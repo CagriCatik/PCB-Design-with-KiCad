@@ -3,3 +3,64 @@ book
 
 # pdf
 KiCadLikeaPro3e.pdf
+
+
+# Ignore backup files
+*.bak
+*.bck
+
+# Ignore autosave files
+*.kicad_pcb-bak
+*.sch-bak
+*-rescue.lib
+
+# Ignore build and output files
+fp-info-cache
+fp-lib-table
+sym-lib-table
+sym-lib-table-bak
+cache
+*.net
+*.xml
+*.dsn
+*.ses
+*.cmp
+*.kicad_prl
+
+# Ignore the backup of PCB layout
+*-bak.kicad_pcb
+
+# Ignore simulation files
+*.cir
+*.spice
+
+# Ignore Gerber and output files
+*.gbr
+*.gtl
+*.gbl
+*.gts
+*.gbs
+*.gto
+*.gbo
+*.gml
+*.gtp
+*.gbp
+*.drl
+*.map
+*.svg
+*.pdf
+
+# Ignore autoroute files
+*.rpt
+*.cmp
+*.drd
+
+# Ignore temporary files and editor backups
+*.tmp
+*.log
+*.swp
+*~
+
+# Ignore KiCad autosaves
+*.kicad_pcb-bak
+*.sch-bak
