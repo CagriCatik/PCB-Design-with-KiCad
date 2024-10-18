@@ -1,1 +1,0 @@
-# Start Pcbnew, import footprints

@@ -1,1 +1,0 @@
-# Solder paste and stencil

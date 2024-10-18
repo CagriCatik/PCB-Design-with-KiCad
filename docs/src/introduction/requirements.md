@@ -1,1 +1,0 @@
-# Software and Hardware requirements

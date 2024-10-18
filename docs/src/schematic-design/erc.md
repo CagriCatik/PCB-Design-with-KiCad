@@ -1,1 +1,0 @@
-# The Electrical Rules Check

@@ -1,6 +1,6 @@
 # PCB Design with KiCad 8
 
-This repository is a comprehensive guide to Printed Circuit Board (PCB) design using **KiCad 8**. It covers the essential aspects of designing single, double, and multi-layer boards from schematic creation to layout design, with a focus on mastering KiCad's extensive tools and features.
+This repository is a comprehensive guide to Printed Circuit Board (PCB) design using **KiCad 8**. It covers the essential aspects of designing single, double, and multi-layer boards from schematic creation to layout design, with a focus on mastering KiCad's extensive tools and features. [mdBook](https://cagricatik.github.io/PCB-Design-with-KiCad/)
 
 ## Course Overview
 

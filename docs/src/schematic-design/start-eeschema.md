@@ -1,1 +1,0 @@
-# Start Eeschema, setup Sheet
