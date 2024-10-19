@@ -1,16 +1,14 @@
 # PCB Design with KiCad 8
 
 - [Introduction](./01_introduction/README.md)
-  - [Why KiCad?](./01_introduction/01_why-kicad.md)
-  - [What is this course about?](./01_introduction/what-is-this-course.md)
+  - [Why KiCad?](./01_introduction/why-kicad.md)
+  - [About this guide](./01_introduction/about-this-guide.md)
   - [Study guide](./01_introduction/study-guide.md)
-  - [Contribute to KiCad](./01_introduction/contribute-to-kicad.md)
-  - [Software and Hardware requirements](./01_introduction/requirements.md)
-  - [What is a PCB?](./01_introduction/what-is-a-pcb.md)
-  - [The PCB design process](./01_introduction/pcb-design-process.md)
+  - [Definition of PCB?](./01_introduction/what-is-a-pcb.md)
+  - [PCB design process](./01_introduction/pcb-design-process.md)
   - [Manufacturing](./01_introduction/manufacturing.md)
-  - [Supported operating systems and installation](./01_introduction/supported-os.md)
   - [Example project](./01_introduction/example-project.md)
+  - [Lessons learned](./01_introduction/lessons-learned.md)
 
 - [KiCad](./02_kicad-interface/README.md)
   - [Introduction](./02_kicad-interface/introduction.md)
@@ -19,7 +17,6 @@
   - [Paths and Libraries](./02_kicad-interface/paths-libraries.md)
   - [Create a new project from scratch](./02_kicad-interface/new-project-scratch.md)
   - [Create a new project from a template](./02_kicad-interface/new-project-template.md)
-  - [KiCad on Windows and Linux](./02_kicad-interface/os.md)
 
 - [Schematic Design](./03_schematic-design/README.md)
   - [Introduction to schematic design](./03_schematic-design/introduction.md)

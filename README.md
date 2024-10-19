@@ -43,7 +43,7 @@ This guide draws inspiration from the Udemy course **[KiCad Like a Pro by Dr. Pe
 
 ## ToDo's
 
-- [ ] Introduction
+- [x] Introduction
 - [ ] KiCad
 - [ ] Schematic Design
 - [ ] Layout
