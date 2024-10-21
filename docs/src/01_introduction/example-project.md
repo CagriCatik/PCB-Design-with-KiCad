@@ -23,7 +23,7 @@ For this example, I’ve chosen the **PIC Programmer** project. The folder conta
 To open the project in KiCad:
 - You can **double-click the `.pro` file** or drag and drop it into the KiCad main window. This will open the project as a whole, allowing you to access both the schematic and PCB layout from within the same interface.
 
----
+
 
 ## Exploring the Schematic Editor (Eeschema)
 
@@ -47,8 +47,6 @@ Many projects, especially complex ones, break the schematic into multiple sheets
 
 - **Navigating Between Sheets:** Double-click a hierarchical box to open another schematic sheet within the same project. You can also use the **Schematic Hierarchy** pane (left toolbar) to switch between different sheets.
 - **Viewing Symbol Properties Quickly:** New in KiCad 8, you can enable the **Properties Manager** pane. This allows you to see properties for any component without opening a separate dialog box. Simply click on a symbol, and its properties will be displayed in the pane on the left.
-
----
 
 ## Exploring the PCB Layout Editor (PCBnew)
 
@@ -78,7 +76,7 @@ One of the standout features of KiCad is the **3D Viewer**, which allows you to 
 
 - **Opening the 3D Viewer:** Click the **3D Viewer** button on the top toolbar. The viewer provides a realistic view of your PCB, showing the components, silkscreen, and board outline.
 
----
+
 
 ## Integration Between Schematic and PCB Editors
 
@@ -86,7 +84,7 @@ KiCad tightly integrates its **Schematic Editor** and **PCB Editor**, allowing y
 - **Cross-Referencing:** Clicking on a component in the schematic will automatically highlight the corresponding component in the PCB layout, and vice versa. For example, selecting a capacitor in the Schematic Editor will focus on that component in the PCB Editor.
 - **Real-Time Updates:** Any changes you make to the schematic, such as adding or removing components, will reflect in the PCB layout once the design is updated.
 
----
+
 
 ## Exploring More KiCad Projects
 
@@ -94,7 +92,7 @@ While this course focuses on beginner-to-intermediate-level projects, KiCad is c
 
 Some projects demonstrate KiCad’s capabilities for high-density and high-complexity designs, far beyond the scope of this course. By reviewing these projects, you’ll gain a better understanding of how advanced users apply KiCad’s features in professional applications.
 
----
+
 
 ## Conclusion
 

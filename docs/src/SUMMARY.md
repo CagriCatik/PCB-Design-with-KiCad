@@ -4,20 +4,21 @@
   - [Why KiCad?](./01_introduction/why-kicad.md)
   - [About this guide](./01_introduction/about-this-guide.md)
   - [Study guide](./01_introduction/study-guide.md)
-  - [Definition of PCB?](./01_introduction/what-is-a-pcb.md)
+  - [Definition of PCB](./01_introduction/what-is-a-pcb.md)
   - [PCB design process](./01_introduction/pcb-design-process.md)
   - [Manufacturing](./01_introduction/manufacturing.md)
   - [Example project](./01_introduction/example-project.md)
   - [Lessons learned](./01_introduction/lessons-learned.md)
-
+---
 - [KiCad](./02_kicad-interface/README.md)
   - [Introduction](./02_kicad-interface/introduction.md)
-  - [KiCad 8 project manager](./02_kicad-interface/project-manager.md)
-  - [KiCad apps overview](./02_kicad-interface/apps-overview.md)
+  - [Project manager](./02_kicad-interface/project-manager.md)
+  - [Apps overview](./02_kicad-interface/apps-overview.md)
   - [Paths and Libraries](./02_kicad-interface/paths-libraries.md)
   - [Create a new project from scratch](./02_kicad-interface/new-project-scratch.md)
   - [Create a new project from a template](./02_kicad-interface/new-project-template.md)
-
+  - [Lessons learned](./02_kicad-interface/lessons-learned.md)
+---
 - [Schematic Design](./03_schematic-design/README.md)
   - [Introduction to schematic design](./03_schematic-design/introduction.md)
   - [Quick intro to the design workflows](./03_schematic-design/workflows-intro.md)
@@ -30,7 +31,7 @@
   - [Nets](./03_schematic-design/nets.md)
   - [The Electrical Rules Check](./03_schematic-design/erc.md)
   - [Comments with text and graphics](./03_schematic-design/comments-graphics.md)
-
+---
 - [Layout Design](./04_layout/README.md)
   - [Introduction to layout design](./04_layout/introduction.md)
   - [Start Pcbnew, import footprints](./04_layout/start-pcbnew.md)
@@ -42,7 +43,7 @@
   - [Design rules check](./04_layout/drc.md)
   - [Export Gerbers and order](./04_layout/export-gerbers.md)
   - [The manufactured PCB](./04_layout/manufactured-pcb.md)
-
+---
 - [Design Principles and PCB Terms](./05_design-principles/README.md)
   - [Design principles introduction](./05_design-principles/introduction.md)
   - [Schematic symbols](./05_design-principles/schematic-symbols.md)
@@ -60,25 +61,24 @@
   - [Panel](./05_design-principles/panel.md)
   - [Solder paste and stencil](./05_design-principles/solder-paste.md)
   - [Pick-and-place](./05_design-principles/pick-and-place.md)
-
+---
 - [Design Workflows and Considerations](./06_workflows/README.md)
   - [Introduction to design workflows](./06_workflows/introduction.md)
   - [Schematic Design Steps](./06_workflows/schematic-steps.md)
   - [PCB Layout Workflow](./06_workflows/pcb-layout.md)
-
+---
 - [Symbols and Eeschema](./07_symbols-eeschema/README.md)
   - [Introduction](./07_symbols-eeschema/introduction.md)
   - [Menu bar overviews](./07_symbols-eeschema/menu-bar.md)
   - [Symbol management](./07_symbols-eeschema/symbol-management.md)
   - [Creating custom symbols](./07_symbols-eeschema/custom-symbols.md)
-
+---
 - [Footprints and Pcbnew](./08_footprints-pcbnew/README.md)
   - [Introduction](./08_footprints-pcbnew/introduction.md)
   - [Menu bar overviews](./08_footprints-pcbnew/menu-bar.md)
   - [Board Setup](./08_footprints-pcbnew/board-setup.md)
   - [Footprint management](./08_footprints-pcbnew/footprint-management.md)
-
-
+---
 - [Project: Breadboard Power Supply](./09_project-power-supply/README.md)
   - [Project - Introduction](./09_project-power-supply/introduction.md)
   - [Schema 1 - Setup](./09_project-power-supply/schema-setup.md)
@@ -102,8 +102,7 @@
   - [Finding and Correcting a Design Defect](./09_project-power-supply/find-correct-defect.md)
   - [Fix the Schematic](./09_project-power-supply/fix-schematic.md)
   - [Fix the Layout](./09_project-power-supply/fix-layout.md)
-
-
+---
 - [Project: MCU Datalogger](./10_project-mcu-datalogger/README.md)
   - [Project - Introduction](./10_project-mcu-datalogger/introduction.md)
   - [Create the new project and create new Git repository](./10_project-mcu-datalogger/create-new-project-git.md)
@@ -139,8 +138,7 @@
   - [Fix the Bugs in the Schematic](./10_project-mcu-datalogger/fix-schematic-bugs.md)
   - [Fix the Bugs in the 2 Layer PCB](./10_project-mcu-datalogger/fix-2layer-pcb-bugs.md)
   - [Fix the Bugs in the 4 Layer PCB](./10_project-mcu-datalogger/fix-4layer-pcb-bugs.md)
-
-  
+---
 - [Recipes](./11_recipes/README.md)
   - [How to create a custom graphic](./11_recipes/how_to_create_a_custom_graphic.md)
   - [How to change a footprint in Pcbnew in bulk](./11_recipes/change_footprint_bulk.md)
@@ -166,4 +164,3 @@
   - [Grid Overrides Schematic editor](./11_recipes/grid_overrides_schematic.md)
   - [Grid Overrides PCB editor](./11_recipes/grid_overrides_pcb.md)
   - [Teardrops](./11_recipes/teardrops.md)
-

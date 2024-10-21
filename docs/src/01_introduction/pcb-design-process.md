@@ -107,5 +107,3 @@ Before moving on to the next lecture, here’s a recap of some important terms:
 ## Conclusion
 
 The PCB design process is both a technical and creative journey. You’ll follow a procedural workflow, but as you gain experience, you’ll develop your unique style. The two main stages—schematic design and PCB layout—are supported by powerful tools in KiCad, and this course will guide you through using these tools to create your own boards. Once your layout is complete and verified, you’ll be ready to send your design to a manufacturer for fabrication.
-
-In the next lecture, we’ll dive into **PCB fabrication** and explore how the manufacturing process converts your design into a physical PCB.

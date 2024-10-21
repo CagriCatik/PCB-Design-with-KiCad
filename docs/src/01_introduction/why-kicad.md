@@ -2,7 +2,7 @@
 
 KiCad, initially released in 1992, has grown from a clunky and niche software to a professional-grade, reliable PCB CAD application. With the advent of its latest version (KiCad 8), it has not only become a serious alternative to commercial products but is often the preferred choice for many engineers, hobbyists, and educators. With powerful features and an ever-growing community of users and contributors, KiCad stands out for its ease of use, flexibility, and open-source nature.
 
-This documentation delves into the concepts, best practices, and advanced features of KiCad, providing you with the knowledge to effectively design printed circuit boards (PCBs) using KiCad. We will cover design principles, step-by-step guides, and insights that can help intermediate and advanced PCB designers leverage the full potential of KiCad.
+This documentation explores into the concepts, best practices, and advanced features of KiCad, providing you with the knowledge to effectively design printed circuit boards (PCBs) using KiCad. We will cover design principles, step-by-step guides, and insights that can help intermediate and advanced PCB designers leverage the full potential of KiCad.
 
 ## KiCad Benefits and Key Features
 

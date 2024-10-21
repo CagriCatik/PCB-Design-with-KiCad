@@ -10,9 +10,7 @@ The course is divided into **five main parts**:
 4. **Project-Based Learning**
 5. **Recipes and Specific How-to Guides**
 
-Let’s dive into each of these parts and see how they contribute to your journey in mastering PCB design using KiCad.
-
-
+Let’s explore into each of these parts and see how they contribute to your journey in mastering PCB design using KiCad.
 
 ## Part 1: Introduction to PCBs and KiCad
 
@@ -41,12 +39,10 @@ The second part of the course features a **simple, hands-on project** designed t
 **Who should focus on this part?**  
 If you are new to KiCad or PCB design in general, this hands-on project is crucial to help you transition from theory to practice.
 
-
-
 ## Part 3: KiCad and PCB Fundamentals
 
 ### Overview
-This part delves into **fundamental concepts of PCB design** and **key features of KiCad**. It includes four sections that build on the knowledge from Parts 1 and 2, offering in-depth explanations of essential design principles and workflows in KiCad.
+This part explores into **fundamental concepts of PCB design** and **key features of KiCad**. It includes four sections that build on the knowledge from Parts 1 and 2, offering in-depth explanations of essential design principles and workflows in KiCad.
 
 ### Topics Covered
 - **Vias and Keep-Out Areas:** Learn how to control where traces and components can be placed on your board.
@@ -99,8 +95,6 @@ The recipes section also covers how to integrate KiCad with **external tools** l
 
 **Who should focus on this part?**  
 These how-to guides are suitable for users at any level. Whenever you need to perform a specific task in KiCad, this section provides quick and easy solutions.
-
-
 
 ## Conclusion and Study Tips
 

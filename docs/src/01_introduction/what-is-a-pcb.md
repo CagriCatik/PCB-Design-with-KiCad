@@ -69,5 +69,3 @@ In more advanced designs, such as a 4-layer MCU data logger, you'll work with **
 ## Conclusion
 
 Understanding the various components and features of a PCB is fundamental to mastering the design process. We've covered key terminology, including through-hole and surface-mount components, traces, vias, solder masks, and silkscreening. In the next section, we'll explore the **PCB design process** in more detail, where you will apply this knowledge to create your own PCBs using KiCad.
-
-By the end of this course, you will have a solid understanding of PCB fundamentals and the skills to design professional-grade boards, whether they be simple single-layer boards or complex multi-layer designs. Let's move on to the next lecture where we discuss the **PCB design process** in depth.

@@ -1,6 +1,10 @@
 # mdBook
 book
 
+# Ignore zip files
+
+*.zip
+
 # pdf
 KiCadLikeaPro3e.pdf
 
