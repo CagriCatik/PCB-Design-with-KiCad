@@ -33,7 +33,7 @@ KiCad is a powerful, open-source tool suite for PCB design. The tools within KiC
 One of the most critical elements in any PCB design project is keeping everything organized. KiCad offers several features to manage and structure your projects efficiently.
 
 ### Key Concepts:
-- **Project Directory**: When starting a new project, it’s important to create a dedicated folder for all project files. This includes the `.kicad_pro`, `.kicad_sch`, and `.kicad_pcb` files, which store project, schematic, and PCB layout data.
+- **Project Directory**: When starting a new project, it’s important to create a dedicated folder for all project files. This includes the `.KiCad_pro`, `.KiCad_sch`, and `.KiCad_pcb` files, which store project, schematic, and PCB layout data.
 - **File Structure**: KiCad project files are stored as human-readable text files, which allows for easy editing and sharing.
 
 ### Best Practices:

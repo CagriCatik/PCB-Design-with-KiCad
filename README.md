@@ -40,7 +40,7 @@ This guide emphasizes practical, hands-on experience. Each lesson is tied to rea
 
 ## Course Reference
 
-This guide draws inspiration from the Udemy course **[KiCad Like a Pro by Dr. Peter Dalmaris](https://www.udemy.com/course/kicad-like-a-pro-3e)**, ensuring that you're learning from one of the best resources available for KiCad 8.
+This guide draws inspiration from the Udemy course **[KiCad Like a Pro by Dr. Peter Dalmaris](https://www.udemy.com/course/KiCad-like-a-pro-3e)**, ensuring that you're learning from one of the best resources available for KiCad 8.
 
 
 ## ToDo's

@@ -48,7 +48,7 @@ The left-hand toolbar provides access to common operations:
 ### 2. **Project Files Pane**
 The right pane shows all the files and folders in your project directory. This includes:
 - **Custom Libraries**: You can create folders for symbols, footprints, and models specific to your project. Custom libraries can be stored here and will appear in this window.
-- **Project-Specific Files**: All project-related files are displayed, including schematics (`.sch`), PCB files (`.kicad_pcb`), and configuration files.
+- **Project-Specific Files**: All project-related files are displayed, including schematics (`.sch`), PCB files (`.KiCad_pcb`), and configuration files.
 
 #### Best Practice:
 Organize your project files by creating subdirectories for custom libraries (symbols, footprints) and documentation. This helps maintain a clear structure, especially in larger projects.

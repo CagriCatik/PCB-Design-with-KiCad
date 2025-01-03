@@ -20,9 +20,9 @@ KiCad provides a set of demo projects to help users learn by example. These demo
 ### Step 2: Opening the Project
 
 For this example, I’ve chosen the **PIC Programmer** project. The folder contains several KiCad project files:
-- `kicad_pro`: The main project file, which holds information about the overall project.
-- `kicad_pcb`: This file contains the layout information for the PCB.
-- `kicad_sch`: The schematic file that contains the circuit design.
+- `KiCad_pro`: The main project file, which holds information about the overall project.
+- `KiCad_pcb`: This file contains the layout information for the PCB.
+- `KiCad_sch`: The schematic file that contains the circuit design.
 
 To open the project in KiCad:
 - You can **double-click the `.pro` file** or drag and drop it into the KiCad main window. This will open the project as a whole, allowing you to access both the schematic and PCB layout from within the same interface.

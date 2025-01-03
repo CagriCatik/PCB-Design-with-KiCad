@@ -50,8 +50,8 @@ Once the project is created, KiCad automatically generates a project directory w
 
 ### 1. Project Directory Structure
 Your new project folder will contain:
-- **Schematic File (`.kicad_sch`)**: Pre-populated with the Raspberry Pi header and mounting holes.
-- **PCB Layout File (`.kicad_pcb`)**: The PCB layout will already include the board outline, mounting holes, and locations for the USB and network ports.
+- **Schematic File (`.KiCad_sch`)**: Pre-populated with the Raspberry Pi header and mounting holes.
+- **PCB Layout File (`.KiCad_pcb`)**: The PCB layout will already include the board outline, mounting holes, and locations for the USB and network ports.
 - **Other Files**: Cache files and tables required for managing the project.
 
 ### 2. Pre-Populated Schematic

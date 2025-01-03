@@ -40,7 +40,7 @@ KiCadLikeaPro3e.pdf
 *.bck
 
 # Ignore autosave files
-*.kicad_pcb-bak
+*.KiCad_pcb-bak
 *.sch-bak
 *-rescue.lib
 
@@ -55,10 +55,10 @@ cache
 *.dsn
 *.ses
 *.cmp
-*.kicad_prl
+*.KiCad_prl
 
 # Ignore the backup of PCB layout
-*-bak.kicad_pcb
+*-bak.KiCad_pcb
 
 # Ignore simulation files
 *.cir
@@ -92,5 +92,5 @@ cache
 *~
 
 # Ignore KiCad autosaves
-*.kicad_pcb-bak
+*.KiCad_pcb-bak
 *.sch-bak

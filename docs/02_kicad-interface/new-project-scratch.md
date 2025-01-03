@@ -18,7 +18,7 @@ KiCad offers two primary methods to start a new project: from scratch or from a 
 
 2. **Choose a Location for the Project**:
    - In the file explorer that pops up, select the directory where you want to save your project. It’s a good idea to create a dedicated directory for all your KiCad projects.
-   - For this example, we will save the project in a folder named `Kicad Projects/Pro Third Edition`.
+   - For this example, we will save the project in a folder named `KiCad Projects/Pro Third Edition`.
 
 3. **Name Your Project**:
    - Enter a meaningful name for your project, such as `example_new_project`. This will help you easily identify the project later on.
@@ -36,13 +36,13 @@ KiCad offers two primary methods to start a new project: from scratch or from a 
 
 After saving, KiCad automatically generates several key files within your newly created project folder:
 
-1. **Project File (`.kicad_pro`)**:
+1. **Project File (`.KiCad_pro`)**:
    - This file contains important project information, such as design settings, paths, and project configurations. It is used to open and manage the project from the KiCad Project Manager.
 
-2. **Schematic File (`.kicad_sch`)**:
+2. **Schematic File (`.KiCad_sch`)**:
    - The schematic file is where you’ll create and manage the electrical schematic of your design. It is initially empty, waiting for you to begin placing components and creating connections.
 
-3. **PCB Layout File (`.kicad_pcb`)**:
+3. **PCB Layout File (`.KiCad_pcb`)**:
    - This file will contain your PCB layout once you’ve designed it. Like the schematic file, it starts empty and will be populated as you place components and route traces.
 
 
@@ -51,7 +51,7 @@ After saving, KiCad automatically generates several key files within your newly 
 
 KiCad stores its project files in human-readable text format. You can open these files in any text editor (e.g., Atom, Notepad++) to inspect their contents.
 
-1. **Project File (`.kicad_pro`)**:
+1. **Project File (`.KiCad_pro`)**:
    - This file includes the basic project metadata, design settings, and configurations. For example:
      ```text
      (project
@@ -62,20 +62,20 @@ KiCad stores its project files in human-readable text format. You can open these
      ```
    - It contains high-level information like the design rules, board settings, and tool configurations.
 
-2. **Schematic File (`.kicad_sch`)**:
+2. **Schematic File (`.KiCad_sch`)**:
    - The schematic file is initially a blank file that contains headers and basic formatting information, ready to be populated with components and connections. Example content:
      ```text
-     (kicad_sch
+     (KiCad_sch
        (version 20211014)
        (generator eeschema)
        ...
      )
      ```
 
-3. **PCB File (`.kicad_pcb`)**:
+3. **PCB File (`.KiCad_pcb`)**:
    - The PCB layout file is similar in structure to the schematic file and contains all the board-specific information once you start designing your PCB. Initially, it’s a blank canvas ready for component placement and routing. Example content:
      ```text
-     (kicad_pcb
+     (KiCad_pcb
        (version 20211014)
        (host pcbnew)
        ...

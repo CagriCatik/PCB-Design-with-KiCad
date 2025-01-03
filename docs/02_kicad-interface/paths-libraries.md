@@ -25,9 +25,9 @@ While the 3D models are not strictly necessary for PCB design, they enhance the 
 When you install KiCad, it automatically configures default paths for libraries and other files. These paths are stored as **environment variables** that KiCad references during operation. However, for various reasons—such as limited storage or organizing files on an external disk—you may want to alter these paths.
 
 ### Key Environment Variables in KiCad:
-- **KICAD_SYMBOL_DIR**: Points to the directory containing symbol libraries.
-- **KICAD_FOOTPRINT_DIR**: Points to the directory containing footprint libraries.
-- **KICAD_3DMODEL_DIR**: Points to the directory for 3D models.
+- **KiCad_SYMBOL_DIR**: Points to the directory containing symbol libraries.
+- **KiCad_FOOTPRINT_DIR**: Points to the directory containing footprint libraries.
+- **KiCad_3DMODEL_DIR**: Points to the directory for 3D models.
 
 #### Example: Adjusting the Default Paths
 You may find that the 3D models directory takes up a considerable amount of space—several gigabytes, in some cases. If you’re using a laptop or a computer with limited SSD storage, you can relocate these large files to an external hard drive.
@@ -35,13 +35,13 @@ You may find that the 3D models directory takes up a considerable amount of spac
 Here’s how you can do it:
 1. Open **KiCad Project Manager**.
 2. Go to `Preferences` → `Configure Paths`.
-3. Select the path you want to change (e.g., **KICAD_3DMODEL_DIR**).
+3. Select the path you want to change (e.g., **KiCad_3DMODEL_DIR**).
 4. Update the path to point to a new directory on an external disk or another location with more storage.
 
 **Example Setup**:
-- **KICAD_3DMODEL_DIR**: `/mnt/external_disk/kicad_projects/libraries/3D_models/`
-- **KICAD_SYMBOL_DIR**: `/mnt/external_disk/kicad_projects/libraries/symbols/`
-- **KICAD_FOOTPRINT_DIR**: `/mnt/external_disk/kicad_projects/libraries/footprints/`
+- **KiCad_3DMODEL_DIR**: `/mnt/external_disk/KiCad_projects/libraries/3D_models/`
+- **KiCad_SYMBOL_DIR**: `/mnt/external_disk/KiCad_projects/libraries/symbols/`
+- **KiCad_FOOTPRINT_DIR**: `/mnt/external_disk/KiCad_projects/libraries/footprints/`
 
 By moving these directories to an external disk, you can free up valuable internal storage space without affecting the functionality of KiCad.
 
@@ -73,12 +73,12 @@ KiCad will automatically generate environment variables pointing to the project'
 KiCad relies on environment variables to manage paths to libraries and other resources. These environment variables are automatically generated and referenced in different parts of the software.
 
 ### Example: Symbol and Footprint Libraries
-When you open the **Manage Symbol Libraries** window, you’ll notice that each library path includes an environment variable, such as **KICAD_SYMBOL_DIR**. This variable points to the directory where KiCad looks for symbol files (`.lib` or `.sym`).
+When you open the **Manage Symbol Libraries** window, you’ll notice that each library path includes an environment variable, such as **KiCad_SYMBOL_DIR**. This variable points to the directory where KiCad looks for symbol files (`.lib` or `.sym`).
 
-Similarly, in the **Manage Footprint Libraries** window, you’ll find the **KICAD_FOOTPRINT_DIR** variable, which points to the directory containing footprint files (`.mod`).
+Similarly, in the **Manage Footprint Libraries** window, you’ll find the **KiCad_FOOTPRINT_DIR** variable, which points to the directory containing footprint files (`.mod`).
 
 #### Global vs. Project-Specific Libraries
-- **Global Libraries**: Refer to symbols, footprints, and models available across all projects, typically defined by environment variables like **KICAD_SYMBOL_DIR**.
+- **Global Libraries**: Refer to symbols, footprints, and models available across all projects, typically defined by environment variables like **KiCad_SYMBOL_DIR**.
 - **Project-Specific Libraries**: Refer to resources that are unique to a particular project, defined automatically based on the project directory.
 
 

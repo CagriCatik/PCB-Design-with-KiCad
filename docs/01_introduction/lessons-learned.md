@@ -35,8 +35,8 @@ KiCad provides an intuitive interface with toolbars for quick access to commonly
 ### 5. **Project Management**
 KiCad projects are composed of multiple files:
 - **`.pro`**: The project file that holds overall project information.
-- **`.kicad_pcb`**: Contains layout information for the PCB.
-- **`.kicad_sch`**: Contains schematic information.
+- **`.KiCad_pcb`**: Contains layout information for the PCB.
+- **`.KiCad_sch`**: Contains schematic information.
 All of these files are stored in plain text format, making them easily accessible and version-controlled using tools like Git.
 
 ### 6. **Manufacturing and Gerber Files**

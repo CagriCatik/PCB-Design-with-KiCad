@@ -27,7 +27,7 @@ KiCad caters to a wide range of users, from hobbyists to professional PCB design
 Before diving into the features and functionality of KiCad, ensure that it is installed on your computer. KiCad supports **macOS**, **Windows**, and **Linux** platforms.
 
 ### Installation Instructions
-1. **Download KiCad**: Go to the official [KiCad website](https://kicad.org/download/) and download the latest stable version for your operating system.
+1. **Download KiCad**: Go to the official [KiCad website](https://KiCad.org/download/) and download the latest stable version for your operating system.
 2. **Installation Guide**:
    - For **Windows**: Run the installer and follow the step-by-step instructions.
    - For **macOS**: Download the disk image (`.dmg`) file, open it, and drag the KiCad icon to the Applications folder.
