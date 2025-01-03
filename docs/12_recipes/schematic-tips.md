@@ -323,8 +323,6 @@ This tutorial integrates insights and best practices from Phil's Lab #62, emphas
 
 ## Appendix A: Sample Schematic Layout in KiCad 8
 
-
-
 ## Appendix B: Checklist for Schematic Review
 
 - [ ] All nets are comprehensively labeled.
