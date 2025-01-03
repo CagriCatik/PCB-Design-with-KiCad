@@ -1,3 +1,8 @@
+---
+sidebar_position: 5
+---
+
+
 # Creating a New KiCad Project from a Template
 
 In this section, we’ll focus on **creating a new project from a template** in KiCad. Templates can significantly speed up your workflow, especially when designing PCBs that follow a common structure, such as Arduino shields, Raspberry Pi expansion boards, or other standardized designs. KiCad includes several built-in templates, and you can also create your own from past projects for reuse.

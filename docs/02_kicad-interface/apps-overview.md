@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # KiCad Applications
 
 In this section, we will explore the individual applications within the KiCad software suite. Each application has a distinct role in the PCB design process, and mastering these tools is key to developing high-quality, professional-grade printed circuit boards. In this documentation, we’ll take a guided tour through the **Schematic Editor**, **PCB Editor**, **Symbol Editor**, **Footprint Editor**, and several additional tools within KiCad. We’ll also highlight best practices and advanced tips for each tool.

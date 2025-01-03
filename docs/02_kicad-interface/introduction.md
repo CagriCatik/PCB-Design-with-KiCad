@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Concepts, Best Practices, and Insights
 
 KiCad provides a suite of applications that help both beginner and advanced PCB designers move seamlessly from schematic capture to PCB layout and manufacturing. In this guide, we'll cover everything you need to know about KiCad’s key features, design principles, and best practices to get the most out of this software.

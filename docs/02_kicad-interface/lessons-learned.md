@@ -1,3 +1,7 @@
+---
+sidebar_position: 7
+---
+
 # Lessons Learned
 
 In this **Lessons Learned** chapter, we summarize the essential concepts, best practices, and key definitions that have emerged throughout the discussion on KiCad and PCB design. By reflecting on these topics, you'll solidify your understanding of the core principles of KiCad, how to structure projects effectively, and the advanced tools and workflows available to speed up your design process.

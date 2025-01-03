@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Project Manager
 
 In this section, we delve into the **KiCad Project Manager**, the central hub for managing your PCB design projects. This guide will explain how the Project Manager operates, its interface, and how to utilize its tools effectively for intermediate and advanced PCB designers.
