@@ -2,7 +2,7 @@
 
 Welcome to the **PCB Design with KiCad 8** repository—a comprehensive guide for mastering the design of single, double, and multi-layer printed circuit boards (PCBs) using **KiCad 8**. This guide walks you through the entire PCB design process, from schematic creation to final layout, utilizing KiCad's powerful suite of tools and features.
 
-- Explore the complete guide here: [**Docusaurus**](https://cagricatik.github.io/PCB-Design-with-KiCad/)
+- Explore the complete guide [**here**](https://cagricatik.github.io/PCB-Design-with-KiCad/)
 - ![Deploy Docusaurus](https://github.com/CagriCatik/PCB-Design-with-KiCad/actions/workflows/deploy.yml/badge.svg)
 
 ## Course Overview

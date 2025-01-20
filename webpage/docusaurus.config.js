@@ -112,10 +112,6 @@ const config = {
                 to: '/docs/category/introduction',
               },
               {
-                label: 'Projects',
-                to: '/docs/category/projects',
-              },
-              {
                 label: 'Recipes',
                 to: '/docs/category/recipes',
               },
@@ -125,16 +121,16 @@ const config = {
             title: 'Projects',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Project 1',
+                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Project 2',
+                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
               },
               {
-                label: 'X',
-                href: 'https://x.com/docusaurus',
+                label: 'Project 3',
+                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
               },
             ],
           },
@@ -152,7 +148,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} PCB Design with KiCad`,
+        copyright: ` PCB Design with KiCad`,
       },
       prism: {
         theme: prismThemes.github,
