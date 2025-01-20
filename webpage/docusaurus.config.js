@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Vehicle Network Standards',
-  tagline: 'Detailed  resources on automotive networking and systems',
+  title: 'PCB Design with KiCad',
+  tagline: ' A website for PCB Design with KiCad',
   favicon: 'img/favicon.ico',
   url: 'https://CagriCatik.github.io',
   baseUrl: '/PCB-Design-with-KiCad/',
@@ -95,7 +95,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
             label: 'GitHub',
             position: 'right',
           },

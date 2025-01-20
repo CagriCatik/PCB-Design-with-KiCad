@@ -18,7 +18,10 @@ The schematic design workflow involves the logical construction of a circuit dia
 6. **Design Validation**: Running Electrical Rule Check (ERC) to ensure the schematic is error-free and adheres to design rules.
 7. **Export and Preparation for Layout**: Generating the necessary files, such as the netlist, to transition to the layout phase.
 
-## **PCB Layout Workflow**
+![alt text](./images/schematic_design_workflow.png)
+
+
+### **PCB Layout Workflow**
 The PCB layout workflow follows the schematic design phase, transforming the logical representation into a physical arrangement of components and traces. This phase is conducted in KiCad’s Pcbnew tool and also comprises seven steps:
 1. **Import Schematic Data**: Loading the netlist or directly synchronizing the schematic to the PCB layout.
 2. **Footprint Assignment**: Associating each schematic symbol with an appropriate physical footprint.
@@ -27,6 +30,8 @@ The PCB layout workflow follows the schematic design phase, transforming the log
 5. **Design Rule Compliance**: Ensuring the layout adheres to predefined constraints, such as trace width and spacing.
 6. **Design Verification**: Performing Design Rule Check (DRC) and verifying connectivity.
 7. **Manufacturing Preparation**: Generating Gerber files and other outputs necessary for production.
+
+![alt text](./images/pcb_layout_workflow.png)
 
 ---
 
