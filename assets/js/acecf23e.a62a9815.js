@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkPCB_Design=self.webpackChunkPCB_Design||[]).push([[1903],{1912:s=>{s.exports=JSON.parse('{"blogBasePath":"/PCB-Design-with-KiCad/blog","blogTitle":"Blog","authorsListPath":"/PCB-Design-with-KiCad/blog/authors"}')}}]);
