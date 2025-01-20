@@ -1,0 +1,8 @@
+{
+  "label": "Layout Design",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Explore the steps involved in PCB layout design, from starting with Pcbnew to manufacturing your PCB."
+  }
+}
