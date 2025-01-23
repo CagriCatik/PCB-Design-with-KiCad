@@ -1,7 +1,3 @@
----
-sidebar_position: 7
----
-
 # Schematic and PCB Editors
 
 In this lecture, we’ll dive into the practical use of KiCad by exploring its core applications—the **Schematic Editor (Eeschema)** and the **PCB Editor (PCBnew)**. These tools are the heart of KiCad’s design workflow, where you’ll build your circuit and lay out your printed circuit board (PCB).

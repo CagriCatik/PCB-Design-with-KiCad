@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Manufacturing Options and Gerber Files
 
 Now that you've completed laying out your board in KiCad and are ready to bring your design to life, the next step is to manufacture the physical PCB. This lecture covers the most common options available for PCB manufacturing, as well as the process of preparing your design for production by exporting the necessary files. You'll learn about chemical etching (for DIY boards) and using professional PCB manufacturers, which is the recommended approach for most projects.

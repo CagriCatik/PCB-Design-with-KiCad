@@ -1,4 +1,3 @@
-
 # Design Guide 
 
 This guide is designed for anyone interested in learning how to use KiCad to design printed circuit boards (PCBs), regardless of prior experience. Whether you are a beginner or have some experience with PCB design, this guide will guide you through the essential skills needed to master KiCad and create your own PCBs.

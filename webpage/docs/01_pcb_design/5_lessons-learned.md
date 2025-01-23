@@ -1,7 +1,3 @@
----
-sidebar_position: 8
----
-
 # Lessons Learned
 
 This chapter summarizes the key concepts, definitions, and lessons learned throughout our exploration of PCB design using **KiCad**, along with important terminology and best practices.

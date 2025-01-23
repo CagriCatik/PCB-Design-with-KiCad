@@ -1,7 +1,3 @@
----
-sidebar_position: 5
----
-
 # PCB Design Process
 
 In this lecture, we will walk through the PCB design process from a high-level perspective, focusing on the major steps involved in turning an electronic concept into a functional printed circuit board (PCB). This process involves both technical and aesthetic considerations. While designing a PCB is fundamentally an engineering discipline, it also incorporates aspects of artistry, as each design reflects the personal style and preferences of the designer. Over time, your PCB designs will start to look uniquely yours.

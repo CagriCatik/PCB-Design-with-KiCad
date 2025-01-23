@@ -1,4 +1,4 @@
-# 1. Introduction
+# Introduction
 
 Printed Circuit Boards (PCBs) are the foundation of modern electronics, providing the platform for connecting and supporting electronic components. This guide focuses on the process of designing your first PCB, using a simple voltage regulator circuit as an example. The goal is to provide a clear, practical, and beginner-friendly introduction to PCB design, enabling you to create a functional board in less than 10 minutes. 
 

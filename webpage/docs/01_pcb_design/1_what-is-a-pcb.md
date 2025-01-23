@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Components and Terminology
 
 In this part of the course, I want to share how my curiosity for electronics led to a deep fascination with the components and technology behind printed circuit boards (PCBs). In this lecture, we'll take a closer look at a few examples of PCBs to understand their features and the terminology used to describe them. This foundational understanding is crucial as we move forward in the course to explore the more technical aspects of PCB design and manufacturing.
