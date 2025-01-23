@@ -1,10 +1,10 @@
-# 3. Schematic Design
+# Schematic Design
 
 The schematic design phase is the foundation of any PCB project. It involves creating a logical representation of the circuit, defining how components are connected, and ensuring that the design meets the project requirements. In this chapter, we will walk through the process of designing the schematic for the ESP32-based IoT device in KiCad 7.
 
 ---
 
-## 3.1 Placing Key Components
+## Placing Key Components
 The first step in schematic design is to place the key components that form the core of the circuit. These components include the ESP32 module, sensors, power supply, and interfaces.
 
 1. ESP32 WROOM Module:
@@ -45,7 +45,7 @@ The first step in schematic design is to place the key components that form the 
 
 ---
 
-## 3.2 Wiring the Schematic
+## Wiring the Schematic
 Once the components are placed, the next step is to connect them logically using wires and labels.
 
 1. USB Interface and Programming Circuit:
@@ -76,7 +76,7 @@ Once the components are placed, the next step is to connect them logically using
 
 ---
 
-## 3.3 Adding Power and Ground Connections
+## Adding Power and Ground Connections
 Proper power and ground connections are critical for the functionality and reliability of the circuit.
 
 1. Power Nets:
@@ -89,7 +89,7 @@ Proper power and ground connections are critical for the functionality and relia
 
 ---
 
-## 3.4 Annotating and Assigning Footprints
+## Annotating and Assigning Footprints
 Annotating components and assigning footprints ensures that the schematic is ready for PCB layout.
 
 1. Annotate Components:
@@ -106,7 +106,7 @@ Annotating components and assigning footprints ensures that the schematic is rea
 
 ---
 
-## 3.5 Finalizing the Schematic
+## Finalizing the Schematic
 Before moving to the PCB layout, perform a final review of the schematic to ensure accuracy and completeness.
 
 1. Check Connections:
@@ -123,7 +123,7 @@ Before moving to the PCB layout, perform a final review of the schematic to ensu
 
 ---
 
-## 3.6 Summary
+## Summary
 In this chapter, we designed the schematic for the ESP32-based IoT device. We placed key components, wired the circuit, added power and ground connections, and assigned footprints. The schematic serves as the blueprint for the PCB layout, ensuring that all connections and components are accurately represented. In the next chapter, we will transition to the PCB layout phase, where we will bring the schematic to life by designing the physical board.
 
 ---

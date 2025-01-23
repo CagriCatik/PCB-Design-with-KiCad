@@ -1,10 +1,10 @@
-# 7. 3D Visualization and Final Review
+# 3D Visualization and Final Review
 
 The final step before sending your PCB design for manufacturing is to perform a thorough review using 3D visualization and other tools. This chapter covers how to use KiCad’s 3D viewer to inspect your design, identify potential issues, and ensure the board is ready for production. We’ll also discuss final checks to verify the design’s accuracy and manufacturability.
 
 ---
 
-## 7.1 Using the 3D Viewer in KiCad
+## Using the 3D Viewer in KiCad
 KiCad’s 3D viewer allows you to visualize your PCB in three dimensions, providing a realistic representation of the final product. This tool is invaluable for identifying mechanical conflicts, verifying component placement, and ensuring the board meets design requirements.
 
 1. Access the 3D Viewer:
@@ -30,7 +30,7 @@ KiCad’s 3D viewer allows you to visualize your PCB in three dimensions, provid
 
 ---
 
-## 7.2 Final Design Checks
+## Final Design Checks
 After reviewing the design in 3D, perform a series of final checks to ensure the board is ready for manufacturing.
 
 1. Cross-Check with Schematic:
@@ -55,7 +55,7 @@ After reviewing the design in 3D, perform a series of final checks to ensure the
 
 ---
 
-## 7.3 Verifying Manufacturing Files
+## Verifying Manufacturing Files
 Before submitting the design for manufacturing, double-check the generated files to ensure they are accurate and complete.
 
 1. Inspect Gerber Files:
@@ -72,7 +72,7 @@ Before submitting the design for manufacturing, double-check the generated files
 
 ---
 
-## 7.4 Final Adjustments
+## Final Adjustments
 If any issues are identified during the final review, make the necessary adjustments to the design.
 
 1. Modify Component Placement:
@@ -90,7 +90,7 @@ If any issues are identified during the final review, make the necessary adjustm
 
 ---
 
-## 7.5 Preparing for Manufacturing
+## Preparing for Manufacturing
 Once the design is finalized, prepare the files for submission to the manufacturer.
 
 1. Compile Manufacturing Files:
@@ -105,7 +105,7 @@ Once the design is finalized, prepare the files for submission to the manufactur
 
 ---
 
-## 7.6 Summary
+## Summary
 In this chapter, we used KiCad’s 3D viewer to inspect the PCB design and performed a series of final checks to ensure the board is ready for manufacturing. We verified component placement, mechanical clearances, and manufacturing files, making adjustments as needed. With these steps completed, your design is fully prepared for production. In the next chapter, we will discuss the manufacturing process and how to assemble the board.
 
 ---

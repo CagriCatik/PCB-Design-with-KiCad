@@ -1,13 +1,13 @@
-# 1. Introduction
+# Introduction
 
-## 1.1 Overview of KiCad as a PCB Design Tool
+## Overview of KiCad as a PCB Design Tool
 KiCad is a powerful open-source software suite for electronic design automation (EDA). It is widely used for creating schematics and printed circuit board (PCB) layouts. With its robust set of tools, KiCad allows engineers and hobbyists to design complex PCBs, from simple single-layer boards to advanced multi-layer designs. The software supports a wide range of features, including schematic capture, PCB layout, 3D visualization, and generation of manufacturing files. KiCad is particularly popular in the maker and IoT communities due to its flexibility, cost-effectiveness, and active development community.
 
 In this tutorial, we will explore the capabilities of KiCad 7 by designing a fully functional IoT device based on the ESP32 microcontroller. The project will cover the entire design workflow, from initial specification to generating manufacturing files.
 
 ---
 
-## 1.2 Project Overview: ESP32-Based IoT Device
+## Project Overview: ESP32-Based IoT Device
 The goal of this project is to design a general-purpose IoT device centered around the ESP32 WROOM module. The ESP32 is a versatile microcontroller with built-in Wi-Fi and Bluetooth capabilities, making it an ideal choice for IoT applications. The device will include a variety of features to demonstrate the flexibility of the ESP32 and the power of KiCad for PCB design.
 
 The key functionalities of the IoT device include:
@@ -22,7 +22,7 @@ The key functionalities of the IoT device include:
 
 ---
 
-## 1.3 Key Features of the IoT Device
+## Key Features of the IoT Device
 The IoT device is designed to be a versatile platform for various applications. Below is a detailed breakdown of its key features:
 
 1. ESP32 WROOM Module:
@@ -58,7 +58,7 @@ The IoT device is designed to be a versatile platform for various applications. 
 
 ---
 
-## 1.4 Board Specifications
+## Board Specifications
 The IoT device is designed to be compact and functional, with the following specifications:
 - Board Size: 80mm x 80mm (square).
 - Layer Count: 4-layer PCB.
@@ -72,7 +72,7 @@ The IoT device is designed to be compact and functional, with the following spec
 
 ---
 
-## 1.5 Tutorial Objectives
+## Tutorial Objectives
 By the end of this tutorial, you will:
 - Gain a solid understanding of the KiCad 7 workflow, from schematic design to PCB layout.
 - Learn how to design a 4-layer PCB with a focus on signal integrity and power distribution.
@@ -82,7 +82,7 @@ By the end of this tutorial, you will:
 
 ---
 
-## 1.6 Prerequisites
+## Prerequisites
 To follow this tutorial, you should have:
 - Basic knowledge of electronics and PCB design concepts.
 - KiCad 7 installed on your computer (available for free from the official KiCad website).

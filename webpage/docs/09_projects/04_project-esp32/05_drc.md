@@ -1,10 +1,10 @@
-# 5. Design Rule Check (DRC) and Final Checks
+# Design Rule Check (DRC) and Final Checks
 
 The Design Rule Check (DRC) is a critical step in the PCB design process. It ensures that your layout adheres to the specified design rules, such as trace width, clearance, and via size. After completing the PCB layout, performing a thorough DRC and final checks will help identify and resolve any issues before sending the design for manufacturing. This chapter covers the DRC process, final design optimizations, and preparing the board for production.
 
 ---
 
-## 5.1 Running the Design Rule Check (DRC)
+## Running the Design Rule Check (DRC)
 The DRC verifies that your PCB layout meets the design rules defined in the project. These rules ensure manufacturability, signal integrity, and reliability.
 
 1. Access the DRC Tool:
@@ -35,7 +35,7 @@ The DRC verifies that your PCB layout meets the design rules defined in the proj
 
 ---
 
-## 5.2 Final Design Optimizations
+## Final Design Optimizations
 Once the DRC is clean, perform final optimizations to improve the design’s performance and manufacturability.
 
 1. Signal Integrity Checks:
@@ -64,7 +64,7 @@ Once the DRC is clean, perform final optimizations to improve the design’s per
 
 ---
 
-## 5.3 Generating Manufacturing Files
+## Generating Manufacturing Files
 After completing the DRC and final checks, generate the files required for PCB manufacturing.
 
 1. Gerber Files:
@@ -90,7 +90,7 @@ After completing the DRC and final checks, generate the files required for PCB m
 
 ---
 
-## 5.4 Final Review
+## Final Review
 Before sending the design for manufacturing, perform a final review to ensure everything is correct.
 
 1. Cross-Check with Schematic:
@@ -110,7 +110,7 @@ Before sending the design for manufacturing, perform a final review to ensure ev
 
 ---
 
-## 5.5 Summary
+## Summary
 In this chapter, we performed the Design Rule Check (DRC) to ensure the PCB layout adheres to the specified design rules. We also conducted final optimizations, generated manufacturing files, and performed a thorough review of the design. With these steps completed, the PCB is ready for production. In the next chapter, we will discuss the manufacturing process and how to assemble the board.
 
 ---

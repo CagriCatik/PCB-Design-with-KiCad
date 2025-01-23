@@ -1,6 +1,6 @@
-# 2. Setting Up the KiCad Project
+# Setting Up the KiCad Project
 
-## 2.1 Creating a New Project
+## Creating a New Project
 The first step in any PCB design is to set up the project in KiCad. This involves creating a new project, defining its structure, and organizing the files. Here’s how to get started:
 
 1. Launch KiCad:
@@ -22,7 +22,7 @@ The first step in any PCB design is to set up the project in KiCad. This involve
 
 ---
 
-## 2.2 Configuring Page Settings
+## Configuring Page Settings
 Before diving into the schematic design, it’s important to configure the page settings. This step ensures that your schematic is well-documented and ready for professional use.
 
 1. Open the Schematic Editor:
@@ -46,7 +46,7 @@ Before diving into the schematic design, it’s important to configure the page 
 
 ---
 
-## 2.3 Organizing the Schematic
+## Organizing the Schematic
 With the project and page settings configured, you can now start organizing the schematic. This involves placing components, defining connections, and ensuring the design is easy to understand.
 
 1. Add Components:
@@ -73,7 +73,7 @@ With the project and page settings configured, you can now start organizing the 
 
 ---
 
-## 2.4 Assigning Footprints
+## Assigning Footprints
 Footprints define the physical layout of components on the PCB. Assigning footprints early in the design process ensures that your schematic and PCB layout are aligned.
 
 1. Open the Footprint Assignment Tool:
@@ -92,7 +92,7 @@ Footprints define the physical layout of components on the PCB. Assigning footpr
 
 ---
 
-## 2.5 Setting Up the PCB Layout
+## Setting Up the PCB Layout
 Once the schematic is complete and footprints are assigned, you can move on to the PCB layout.
 
 1. Open the PCB Editor:
@@ -116,7 +116,7 @@ Once the schematic is complete and footprints are assigned, you can move on to t
 
 ---
 
-## 2.6 Preparing for Design
+## Preparing for Design
 Before starting the PCB layout, ensure that the following steps are completed:
 - Grid Settings: Set the grid to 1mm for initial placement and 0.1mm for fine-tuning.
 - Design Rules: Configure design rules in Board Setup > Design Rules (e.g., track width, clearance, via size).
@@ -124,7 +124,7 @@ Before starting the PCB layout, ensure that the following steps are completed:
 
 ---
 
-## 2.7 Summary
+## Summary
 In this chapter, you set up the KiCad project, configured the schematic page, organized the components, and prepared the PCB layout. These steps lay the foundation for the detailed schematic design and PCB routing that will follow in the next chapters. With the project structure in place, you’re now ready to dive into the schematic design process.
 
 --- 

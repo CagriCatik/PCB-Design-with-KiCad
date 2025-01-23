@@ -1,10 +1,10 @@
-# 6. Generating Manufacturing Files
+# Generating Manufacturing Files
 
 Once the PCB layout is complete and all design checks have been performed, the next step is to generate the files required for manufacturing. These files, often referred to as Gerber files and drill files, provide the manufacturer with all the necessary information to produce the PCB. This chapter walks you through the process of generating manufacturing files in KiCad 7, ensuring your design is ready for production.
 
 ---
 
-## 6.1 Understanding Manufacturing Files
+## Understanding Manufacturing Files
 Manufacturing files are standardized formats used by PCB manufacturers to fabricate and assemble your board. The key files include:
 
 1. Gerber Files:
@@ -25,7 +25,7 @@ Manufacturing files are standardized formats used by PCB manufacturers to fabric
 
 ---
 
-## 6.2 Generating Gerber Files
+## Generating Gerber Files
 Gerber files are the most critical files for PCB fabrication. Here’s how to generate them in KiCad:
 
 1. Open the Plot Dialog:
@@ -53,7 +53,7 @@ Gerber files are the most critical files for PCB fabrication. Here’s how to ge
 
 ---
 
-## 6.3 Generating Drill Files
+## Generating Drill Files
 Drill files specify the location and size of all holes on the PCB, including vias and mounting holes.
 
 1. Open the Drill File Dialog:
@@ -70,7 +70,7 @@ Drill files specify the location and size of all holes on the PCB, including via
 
 ---
 
-## 6.4 Generating the Bill of Materials (BOM)
+## Generating the Bill of Materials (BOM)
 The BOM lists all components required for assembling the PCB. Here’s how to generate it in KiCad:
 
 1. Open the BOM Generator:
@@ -90,7 +90,7 @@ The BOM lists all components required for assembling the PCB. Here’s how to ge
 
 ---
 
-## 6.5 Generating Assembly Drawings
+## Generating Assembly Drawings
 Assembly drawings provide visual guidance for placing components on the PCB during assembly.
 
 1. Create Assembly Drawings:
@@ -107,7 +107,7 @@ Assembly drawings provide visual guidance for placing components on the PCB duri
 
 ---
 
-## 6.6 Creating a ZIP File for Manufacturing
+## Creating a ZIP File for Manufacturing
 To simplify the submission process, compile all manufacturing files into a single ZIP file.
 
 1. Organize Files:
@@ -123,7 +123,7 @@ To simplify the submission process, compile all manufacturing files into a singl
 
 ---
 
-## 6.7 Final Checks Before Submission
+## Final Checks Before Submission
 Before sending the files to the manufacturer, perform a final review to ensure everything is correct.
 
 1. Verify Gerber Files:
@@ -141,7 +141,7 @@ Before sending the files to the manufacturer, perform a final review to ensure e
 
 ---
 
-## 6.8 Summary
+## Summary
 In this chapter, we generated the manufacturing files required to produce the ESP32-based IoT device PCB. We covered the creation of Gerber files, drill files, BOM, and assembly drawings, as well as compiling them into a ZIP file for submission. With these files ready, your design is prepared for fabrication and assembly. In the next chapter, we will discuss the manufacturing process and how to assemble the board.
 
 ---

@@ -1,10 +1,10 @@
-# 4. PCB Layout
+# PCB Layout
 
 The PCB layout phase is where the schematic design is translated into a physical board. This involves placing components, routing traces, and ensuring that the design meets electrical and mechanical requirements. In this chapter, we will walk through the process of designing the PCB layout for the ESP32-based IoT device in KiCad 7.
 
 ---
 
-## 4.1 Setting Up the PCB Layout
+## Setting Up the PCB Layout
 Before placing components and routing traces, it’s important to configure the PCB layout environment.
 
 1. Open the PCB Editor:
@@ -28,7 +28,7 @@ Before placing components and routing traces, it’s important to configure the 
 
 ---
 
-## 4.2 Placing Components
+## Placing Components
 Proper component placement is critical for signal integrity, thermal management, and manufacturability.
 
 1. ESP32 WROOM Module:
@@ -56,7 +56,7 @@ Proper component placement is critical for signal integrity, thermal management,
 
 ---
 
-## 4.3 Routing the PCB
+## Routing the PCB
 Routing involves connecting the components with copper traces while adhering to design rules and best practices.
 
 1. Critical Signal Routing:
@@ -80,7 +80,7 @@ Routing involves connecting the components with copper traces while adhering to 
 
 ---
 
-## 4.4 Design Rule Check (DRC)
+## Design Rule Check (DRC)
 The Design Rule Check ensures that the PCB layout adheres to the specified design rules.
 
 1. Run the DRC:
@@ -93,7 +93,7 @@ The Design Rule Check ensures that the PCB layout adheres to the specified desig
 
 ---
 
-## 4.5 Finalizing the PCB Layout
+## Finalizing the PCB Layout
 Before generating manufacturing files, perform a final review of the PCB layout.
 
 1. Add Silkscreen Labels:
@@ -111,7 +111,7 @@ Before generating manufacturing files, perform a final review of the PCB layout.
 
 ---
 
-## 4.6 Summary
+## Summary
 In this chapter, we designed the PCB layout for the ESP32-based IoT device. We placed components, routed traces, and performed a Design Rule Check to ensure the layout meets all requirements. The PCB layout is now ready for manufacturing, bringing the schematic design to life as a physical board. In the next chapter, we will cover the final steps of generating manufacturing files and preparing the design for production.
 
 ---
