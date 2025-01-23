@@ -1,7 +1,3 @@
----
-sidebar_position: 3
----
-
 # Study Guide
 
 In this lecture, we will cover the structure of the KiCad PCB Design course to help you understand the organization of the content and how to approach it. The course is designed to be flexible, catering to both beginners and experienced PCB designers. Depending on your familiarity with PCB design and KiCad, you can follow different pathways to maximize your learning.

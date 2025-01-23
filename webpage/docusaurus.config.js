@@ -69,35 +69,78 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'PCB Design with KiCad',
+        title: ' ',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'pcb logo',
           src: 'img/logo.png',
         },
+
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'KnowledgeBaseSidebar',
+            sidebarId: 'gettingStartedSidebar',
             position: 'left',
-            label: 'Knowledge Base',
+            label: 'Getting Started',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'ProjectsSidebar',
+            sidebarId: 'pcbDesignSidebar',
+            position: 'left',
+            label: 'PCB Design',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'kicadSidebar',
+            position: 'left',
+            label: 'KiCad',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'schematicSidebar',
+            position: 'left',
+            label: 'Schematic',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'layoutSidebar',
+            position: 'left',
+            label: 'Layout',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'designPrinciplesSidebar',
+            position: 'left',
+            label: 'Design Principles',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'designWorkflowSidebar',
+            position: 'left',
+            label: 'Design Workflow',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'symbolsEeschemaSidebar',
+            position: 'left',
+            label: 'Symbols Eeschema',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'footprintsPcbnewSidebar',
+            position: 'left',
+            label: 'Footprints Pcbnew',
+          },
+          {
+            type: 'docSidebar',
+            sidebarId: 'projectsSidebar',
             position: 'left',
             label: 'Projects',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'RecipesSidebar',
+            sidebarId: 'recipesSidebar',
             position: 'left',
             label: 'Recipes',
-          },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {
-            href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
-            label: 'GitHub',
-            position: 'right',
           },
         ],
       },
@@ -148,7 +191,7 @@ const config = {
             ],
           },
         ],
-        copyright: ` PCB Design with KiCad`,
+        copyright: `PCB Design with KiCad`,
       },
       prism: {
         theme: prismThemes.github,

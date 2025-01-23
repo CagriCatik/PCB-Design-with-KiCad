@@ -28,3 +28,40 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Center the text in the navbar */
+.navbar__items {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center; /* Centers vertically */
+  height: 100%; /* Ensures alignment in the navbar */
+  text-align: center;
+}
+
+/* Make the navbar text smaller and bold */
+.navbar__item {
+  font-size: 12px; /* Adjust to your preferred size */
+  font-weight: bold; /* Adds bold styling */
+  line-height: 1.5; /* Optional: Adjust line spacing */
+}
+
+/* Center text for specific navbar links */
+.navbar__link {
+  text-align: center;
+  font-size: 12px; /* Smaller text size */
+  font-weight: bold; /* Ensures bold styling for links */
+  margin: 0 10px; /* Adjust spacing between items */
+}
+
+/* Optional: Adjust navbar height for better visual alignment */
+.navbar {
+  height: 60px; /* Adjust as needed */
+}
+
+
+
+@media (max-width: 768px) {
+  .navbar__item {
+      font-size: 10px; /* Smaller font size for mobile */
+  }
+}
