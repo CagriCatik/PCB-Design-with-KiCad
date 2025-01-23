@@ -142,54 +142,16 @@ const config = {
             position: 'left',
             label: 'Recipes',
           },
+
+          {
+            label: 'GitHub',
+            href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
+          },
         ],
       },
       footer: {
         style: 'dark',
         links: [
-          {
-            title: 'Documentation',
-            items: [
-              {
-                label: 'Knowledge Base',
-                to: '/docs/category/introduction',
-              },
-              {
-                label: 'Recipes',
-                to: '/docs/category/recipes',
-              },
-            ],
-          },
-          {
-            title: 'Projects',
-            items: [
-              {
-                label: 'Project 1',
-                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
-              },
-              {
-                label: 'Project 2',
-                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
-              },
-              {
-                label: 'Project 3',
-                href: 'https://github.com/CagriCatik/PCB-Design-with-KiCad',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
         ],
         copyright: `PCB Design with KiCad`,
       },

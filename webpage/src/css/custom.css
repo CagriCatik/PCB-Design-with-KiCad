@@ -48,14 +48,14 @@
 /* Center text for specific navbar links */
 .navbar__link {
   text-align: center;
-  font-size: 12px; /* Smaller text size */
+  font-size: 14px; /* Smaller text size */
   font-weight: bold; /* Ensures bold styling for links */
-  margin: 0 10px; /* Adjust spacing between items */
+  margin: 0 6px; /* Adjust spacing between items */
 }
 
 /* Optional: Adjust navbar height for better visual alignment */
 .navbar {
-  height: 60px; /* Adjust as needed */
+  height: 80px; /* Adjust as needed */
 }
 
 
