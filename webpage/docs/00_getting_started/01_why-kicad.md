@@ -1,4 +1,4 @@
-# Introduction to KiCad PCB Design
+# Introduction
 
 KiCad, initially released in 1992, has grown from a clunky and niche software to a professional-grade, reliable PCB CAD application. With the advent of its latest version (KiCad 8), it has not only become a serious alternative to commercial products but is often the preferred choice for many engineers, hobbyists, and educators. With powerful features and an ever-growing community of users and contributors, KiCad stands out for its ease of use, flexibility, and open-source nature.
 
