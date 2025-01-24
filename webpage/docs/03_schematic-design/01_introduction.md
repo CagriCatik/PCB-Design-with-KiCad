@@ -1,4 +1,4 @@
-# Introduction to Schematic Design  
+# Introduction
 
 Schematic design constitutes the logical foundation of PCB development, translating conceptual circuit behavior into a structured, standardized representation. This phase defines component interconnections, electrical relationships, and hierarchical organization, serving as the blueprint for subsequent physical layout and manufacturing. Utilizing KiCad’s Eeschema tool, designers encode circuit functionality while adhering to principles of clarity, modularity, and error minimization.  
 

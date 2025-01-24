@@ -1,9 +1,9 @@
 # ToDo
 
-- [ ] Introduction  
-- [ ] Getting Started with PCB Design  
-- [ ] Getting Started with KiCad  
-- [ ] Schematic Design  
+- [x] Introduction  
+- [x] Getting Started with PCB Design  
+- [x] Getting Started with KiCad  
+- [x] Schematic Design  
 - [ ] Layout  
 - [ ] Design Principles and PCB Terms  
 - [ ] Design Workflow and Considerations  

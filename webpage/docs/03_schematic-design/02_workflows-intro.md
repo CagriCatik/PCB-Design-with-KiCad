@@ -1,4 +1,4 @@
-# Introduction to Design Workflows  
+# Design Workflows  
 
 PCB design workflows systematize the transition from conceptual circuit diagrams to manufacturable boards, ensuring logical integrity, electrical compliance, and physical feasibility. Two interdependent workflows govern this process: **Schematic Design** (logical representation) and **PCB Layout** (physical realization). KiCad’s Eeschema and Pcbnew tools formalize these stages, enabling designers to iteratively refine designs while adhering to industry standards.  
 

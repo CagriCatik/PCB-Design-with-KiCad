@@ -1,4 +1,4 @@
-# Components and Terminology
+# Printed Circuit Board
 
 ## 1. Through-Hole Components
 

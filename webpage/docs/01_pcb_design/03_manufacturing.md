@@ -1,4 +1,4 @@
-# Manufacturing Options and Gerber Files
+# Manufacturing
 
 Upon completing the PCB layout in KiCad, the subsequent phase involves manufacturing the physical Printed Circuit Board (PCB). This stage encompasses selecting an appropriate manufacturing method and preparing the design files necessary for production. This documentation delineates the prevalent PCB manufacturing options, elucidates the process of generating and verifying Gerber files, and provides guidance on interfacing with professional PCB manufacturers to ensure the realization of high-quality PCBs.
 

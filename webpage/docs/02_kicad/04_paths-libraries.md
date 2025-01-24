@@ -1,4 +1,4 @@
-# Configuring Paths
+# Paths and Libraries
 
 In this section, we'll focus on an essential aspect of KiCad’s configuration: **setting and managing paths**. The correct configuration of paths ensures that KiCad can locate important files like symbols, footprints, 3D models, and templates. Understanding how to manage these paths effectively will help you optimize your design workflow, especially if you are working with large projects or on systems with limited storage.
 

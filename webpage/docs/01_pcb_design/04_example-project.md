@@ -1,4 +1,4 @@
-# Schematic and PCB Editors
+# Example Project
 
 The design of Printed Circuit Boards (PCBs) utilizing KiCad necessitates proficiency in its core applications: the **Schematic Editor (Eeschema)** and the **PCB Editor (PCBnew)**. These editors constitute the foundational tools within KiCad’s design workflow, enabling the creation of intricate circuits and their subsequent physical layout on PCBs. This documentation elucidates the practical utilization of these editors through an exemplar project, the **PIC Programmer**, sourced from the **KiCad demo repository** on GitLab. The PIC Programmer project serves as an intermediate-level case study, showcasing the comprehensive capabilities of KiCad’s design tools.
 
