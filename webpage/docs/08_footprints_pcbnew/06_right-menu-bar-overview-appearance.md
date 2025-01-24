@@ -1,1 +1,1 @@
-# 96. Right menu bar overview - Appearance
+# Right menu bar overview - Appearance

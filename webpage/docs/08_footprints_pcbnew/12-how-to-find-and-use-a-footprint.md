@@ -1,1 +1,1 @@
-# 102. How to find and use a footprint
+# How to find and use a footprint

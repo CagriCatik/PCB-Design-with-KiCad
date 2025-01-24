@@ -1,1 +1,1 @@
-# 99. Board Setup - Text & Graphics
+# Board Setup - Text & Graphics

@@ -1,1 +1,1 @@
-# 115. Finding and using a 3D shape for a footprint
+# Finding and using a 3D shape for a footprint

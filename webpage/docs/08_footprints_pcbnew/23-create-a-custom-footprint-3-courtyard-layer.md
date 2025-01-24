@@ -1,1 +1,1 @@
-# 113. Create a custom footprint, 3, Courtyard layer
+# Create a custom footprint, 3, Courtyard layer

@@ -1,1 +1,1 @@
-# 100. Board Setup - Design Rules - Constraints, sizes, classes
+# Board Setup - Design Rules - Constraints, sizes, classes
