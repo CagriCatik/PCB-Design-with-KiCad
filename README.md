@@ -47,7 +47,7 @@ This guide draws inspiration from the Udemy course **[KiCad Like a Pro by Dr. Pe
 
 - [x] Introduction
 - [x] KiCad
-- [ ] Schematic Design
+- [x] Schematic Design
 - [ ] Layout
 - [ ] Design Principles
 - [ ] Workflows
