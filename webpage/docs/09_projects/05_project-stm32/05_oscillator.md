@@ -8,7 +8,7 @@ The STM32 WB55CEU microcontroller utilizes a High-Speed External Oscillator (HSE
 
   - **Type:** Fundamental-mode quartz crystals, exemplified by models such as the NX3225GD-32M, are employed to provide the necessary stability and frequency accuracy. These crystals exhibit a stability of ±10 parts per million (ppm), ensuring minimal frequency drift over temperature and time variations.
   
-  - **Load Capacitance (\(C_L\)):** The HSE crystals are designed with an internal programmable load capacitance of 8 pF, eliminating the need for external capacitive components. This simplifies the circuit design and reduces component count, enhancing reliability and manufacturability.
+  - **Load Capacitance ($C_L$):** The HSE crystals are designed with an internal programmable load capacitance of 8 pF, eliminating the need for external capacitive components. This simplifies the circuit design and reduces component count, enhancing reliability and manufacturability.
   
   - **Equivalent Series Resistance (ESR):** Crystals with an ESR of ≤ 80 Ω are selected to guarantee reliable startup conditions. Low ESR values facilitate the initiation of oscillations with minimal drive power, ensuring consistent performance across varying environmental conditions.
   
@@ -16,13 +16,13 @@ The STM32 WB55CEU microcontroller utilizes a High-Speed External Oscillator (HSE
 
 - **Internal Load Capacitance Configuration:**
 
-  The internal load capacitance of the HSE is dynamically adjustable through the RCC_CR register to match the crystal's specified \(C_L\). The effective load capacitance is determined by the equation:
+  The internal load capacitance of the HSE is dynamically adjustable through the RCC_CR register to match the crystal's specified $C_L$. The effective load capacitance is determined by the equation:
 
   \[
   C_{\text{load}} = \frac{C_{L1} \cdot C_{L2}}{C_{L1} + C_{L2}} + C_{\text{stray}}
   \]
 
-  where \(C_{\text{stray}} \approx 2 \text{ pF}\) accounts for the parasitic capacitance inherent in PCB traces and pad geometries. This configurability allows for precise tuning of the oscillator's frequency response, ensuring optimal performance.
+  where $C_{\text{stray}} \approx 2 \text{ pF}$ accounts for the parasitic capacitance inherent in PCB traces and pad geometries. This configurability allows for precise tuning of the oscillator's frequency response, ensuring optimal performance.
 
 - **Layout Guidelines:**
 
@@ -40,19 +40,19 @@ The Low-Speed External Oscillator (LSE) operates at 32.768 kHz and serves as the
 
   - **Type:** Tuning-fork quartz crystals, such as the NX2012SA-32.768K, are selected for their precise frequency stability and minimal power consumption. These crystals operate in fundamental mode with a stability of ±20 ppm, suitable for RTC applications.
   
-  - **Load Capacitance (\(C_L\)):** The LSE crystals require an external load capacitance ranging from 6 pF to 12 pF, typically set to 10 pF. This capacitance is critical for achieving the desired oscillation frequency and ensuring stable operation.
+  - **Load Capacitance ($C_L$):** The LSE crystals require an external load capacitance ranging from 6 pF to 12 pF, typically set to 10 pF. This capacitance is critical for achieving the desired oscillation frequency and ensuring stable operation.
   
   - **Equivalent Series Resistance (ESR):** An ESR of ≤ 70 kΩ is specified to facilitate low-power operation. High ESR values are necessary to prevent excessive current draw during oscillation, thereby extending battery life in backup scenarios.
 
 - **External Load Capacitor Design:**
 
-  To compensate for the crystal's load capacitance and account for stray capacitances (\(C_{\text{stray}} \approx 3 \text{ pF}\)) from PCB traces and package parasitics, the external load capacitor (\(C_{\text{ext}}\)) is calculated using the formula:
+  To compensate for the crystal's load capacitance and account for stray capacitances ($C_{\text{stray}} \approx 3 \text{ pF}$) from PCB traces and package parasitics, the external load capacitor ($C_{\text{ext}}$) is calculated using the formula:
 
   \[
   C_{\text{ext}} = 2 \cdot (C_L - C_{\text{stray}})
   \]
 
-  For instance, with \(C_L = 10 \text{ pF}\) and \(C_{\text{stray}} = 3 \text{ pF}\), the external load capacitor required is:
+  For instance, with $C_L = 10 \text{ pF}$ and $C_{\text{stray}} = 3 \text{ pF}$, the external load capacitor required is:
 
   \[
   C_{\text{ext}} = 2 \times (10 - 3) = 14 \text{ pF}
@@ -60,7 +60,7 @@ The Low-Speed External Oscillator (LSE) operates at 32.768 kHz and serves as the
 
   Given standard component values, a 12 pF capacitor is selected to approximate the calculated value, ensuring reliable oscillation without necessitating non-standard components.
 
-- **Series Resistance (\(R_{\text{ext}}\)):**
+- **Series Resistance ($R_{\text{ext}}$):**
 
   A resistor ranging from 1 MΩ to 5 MΩ is integrated in series with the LSE to enhance oscillation margins. This resistor, exemplified by Panasonic ERJ-1TN models, serves to stabilize the oscillator by dampening potential oscillation overshoot and ensuring consistent startup behavior.
 

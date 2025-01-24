@@ -29,7 +29,7 @@ The Universal Asynchronous Receiver/Transmitter (UART) interface serves as a fun
 
   - **Power Dissipation Calculation:**
 
-    The power dissipation (\(P\)) across each resistor is calculated using Ohm’s law:
+    The power dissipation ($P$) across each resistor is calculated using Ohm’s law:
 
     \[
     P = \frac{V^2}{R} = \frac{(3.3 \, \text{V})^2}{220 \, \Omega} = 49.5 \, \text{mW} \quad (\text{per resistor})
@@ -49,19 +49,19 @@ The LED driver circuit is responsible for controlling indicator LEDs, which prov
     
     Each GPIO pin is configured to sink a maximum current of ≤8 mA, adhering to the STM32 WB55CEU’s GPIO specifications to prevent overloading and potential damage.
 
-  - **Forward Current (\(I_F\)):**
+  - **Forward Current ($I_F$):**
 
     The forward current for the LED is calculated using the following equation:
 
-    \[
+    $$
     I_F = \frac{V_{\text{DD}} - V_F}{R} = \frac{3.3 \, \text{V} - 1.8 \, \text{V}}{220 \, \Omega} = 6.8 \, \text{mA}
-    \]
+    $$
 
     Where:
     
-    - \(V_{\text{DD}}\) = 3.3V (supply voltage)
-    - \(V_F\) = 1.8V (typical forward voltage for a green LED)
-    - \(R\) = 220Ω (current-limiting resistor)
+    - $V_{\text{DD}}$ = 3.3V (supply voltage)
+    - $V_F$ = 1.8V (typical forward voltage for a green LED)
+    - $R$ = 220Ω (current-limiting resistor)
 
     This calculation ensures that the LED operates within safe current limits, providing adequate brightness while preventing thermal and electrical stress.
 
@@ -115,7 +115,7 @@ Ensuring high signal integrity is crucial for the reliable operation of UART and
 
   - **Forward Voltage:**
     
-    The forward voltage (\(V_F\)) of the LED is measured to be within the range of 1.65V to 1.95V at a forward current of 5 mA using a parameter analyzer. This range confirms the LED operates within its specified parameters, ensuring consistent brightness and preventing thermal overstress.
+    The forward voltage ($V_F$) of the LED is measured to be within the range of 1.65V to 1.95V at a forward current of 5 mA using a parameter analyzer. This range confirms the LED operates within its specified parameters, ensuring consistent brightness and preventing thermal overstress.
 
   - **PWM Linearity:**
     

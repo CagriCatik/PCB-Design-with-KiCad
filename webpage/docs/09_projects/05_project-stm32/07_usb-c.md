@@ -58,17 +58,17 @@ Effective thermal management is essential to prevent overheating of power regula
 
 - **Power Dissipation Calculation:**
   
-  The power dissipation (\(P_{\text{diss}}\)) of the MIC5365 LDO is calculated using the formula:
+  The power dissipation ($P_{\text{diss}}$) of the MIC5365 LDO is calculated using the formula:
   
-  \[
+  $$
   P_{\text{diss}} = (V_{\text{IN}} - V_{\text{OUT}}) \cdot I_{\text{OUT}} = (5 \, \text{V} - 3.3 \, \text{V}) \cdot 0.15 \, \text{A} = 0.255 \, \text{W}
-  \]
+  $$
   
-  This dissipation results in a temperature rise (\(\Delta T\)) given by:
+  This dissipation results in a temperature rise ($\Delta T$) given by:
   
-  \[
+  $$
   \Delta T = P_{\text{diss}} \cdot \theta_{JA} = 0.255 \, \text{W} \cdot 220 \, \text{°C/W} = 56.1 \, \text{°C}
-  \]
+  $$
   
   For ambient temperatures exceeding 60°C, active cooling mechanisms such as airflow are recommended to maintain thermal stability and prevent thermal runaway conditions.
 

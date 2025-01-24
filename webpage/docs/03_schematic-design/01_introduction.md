@@ -17,7 +17,7 @@ The resulting schematic will integrate an LED, current-limiting resistor, switch
 ## Project Specifications  
 ### Core Components  
 - **LED (Light-Emitting Diode):** Forward voltage (Vf) and current (If) specifications determine resistor selection.  
-- **Current-Limiting Resistor:** Calculated using Ohm’s Law: \( R = \frac{V_{supply} - V_f}{I_f} \).  
+- **Current-Limiting Resistor:** Calculated using Ohm’s Law: $ R = \frac{V_{supply} - V_f}{I_f} $.  
 - **Switch (SPST):** Provides user-controlled circuit activation/deactivation.  
 - **Battery (DC Source):** Voltage selected to meet LED operational requirements.  
 

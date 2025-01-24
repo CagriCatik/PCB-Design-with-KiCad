@@ -31,13 +31,13 @@ The NRST (reset) signal is critical for initializing and resetting the microcont
   
   - **Capacitor (C_NRST):** A 100 nF X7R MLCC in an 0402 package rated at 10V is placed within 2 mm of the MCU's NRST pin. This capacitor smooths out rapid voltage fluctuations, effectively suppressing glitches with durations shorter than 1 µs.
   
-  - **Time Constant (\(\tau\)):**
+  - **Time Constant ($\tau$):**
   
     The time constant of the RC network is calculated as:
     
-    \[
+    $$
     \tau = R_{\text{MCU}} \cdot C_{\text{NRST}} \approx 40 \, \text{kΩ} \cdot 100 \, \text{nF} = 4 \, \text{ms}
-    \]
+    $$
     
     This time constant ensures that transient noise does not propagate through the reset line, maintaining stable MCU operation.
 
