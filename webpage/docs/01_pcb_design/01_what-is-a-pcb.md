@@ -30,7 +30,7 @@ Surface-Mount Devices (SMDs) are mounted directly onto the copper pads on the PC
 
 Copper traces serve as the conductive pathways that interconnect components on a PCB. The design of these traces is governed by several critical parameters:
 
-- **Current Capacity**: The width of a copper trace is determined based on the current it must carry, using standardized formulas such as those provided by IPC-2221. For example, the width \( W \) can be calculated using \( W = \frac{I}{k \cdot \Delta T^{0.44}} \), where \( I \) is the current, \( k \) is a constant (0.024 for outer layers), and \( \Delta T \) is the allowable temperature rise. Proper calculation ensures that traces can handle the intended current without excessive heating or voltage drop.
+- **Current Capacity**: The width of a copper trace is determined based on the current it must carry, using standardized formulas such as those provided by IPC-2221. For example, the width $ W $ can be calculated using $ W = \frac{I}{k \cdot \Delta T^{0.44}} $, where $ I $ is the current, $ k $ is a constant (0.024 for outer layers), and $ \Delta T $ is the allowable temperature rise. Proper calculation ensures that traces can handle the intended current without excessive heating or voltage drop.
 
 - **Impedance Control**: In high-speed signal applications, maintaining consistent impedance is vital to prevent signal degradation and reflections. Impedance control is achieved through meticulous regulation of trace width, thickness, and the dielectric spacing between layers. This precision is essential for maintaining signal integrity in high-frequency circuits.
 
