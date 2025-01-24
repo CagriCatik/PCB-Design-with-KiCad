@@ -1,7 +1,3 @@
----
-sidebar_position: 2
----
-
 # Project Manager
 
 In this section, we delve into the **KiCad Project Manager**, the central hub for managing your PCB design projects. This guide will explain how the Project Manager operates, its interface, and how to utilize its tools effectively for intermediate and advanced PCB designers.
@@ -14,8 +10,6 @@ When you first open KiCad, the **Project Manager** is the main window you’ll s
 1. **Access to Applications**: Quick links to open KiCad’s applications like Eeschema (Schematic Editor), Pcbnew (PCB Editor), Footprint Editor, Gerber Viewer, and more.
 2. **File Management**: Displays project directories and allows easy access to manage your files directly.
 3. **Toolbar Functions**: Provides convenient actions like creating new projects, opening existing ones, refreshing the file view, and accessing project folders.
-
-
 
 ## Opening a KiCad Project
 
@@ -30,8 +24,6 @@ Once KiCad is installed and running, loading a project is straightforward:
 
 ### Demonstration Example:
 If you close a project, simply drag the project file back into the main window, or open it via the file menu to reload it.
-
-
 
 ## The KiCad Project Manager Interface
 
@@ -98,8 +90,6 @@ The **View** menu gives access to:
 #### Example:  
 You can manually edit a schematic’s text file to adjust component sizes or settings without opening the Schematic Editor. Any saved changes will reflect in the project.
 
-
-
 ## Tools Menu and Gerber Viewer
 
 From the **Tools** menu, you can launch all of KiCad’s applications, such as the **Gerber Viewer**:
@@ -133,7 +123,3 @@ KiCad’s **Help** menu provides access to local and online documentation:
 - **User Manual**: A comprehensive guide on using KiCad’s features.
 - **Getting Started Guide**: An introductory document to help you navigate through your first KiCad project.
 - **Hotkeys List**: A list of shortcuts for speeding up your workflow.
-
-## Conclusion
-
-The **KiCad Project Manager** is your primary interface for organizing and managing your PCB design workflow. By understanding its structure and tools, you can streamline your design process, improve efficiency, and enhance the quality of your PCB projects. In the upcoming sections, we will dive deeper into individual applications like the **Schematic Editor** and **PCB Editor**, explaining their advanced functionalities in detail.

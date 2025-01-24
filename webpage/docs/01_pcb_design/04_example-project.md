@@ -23,8 +23,6 @@ For this example, I’ve chosen the **PIC Programmer** project. The folder conta
 To open the project in KiCad:
 - You can **double-click the `.pro` file** or drag and drop it into the KiCad main window. This will open the project as a whole, allowing you to access both the schematic and PCB layout from within the same interface.
 
-
-
 ## Exploring the Schematic Editor (Eeschema)
 
 Once the project is open, you can start by exploring the **Schematic Editor**. In KiCad, this is known as **Eeschema**, and it’s where you’ll design the circuit itself.
@@ -76,23 +74,17 @@ One of the standout features of KiCad is the **3D Viewer**, which allows you to 
 
 - **Opening the 3D Viewer:** Click the **3D Viewer** button on the top toolbar. The viewer provides a realistic view of your PCB, showing the components, silkscreen, and board outline.
 
-
-
 ## Integration Between Schematic and PCB Editors
 
 KiCad tightly integrates its **Schematic Editor** and **PCB Editor**, allowing you to easily navigate between the two environments:
 - **Cross-Referencing:** Clicking on a component in the schematic will automatically highlight the corresponding component in the PCB layout, and vice versa. For example, selecting a capacitor in the Schematic Editor will focus on that component in the PCB Editor.
 - **Real-Time Updates:** Any changes you make to the schematic, such as adding or removing components, will reflect in the PCB layout once the design is updated.
 
-
-
 ## Exploring More KiCad Projects
 
 While this course focuses on beginner-to-intermediate-level projects, KiCad is capable of handling much more complex designs. I encourage you to explore additional projects in the KiCad demo repository to see what’s possible. You can also visit KiCad’s **Made with KiCad** page to see real-world projects developed by engineers and hobbyists using the tool.
 
 Some projects demonstrate KiCad’s capabilities for high-density and high-complexity designs, far beyond the scope of this course. By reviewing these projects, you’ll gain a better understanding of how advanced users apply KiCad’s features in professional applications.
-
-
 
 ## Conclusion
 

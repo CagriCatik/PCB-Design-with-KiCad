@@ -1,7 +1,3 @@
----
-sidebar_position: 4
----
-
 # Creating a New KiCad Project
 
 In this section, we will cover how to create a new project from scratch in KiCad. Understanding how to start a project correctly is essential for a smooth workflow and project organization. We will also explore how KiCad automatically sets up project files and folders, giving you a clean environment to begin your PCB design.
@@ -30,8 +26,6 @@ KiCad offers two primary methods to start a new project: from scratch or from a 
 5. **Save the Project**:
    - Once you’ve chosen the location and name, click the **Save** button. KiCad will now create the project folder with the necessary files for you to begin.
 
-
-
 ## What Happens After Project Creation?
 
 After saving, KiCad automatically generates several key files within your newly created project folder:
@@ -44,8 +38,6 @@ After saving, KiCad automatically generates several key files within your newly 
 
 3. **PCB Layout File (`.KiCad_pcb`)**:
    - This file will contain your PCB layout once you’ve designed it. Like the schematic file, it starts empty and will be populated as you place components and route traces.
-
-
 
 ### Inspecting the Project Files
 
@@ -82,8 +74,6 @@ KiCad stores its project files in human-readable text format. You can open these
      )
      ```
 
-
-
 ## Next Steps: Working in the Schematic Editor
 
 With your project structure in place, you are now ready to begin designing your schematic. Here’s how to proceed:
@@ -96,14 +86,6 @@ With your project structure in place, you are now ready to begin designing your 
    - Begin by placing components like resistors, capacitors, and integrated circuits from the symbol library.
    - Connect the components using wires and labels to define the electrical connections in your design.
 
-
-
 ## Preview: Creating a New Project from a Template
 
-In the next section, we will explore how to create a new project using a template. Using templates can significantly speed up the project setup process, especially for designs that require specific configurations or layouts. Templates come pre-configured with standard components, layout preferences, and design rules, providing a solid starting point for your project.
-
-Stay tuned for the next lecture, where we will go through the process of creating a project from a template and discuss how to customize and manage templates in KiCad.
-
- 
-
-This completes the step-by-step guide to creating a new project from scratch in KiCad. Following this process ensures that your project is organized and ready for schematic capture and PCB layout.
+In the next section, we will explore how to create a new project using a template. Using templates can significantly speed up the project setup process, especially for designs that require specific configurations or layouts. Templates come pre-configured with standard components, layout preferences, and design rules, providing a solid starting point for your project. Stay tuned for the next lecture, where we will go through the process of creating a project from a template and discuss how to customize and manage templates in KiCad. This completes the step-by-step guide to creating a new project from scratch in KiCad. Following this process ensures that your project is organized and ready for schematic capture and PCB layout.

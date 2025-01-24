@@ -20,8 +20,6 @@ There are many PCB manufacturers around the world. China is home to some of the 
 - **Oshpark:** Known for its simplicity, Oshpark is ideal for beginners. The ordering process is straightforward: you upload Gerber files (or sometimes KiCad PCB files directly), review the design in a user-friendly interface, and proceed with your order.
 - **PCBWay:** This manufacturer offers more customization options, making it suitable for more advanced users. You can adjust everything from the board material and thickness to hole sizes, solder mask colors, and more.
 
-
-
 ## How to Order a PCB from a Manufacturer
 
 ### Example 1: Ordering from Oshpark
@@ -37,8 +35,6 @@ PCBWay offers more extensive customization options, which are suitable for advan
 2. **Select Layer and Material Options:** Choose the number of layers (e.g., two-layer boards) and the material (e.g., standard FR4). PCBWay also allows you to select from advanced materials like aluminum or high-TG FR4 for specialized applications.
 3. **Customize Further:** PCBWay lets you specify solder mask color, board thickness, minimum hole size, and more. You can adjust these settings to match your project’s requirements.
 4. **Get a Quote and Order:** PCBWay provides real-time pricing based on your customizations, starting from $5 for a basic two-layer PCB. You can then proceed to place your order.
-
-
 
 ## Understanding Gerber Files
 
@@ -60,16 +56,12 @@ Each Gerber file corresponds to a different layer of the PCB:
 ### Gerber File Format
 Gerber files are defined by a company called Ucamco, and they have evolved over the years. KiCad currently supports the **Gerber X2 format**, which offers improvements over earlier versions. While the technical details of the Gerber format are not crucial for this course, it’s good to know that Gerber files are human-readable and can be opened with any text editor or specialized viewer.
 
-
-
 ## Verifying Gerber Files
 
 Before sending your Gerber files to a manufacturer, it’s a good idea to double-check them using a **Gerber viewer**. KiCad comes with a built-in Gerber viewer, which allows you to visually inspect the files and ensure that all layers are correctly aligned and free of errors.
 
 - **Load the Gerber Files:** Open your Gerber files in KiCad’s Gerber viewer or another external viewer.
 - **Inspect the Layers:** Review each layer (e.g., front copper, back copper) to ensure that everything looks correct. This step helps catch issues like missing traces, overlapping components, or incorrect drill locations.
-
-
 
 ## Conclusion
 

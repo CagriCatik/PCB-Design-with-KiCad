@@ -1,11 +1,6 @@
----
-sidebar_position: 3
----
-
 # KiCad Applications
 
 In this section, we will explore the individual applications within the KiCad software suite. Each application has a distinct role in the PCB design process, and mastering these tools is key to developing high-quality, professional-grade printed circuit boards. In this documentation, we’ll take a guided tour through the **Schematic Editor**, **PCB Editor**, **Symbol Editor**, **Footprint Editor**, and several additional tools within KiCad. We’ll also highlight best practices and advanced tips for each tool.
-
 
 ## 1. Schematic Editor Overview
 
@@ -20,8 +15,6 @@ The **Schematic Editor** is the starting point for most PCB projects in KiCad. I
 #### Example Workflow:
 In the schematic editor, you’ll add symbols like resistors (R1, R2) and microcontroller units (U1, U2). Connections between components are made with wires or by assigning net labels (e.g., **GND**, **VCC**). This diagram forms the blueprint for your PCB layout.
 
-
-
 ## 2. PCB Editor Overview
 
 The **PCB Editor** is where you physically design the PCB after completing the schematic. Once the schematic is finished, you can import the components and begin arranging them on the board, routing traces, and setting up the layers.
@@ -35,8 +28,6 @@ The **PCB Editor** is where you physically design the PCB after completing the s
 #### Example Workflow:
 In the PCB Editor, once components are imported from the schematic, you place them on the board in the desired locations. Then, you route the signal paths using traces, ensuring all electrical connections are completed. KiCad provides visual indicators if there are any conflicts or errors, making it easier to adjust your design.
 
-
-
 ## 3. 3D Viewer
 
 One of the standout features of KiCad is the **3D Viewer**, which allows you to visualize your PCB in three dimensions. This feature is particularly useful for spotting mechanical issues, verifying component placement, and checking silkscreen alignment.
@@ -48,8 +39,6 @@ One of the standout features of KiCad is the **3D Viewer**, which allows you to 
 
 #### Best Practice:
 Before submitting your board for manufacturing, always check it in the 3D Viewer to catch any mistakes that are hard to spot in 2D, like silkscreen overlap or component clearance issues.
-
-
 
 ## 4. Symbol Editor
 
@@ -63,8 +52,6 @@ The **Symbol Editor** allows you to modify existing symbols or create new ones f
 #### Example Workflow:
 If your project includes a unique IC that doesn’t have a symbol in the standard library, you can create one by defining the pins, assigning labels, and adding custom attributes.
 
-
-
 ## 5. Footprint Editor
 
 Similar to the Symbol Editor, the **Footprint Editor** allows you to modify or create footprints. Footprints represent the physical layout of components on the PCB, including the pads, holes, and outlines.
@@ -76,8 +63,6 @@ Similar to the Symbol Editor, the **Footprint Editor** allows you to modify or c
 
 #### Best Practice:
 Use the **Footprint Wizard** to speed up the creation of common footprints and ensure your custom footprints meet manufacturing standards.
-
-
 
 ## 6. Gerber Viewer
 
@@ -91,8 +76,6 @@ The **Gerber Viewer** is used for the final inspection of Gerber files before se
 #### Best Practice:
 Always inspect your Gerber files using the Gerber Viewer before submitting them for manufacturing. This helps to catch any potential problems that may have been overlooked during the design process.
 
-
-
 ## 7. Image Converter
 
 The **Image Converter** allows you to convert bitmap images into PCB graphics. This tool is especially useful for adding custom logos or graphics to your PCB design.
@@ -103,8 +86,6 @@ The **Image Converter** allows you to convert bitmap images into PCB graphics. T
 
 #### Example Workflow:
 To add a custom logo to your PCB, convert a bitmap image using the Image Converter and place it on the silkscreen or copper layer using the Footprint Editor.
-
-
 
 ## 8. Calculator Tools
 
@@ -118,8 +99,6 @@ KiCad includes a set of **Calculator Tools** that help with common PCB design ca
 #### Best Practice:
 Use the **Track Width Calculator** when designing power traces to ensure that they can handle the expected current without overheating or causing voltage drops.
 
-
-
 ## 9. Drawing Sheet Editor
 
 The **Drawing Sheet Editor** allows you to customize the size, layout, and content of the schematic sheets. You can add company logos, project titles, and other details to the title block or border.
@@ -130,8 +109,6 @@ The **Drawing Sheet Editor** allows you to customize the size, layout, and conte
 
 #### Best Practice:
 Create a custom sheet template for your projects that includes all necessary information, such as company details and project descriptions. This ensures consistency across multiple designs.
-
-
 
 ## 10. Plugin and Content Manager
 
@@ -144,7 +121,3 @@ The **Plugin and Content Manager** allows you to extend the functionality of KiC
 
 #### Best Practice:
 Explore third-party plugins and repositories to enhance your KiCad workflow. Popular plugins like **FreeRouting** and **DFM tools** can save time and improve the overall quality of your designs.
-
-## Conclusion
-
-This section covered an overview of KiCad’s individual applications and tools, each playing a crucial role in the PCB design process. As you continue through the course, you'll gain deeper insight into each tool and learn how to apply them effectively in your projects. By mastering these tools, you'll be able to create professional, reliable PCB designs with KiCad.

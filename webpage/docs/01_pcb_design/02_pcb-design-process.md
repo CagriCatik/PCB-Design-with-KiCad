@@ -10,8 +10,6 @@ Designing a PCB is quite different from PCB manufacturing. As a PCB designer, yo
 
 This course will guide you through the **KiCad PCB design workflow**, a model I've developed from experience and best practices in the field. You can follow this workflow or adapt it to suit your own preferences. The workflow is split into two primary steps: **schematic design** and **layout design**.
 
-
-
 ## High-Level PCB Design Workflow
 
 ### Step 1: Schematic Design
@@ -33,8 +31,6 @@ To create a physical layout of the PCB, including the placement of components, r
 
 **Tools Used:**
 - **PCBnew (KiCad's Layout Editor):** This is where you define the physical layout, place the components, and draw the traces that connect them.
-
-
 
 ## Detailed PCB Design Workflow
 
@@ -74,8 +70,6 @@ After your PCB passes the DRC, the final step is to export the design for manufa
 - **Drill Files:** A file that defines the locations and sizes of holes (vias, component holes) that need to be drilled.
 - **Bill of Materials (BOM):** A BOM file lists all components used in the design, including their part numbers, values, and footprints. This file is essential for ordering components from suppliers.
 
-
-
 ## PCB Design and Aesthetic Considerations
 
 Designing a PCB isn’t just about making the board functional; there is an artistic element to it as well. Over time, as you develop your skills, you’ll likely notice your boards taking on a personal aesthetic. Some designers focus on neat, symmetrical layouts, while others might prioritize compactness and minimalism. Here are some considerations that will help improve both the functionality and the visual appeal of your boards:
@@ -89,8 +83,6 @@ Aim for neat, orderly trace routing. Avoid sharp angles or long, looping traces.
 ### 3. **Silkscreen Clarity**
 Use silkscreen to clearly label components, pins, and any critical information that the end user might need. However, avoid over-cluttering the board. Use concise labels and make sure they are placed where they will be visible once the components are soldered.
 
-
-
 ## Key Terminology Recap
 
 Before moving on to the next lecture, here’s a recap of some important terms:
@@ -101,8 +93,6 @@ Before moving on to the next lecture, here’s a recap of some important terms:
 - **Via:** A small hole that connects different layers of a multi-layer PCB.
 - **Silkscreen:** A printed layer on the PCB that provides information, such as component labels and logos, for assembly and usage.
 - **Gerber File:** The industry-standard file format used to send PCB designs to manufacturers for fabrication.
-
-
 
 ## Conclusion
 

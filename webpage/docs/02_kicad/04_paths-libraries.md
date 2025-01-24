@@ -1,7 +1,3 @@
----
-sidebar_position: 6
----
-
 # Configuring Paths
 
 In this section, we'll focus on an essential aspect of KiCad’s configuration: **setting and managing paths**. The correct configuration of paths ensures that KiCad can locate important files like symbols, footprints, 3D models, and templates. Understanding how to manage these paths effectively will help you optimize your design workflow, especially if you are working with large projects or on systems with limited storage.
@@ -17,8 +13,6 @@ The **Configure Paths** window in KiCad allows you to define where various resou
 4. **Templates**: Predefined project setups that speed up the creation of new projects.
 
 While the 3D models are not strictly necessary for PCB design, they enhance the visualization process, allowing you to inspect your board in 3D. However, symbols and footprints are critical and must be correctly configured.
-
-
 
 ## Managing KiCad Paths via Configure Paths
 
@@ -48,8 +42,6 @@ By moving these directories to an external disk, you can free up valuable intern
 #### Best Practice:
 If you decide to store your libraries on an external drive, ensure that the drive is consistently connected while working with KiCad. Otherwise, you may encounter missing file errors when trying to access symbols or models.
 
-
-
 ## Paths for Project-Specific Libraries
 
 In addition to global libraries, KiCad allows you to define **project-specific libraries**. These libraries are stored within the project folder and are only accessible when that project is open. This setup is ideal for custom components or symbols that are unique to a particular project.
@@ -66,8 +58,6 @@ KiCad will automatically generate environment variables pointing to the project'
 2. Symbols, footprints, or 3D models that are specific to the project can be stored in a **libraries** folder within the project directory.
 3. These project-specific libraries take precedence over global libraries when designing the schematic or PCB.
 
-
-
 ## How KiCad Uses Environment Variables
 
 KiCad relies on environment variables to manage paths to libraries and other resources. These environment variables are automatically generated and referenced in different parts of the software.
@@ -80,8 +70,6 @@ Similarly, in the **Manage Footprint Libraries** window, you’ll find the **KiC
 #### Global vs. Project-Specific Libraries
 - **Global Libraries**: Refer to symbols, footprints, and models available across all projects, typically defined by environment variables like **KiCad_SYMBOL_DIR**.
 - **Project-Specific Libraries**: Refer to resources that are unique to a particular project, defined automatically based on the project directory.
-
-
 
 ## Best Practices for Path Management
 
@@ -96,11 +84,5 @@ Ensure that your external drives and custom paths are backed up regularly. If yo
 
 ### 4. **Path Substitutions**
 KiCad also supports **path substitutions**, which are useful when collaborating with others. For example, if team members store libraries in different locations, path substitutions can help ensure the project still works across all setups without manual path changes.
-
-
-
-## Conclusion
-
-Configuring paths in KiCad is an essential step in optimizing your PCB design workflow. Whether you are managing large libraries, working on multiple projects, or using external storage devices, understanding how KiCad uses environment variables will help you maintain an efficient design process. 
 
 In the next section, we’ll explore how to **create new projects from scratch** and how to use **templates** to speed up the design process. This will ensure you can get started with your designs quickly, while maintaining a flexible and scalable project structure.

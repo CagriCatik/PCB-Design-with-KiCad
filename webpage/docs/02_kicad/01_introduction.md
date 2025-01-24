@@ -1,7 +1,3 @@
----
-sidebar_position: 1
----
-
 # Concepts, Best Practices, and Insights
 
 KiCad provides a suite of applications that help both beginner and advanced PCB designers move seamlessly from schematic capture to PCB layout and manufacturing. In this guide, we'll cover everything you need to know about KiCad’s key features, design principles, and best practices to get the most out of this software.
@@ -19,8 +15,6 @@ KiCad is an all-in-one open-source PCB design tool suite that supports everythin
 
 ### Target Audience
 KiCad caters to a wide range of users, from hobbyists to professional PCB designers. Its versatility and customization options make it suitable for small personal projects and complex professional designs.
-
-
 
 ## 2. Installation and Setup
 
@@ -65,8 +59,6 @@ This tool provides a 3D rendering of your PCB, showing how components will look 
 ### 3.6. **Gerber Viewer**
 The Gerber Viewer is used to inspect the Gerber files generated for manufacturing. It allows you to visualize all layers of the PCB to ensure that they meet design and manufacturing requirements.
 
-
-
 ## 4. Key Libraries in KiCad
 
 KiCad relies heavily on libraries for components, footprints, and 3D models. Understanding these libraries and how to manage them is crucial for efficient PCB design.
@@ -82,8 +74,6 @@ These contain 3D representations of components that you can use to visualize the
 
 ### 4.4. **Template Libraries**
 Templates can be used as starting points for common PCB designs, helping speed up the creation of standard boards.
-
-
 
 ## 5. Creating Your First PCB: Step-by-Step
 
@@ -110,8 +100,6 @@ Templates can be used as starting points for common PCB designs, helping speed u
 - Once the PCB layout is complete, generate Gerber files by going to `File` > `Plot`. These files will be sent to the manufacturer for production.
 - Use the **Gerber Viewer** to inspect your design before submitting it for manufacturing.
 
-
-
 ## 6. Best Practices for PCB Design in KiCad
 
 ### 6.1. **Design Rule Checks (DRC)**
@@ -132,8 +120,6 @@ Adding a ground plane can help reduce noise and improve signal integrity, especi
 - Keep your symbol and footprint libraries organized to ensure reusability across projects.
 - Regularly update libraries to ensure compatibility with the latest components.
 
-
-
 ## 7. Advanced Tips and Optimization
 
 ### 7.1. **Custom Footprints**
@@ -144,10 +130,3 @@ KiCad supports Python scripting, which can automate repetitive tasks such as gen
 
 ### 7.3. **Multi-Layer Designs**
 For complex designs, using multiple layers can simplify routing and reduce the size of the board. KiCad supports up to 32 copper layers.
-
-
-
-## 8. Conclusion
-
-KiCad is an incredibly powerful tool for PCB design, offering a wide range of features that can accommodate designs of varying complexity. By following the best practices outlined in this guide, you can streamline your design process and produce high-quality PCBs.
-

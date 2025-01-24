@@ -1,13 +1,6 @@
----
-sidebar_position: 5
----
-
-
 # Creating a New KiCad Project from a Template
 
 In this section, we’ll focus on **creating a new project from a template** in KiCad. Templates can significantly speed up your workflow, especially when designing PCBs that follow a common structure, such as Arduino shields, Raspberry Pi expansion boards, or other standardized designs. KiCad includes several built-in templates, and you can also create your own from past projects for reuse.
-
-
 
 ## Why Use Templates?
 
@@ -17,8 +10,6 @@ Templates provide a pre-configured starting point for your project. They include
 - **Time-Saving**: Pre-defined layouts, component placements, and board sizes.
 - **Consistency**: Ensures standardized designs across multiple projects.
 - **Customization**: Easily modify templates to suit specific needs.
-
-
 
 ## Steps to Create a New Project from a Template
 
@@ -42,8 +33,6 @@ Each template comes with **documentation** and information about the elements it
 - **Name the Project**: Enter a name like `example_new_project_from_template`.
 - **Save the Project**: Ensure the option **"Create a new folder for the project"** is selected, and click **Save**.
 
-
-
 ## Exploring the Pre-Populated Project
 
 Once the project is created, KiCad automatically generates a project directory with several pre-configured files based on the chosen template.
@@ -65,8 +54,6 @@ Your new project folder will contain:
 ### 4. 3D Viewer
 - Open the **3D Viewer** to visualize the board in 3D. You’ll see that the PCB is ready to receive components and connectors. Key mechanical features, like mounting hole locations and headers, are already positioned correctly.
 
-
-
 ## Customizing Templates
 
 One of the most powerful features of KiCad is the ability to **create your own templates**. This is particularly useful when you have a standard design framework that you want to reuse across multiple projects. You can take an existing project, modify it, and save it as a template for future use.
@@ -75,8 +62,6 @@ One of the most powerful features of KiCad is the ability to **create your own t
 1. **Open an Existing Project**: Select a project that you want to convert into a template.
 2. **Modify the Project**: Ensure that any reusable elements, such as board outlines, standard connectors, and mounting holes, are included.
 3. **Save as Template**: You can export the project as a **user template** from the `File` menu. This will allow you to quickly start new projects using the same setup.
-
-
 
 ## Importance of Templates for Efficiency
 

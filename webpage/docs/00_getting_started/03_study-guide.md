@@ -25,8 +25,6 @@ This part provides a **foundational introduction** to printed circuit boards (PC
 **Who should focus on this part?**  
 If you're new to PCB design, you should complete this section to ensure you have a solid grasp of the basic concepts before moving on to more complex tasks.
 
-
-
 ## Part 2: First Simple Hands-on Project
 
 ### Overview
@@ -57,8 +55,6 @@ The material in Part 3 is designed to be **reference content**—you don’t hav
 **Who should focus on this part?**  
 If you are new to PCB design, it's essential to watch these lectures after completing the hands-on project. If you're an experienced PCB designer but new to KiCad, you can jump directly to sections covering specific features of KiCad, such as the schematic editor or the PCB editor.
 
-
-
 ## Part 4: Project-Based Learning
 
 ### Overview
@@ -76,8 +72,6 @@ This part is the core of the course. It consists of **multiple hands-on projects
 
 **Who should focus on this part?**  
 Everyone should work through these projects. They are the best way to reinforce the knowledge from the reference sections and apply KiCad features in real-world scenarios. Beginners should complete the earlier projects before moving on to more complex designs, while experienced designers may start with more advanced projects.
-
-
 
 ## Part 5: Recipes and Specific How-to Guides
 

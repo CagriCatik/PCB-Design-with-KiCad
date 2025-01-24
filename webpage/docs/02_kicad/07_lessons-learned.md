@@ -1,7 +1,3 @@
----
-sidebar_position: 7
----
-
 # Lessons Learned
 
 In this **Lessons Learned** chapter, we summarize the essential concepts, best practices, and key definitions that have emerged throughout the discussion on KiCad and PCB design. By reflecting on these topics, you'll solidify your understanding of the core principles of KiCad, how to structure projects effectively, and the advanced tools and workflows available to speed up your design process.
@@ -39,8 +35,6 @@ One of the most critical elements in any PCB design project is keeping everythin
 ### Best Practices:
 - Always use the **Create a new folder for the project** option when starting a new project. This ensures that all files related to your project are stored in one place, making them easier to manage.
 - **Version Control**: Use version control tools like Git to manage project changes, especially when collaborating with a team.
-
-
 
 ## 3. **Efficient Use of Templates**
 
@@ -114,7 +108,3 @@ Here are some key abbreviations and terms used throughout the KiCad design proce
 - **Symbol**: The logical representation of a component used in the schematic.
 - **Template**: A pre-configured project setup that speeds up the creation of new projects by providing a pre-made layout and configuration.
 - **PCB**: **Printed Circuit Board** – A board used to physically connect and support electronic components.
-
-## Conclusion
-
-By integrating these lessons into your workflow, you will be able to manage projects efficiently, create custom symbols and footprints, and take full advantage of KiCad’s powerful features. Whether starting from scratch or using templates, KiCad provides the flexibility and tools necessary for professional PCB design.
