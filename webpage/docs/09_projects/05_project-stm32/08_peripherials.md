@@ -1,6 +1,6 @@
-## 8. Peripherals
+# 8. Peripherals
 
-### 8.1 UART Interface Implementation
+## 8.1 UART Interface Implementation
 
 The Universal Asynchronous Receiver/Transmitter (UART) interface serves as a fundamental communication protocol for asynchronous serial communication, facilitating firmware debugging and interfacing with external devices. The UART header on the STM32 WB55CEU-based board is meticulously designed to ensure robust and reliable data transmission, adhering to industry standards for signal integrity and protection.
 
@@ -37,7 +37,7 @@ The Universal Asynchronous Receiver/Transmitter (UART) interface serves as a fun
 
     This level of power dissipation is well within the safe operating limits of standard 220Ω resistors, ensuring reliable performance without thermal issues.
 
-### 8.2 LED Driver Circuit
+## 8.2 LED Driver Circuit
 
 The LED driver circuit is responsible for controlling indicator LEDs, which provide visual feedback on the board’s operational status. The design ensures efficient current management and supports Pulse Width Modulation (PWM) for dimming functionalities.
 
@@ -69,7 +69,7 @@ The LED driver circuit is responsible for controlling indicator LEDs, which prov
     
     PWM dimming is implemented via Timer 2 Channel 1 (TIM2_CH1) with a refresh rate of 50 Hz. This allows for smooth and flicker-free brightness control, enhancing user experience and reducing power consumption during low-light conditions.
 
-### 8.3 Design Rules
+## 8.3 Design Rules
 
 Adhering to stringent design rules is essential for ensuring the reliability, performance, and compliance of peripheral interfaces.
 
@@ -97,7 +97,7 @@ Adhering to stringent design rules is essential for ensuring the reliability, pe
     
     The 220Ω resistors are selected with a power rating of ≥100 mW and are housed in an 0805 package to accommodate the calculated power dissipation of 49.5 mW. This derating provides a safety margin, preventing thermal failure under prolonged operation.
 
-### 8.4 Signal Integrity Validation
+## 8.4 Signal Integrity Validation
 
 Ensuring high signal integrity is crucial for the reliable operation of UART and LED interfaces. Validation is performed through rigorous testing to confirm adherence to design specifications.
 
@@ -121,7 +121,7 @@ Ensuring high signal integrity is crucial for the reliable operation of UART and
     
     PWM dimming linearity is validated to exhibit ≤2% deviation across a duty cycle range of 10% to 90%. High linearity ensures smooth and predictable brightness transitions, enhancing the user experience and maintaining aesthetic consistency.
 
-### 8.5 Compliance Standards
+## 8.5 Compliance Standards
 
 Compliance with industry standards is imperative to ensure that the peripheral interfaces operate safely and effectively within regulated environments.
 
@@ -141,7 +141,7 @@ Compliance with industry standards is imperative to ensure that the peripheral i
     
     The LED driver circuit complies with IEC 62471 photobiological safety standards, categorizing the LED as Risk Group 0. This classification ensures that the LED poses no risk of photobiological hazards to users, affirming its safety for prolonged exposure.
 
-### 8.6 Critical Design Rules
+## 8.6 Critical Design Rules
 
 Adherence to critical design rules ensures the structural integrity, reliability, and compliance of peripheral interfaces with established standards.
 
@@ -163,6 +163,6 @@ Adherence to critical design rules ensures the structural integrity, reliability
     
     To protect against ESD events, a TVS diode array (e.g., ESDALCL6-2SC6) is integrated into the peripheral interfaces. These diodes are selected to comply with IEC 61000-4-2 Level 4 standards, providing robust protection against high-energy discharges and ensuring the longevity and reliability of the USB-C and UART interfaces.
 
-### Conclusion
+## Conclusion
 
 The peripheral implementation on the STM32 WB55CEU-based Bluetooth board is meticulously engineered to balance functionality with robust electromagnetic compatibility (EMC) and electrostatic discharge (ESD) performance. The UART interface facilitates reliable asynchronous serial communication, while the LED driver circuit provides efficient visual indicators with PWM dimming capabilities. Adherence to IPC-2221A standards for spacing and thermal requirements, combined with rigorous signal integrity validation and compliance with relevant standards, ensures that the peripheral interfaces operate seamlessly within industrial and consumer environments. This comprehensive design approach underpins the overall reliability, performance, and user experience of the Bluetooth-enabled PCB design.
