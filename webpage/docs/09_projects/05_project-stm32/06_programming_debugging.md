@@ -61,9 +61,9 @@ Configuring the boot mode of the STM32 WB55CEU microcontroller is essential for 
   
   - **Debounce Filter:** A 100 nF capacitor (C_BOOT) is placed in parallel with the pull-down resistor to create a debounce filter with a time constant of:
   
-    \[
+    $$
     t_{\text{debounce}} = R \cdot C = 5.1 \, \text{kΩ} \cdot 100 \, \text{nF} = 510 \, \mu\text{s}
-    \]
+    $$
     
     This filter prevents mechanical switch bounce from causing false triggers, ensuring that only deliberate button presses alter the boot mode.
 

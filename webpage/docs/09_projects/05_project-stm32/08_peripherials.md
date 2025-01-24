@@ -31,9 +31,9 @@ The Universal Asynchronous Receiver/Transmitter (UART) interface serves as a fun
 
     The power dissipation ($P$) across each resistor is calculated using Ohm’s law:
 
-    \[
+    $$
     P = \frac{V^2}{R} = \frac{(3.3 \, \text{V})^2}{220 \, \Omega} = 49.5 \, \text{mW} \quad (\text{per resistor})
-    \]
+    $$
 
     This level of power dissipation is well within the safe operating limits of standard 220Ω resistors, ensuring reliable performance without thermal issues.
 

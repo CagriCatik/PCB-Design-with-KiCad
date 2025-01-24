@@ -153,7 +153,7 @@ Ensuring that the BOM is accurate and compliant with design specifications is cr
 
 - **Sourcing:**  
   - Components are vetted for lifecycle status, distinguishing between Not Recommended for New Designs (NRND) and active components.  
-  - Lead times are verified to be within acceptable ranges (e.g., <12 weeks) to prevent procurement delays.
+  - Lead times are verified to be within acceptable ranges (e.g., < 12 weeks) to prevent procurement delays.
 
 - **Standards Compliance:**  
   - **IPC-7351 Land Pattern Compliance:**  

@@ -18,9 +18,9 @@ The STM32 WB55CEU microcontroller utilizes a High-Speed External Oscillator (HSE
 
   The internal load capacitance of the HSE is dynamically adjustable through the RCC_CR register to match the crystal's specified $C_L$. The effective load capacitance is determined by the equation:
 
-  \[
+  $$
   C_{\text{load}} = \frac{C_{L1} \cdot C_{L2}}{C_{L1} + C_{L2}} + C_{\text{stray}}
-  \]
+  $$
 
   where $C_{\text{stray}} \approx 2 \text{ pF}$ accounts for the parasitic capacitance inherent in PCB traces and pad geometries. This configurability allows for precise tuning of the oscillator's frequency response, ensuring optimal performance.
 
@@ -48,15 +48,15 @@ The Low-Speed External Oscillator (LSE) operates at 32.768 kHz and serves as the
 
   To compensate for the crystal's load capacitance and account for stray capacitances ($C_{\text{stray}} \approx 3 \text{ pF}$) from PCB traces and package parasitics, the external load capacitor ($C_{\text{ext}}$) is calculated using the formula:
 
-  \[
+  $$
   C_{\text{ext}} = 2 \cdot (C_L - C_{\text{stray}})
-  \]
+  $$
 
   For instance, with $C_L = 10 \text{ pF}$ and $C_{\text{stray}} = 3 \text{ pF}$, the external load capacitor required is:
 
-  \[
+  $$
   C_{\text{ext}} = 2 \times (10 - 3) = 14 \text{ pF}
-  \]
+  $$
 
   Given standard component values, a 12 pF capacitor is selected to approximate the calculated value, ensuring reliable oscillation without necessitating non-standard components.
 
