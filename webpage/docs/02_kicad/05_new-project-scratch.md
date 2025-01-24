@@ -1,4 +1,4 @@
-# Creating a New KiCad Project
+# Creating a New Project
 
 In this section, we will cover how to create a new project from scratch in KiCad. Understanding how to start a project correctly is essential for a smooth workflow and project organization. We will also explore how KiCad automatically sets up project files and folders, giving you a clean environment to begin your PCB design.
 
