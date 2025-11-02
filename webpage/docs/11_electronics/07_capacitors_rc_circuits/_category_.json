@@ -1,0 +1,8 @@
+{
+  "label": "Capacitors and RC circuits",
+  "position": 7,
+  "link": {
+    "type": "generated-index",
+    "description": "Explains capacitor behavior, charging/discharging, and RC circuit time-domain analysis."
+  }
+}

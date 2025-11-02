@@ -1,0 +1,8 @@
+{
+  "label": "The breadboard",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "Hands-on introduction to breadboards and their use in building prototype circuits."
+  }
+}

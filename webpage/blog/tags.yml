@@ -1,0 +1,24 @@
+pcb-design:
+  label: PCB Design
+  permalink: /pcb-design
+  description: All things PCB design, from schematics to layouts.
+
+kicad:
+  label: KiCad
+  permalink: /kicad
+  description: Insights, tips, and tricks for using the open-source KiCad tool.
+
+electronics:
+  label: Electronics
+  permalink: /electronics
+  description: General topics and discussions around electronic design and engineering.
+
+open-source:
+  label: Open Source
+  permalink: /open-source
+  description: Celebrating open-source tools and their impact on PCB design.
+
+tips-and-tricks:
+  label: Tips and Tricks
+  permalink: /tips-and-tricks
+  description: Practical advice to improve your PCB design workflow.

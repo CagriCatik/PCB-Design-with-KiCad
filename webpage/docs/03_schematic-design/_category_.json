@@ -1,0 +1,8 @@
+{
+  "label": "Schematic Design",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Learn the steps involved in schematic design, from project setup to adding symbols and creating nets."
+  }
+}

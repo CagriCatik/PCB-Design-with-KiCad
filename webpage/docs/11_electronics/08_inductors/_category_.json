@@ -1,0 +1,8 @@
+{
+  "label": "Inductors",
+  "position": 8,
+  "link": {
+    "type": "generated-index",
+    "description": "Introduction to inductors, their properties, and their role in AC and transient circuits."
+  }
+}

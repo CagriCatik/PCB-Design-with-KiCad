@@ -1,0 +1,8 @@
+{
+  "label": "The multimeter",
+  "position": 5,
+  "link": {
+    "type": "generated-index",
+    "description": "Covers usage of the multimeter for measuring voltage, current, and resistance in circuits."
+  }
+}

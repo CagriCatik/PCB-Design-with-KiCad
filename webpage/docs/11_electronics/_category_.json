@@ -1,0 +1,8 @@
+{
+  "label": "Introduction",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "Introduction to KiCad, including PCB basics, design processes, and manufacturing insights."
+  }
+}
