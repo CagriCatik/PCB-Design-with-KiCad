@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pcb_design/what-is-a-pcb" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Printed Circuit Board | Electronics &amp; PCB Design</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Printed Circuit Board | Electronics &amp; PCB Design"><meta data-rh="true" name="description" content="1. Through-Hole Components"><meta data-rh="true" property="og:description" content="1. Through-Hole Components"><link data-rh="true" rel="icon" href="/PCB-Design-with-KiCad/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/PCB-Design-with-KiCad/blog/rss.xml" title="Electronics &amp; PCB Design RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/PCB-Design-with-KiCad/blog/atom.xml" title="Electronics &amp; PCB Design Atom Feed"><link rel="stylesheet" href="/PCB-Design-with-KiCad/assets/css/styles.524557fc.css">
+<script src="/PCB-Design-with-KiCad/assets/js/runtime~main.e827b521.js" defer="defer"></script>
+<script src="/PCB-Design-with-KiCad/assets/js/main.3242543a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/PCB-Design-with-KiCad/"><div class="navbar__logo"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"> </b></a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/getting_started/">Getting Started</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">PCB Design</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/kicad/introduction">KiCad</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/schematic-design/introduction">Schematic</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/layout/introduction">Layout</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/design_principles/introduction">Design Principles</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/schematic">Design Workflow</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/symbols_eeschema/introduction">Symbols Eeschema</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/footprints_pcbnew/introduction">Footprints Pcbnew</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/projects/getting-started">Projects</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/recipes/getting-started">Recipes</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/introduction">Electronics</a><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">Printed Circuit Board</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/pcb-design-process">PCB Design Process</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/manufacturing">Manufacturing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/example-project">Example Project</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/lessons-learned">Lessons Learned</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/PCB-Design-with-KiCad/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Printed Circuit Board</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Printed Circuit Board</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-through-hole-components">1. Through-Hole Components<a href="#1-through-hole-components" class="hash-link" aria-label="Direct link to 1. Through-Hole Components" title="Direct link to 1. Through-Hole Components">​</a></h2>
+<p>Through-hole components are distinguished by their elongated leads that extend through the PCB via drilled apertures. These leads are mechanically secured and electrically connected by soldering to annular copper pads on the opposite side of the board. Key characteristics of through-hole components include:</p>
+<ul>
+<li>
+<p><strong>Mechanical Robustness</strong>: Through-hole technology provides superior mechanical stability, making it suitable for applications subjected to high mechanical stress or vibration. The physical anchoring of component leads within the PCB enhances durability and reliability in demanding environments.</p>
+</li>
+<li>
+<p><strong>Component Types</strong>:</p>
+<ul>
+<li><strong>Axial Leads</strong>: Components such as resistors and diodes typically feature axial leads, where the leads emerge from opposite ends of the component body.</li>
+<li><strong>Radial Leads</strong>: Components like electrolytic capacitors and connectors employ radial lead configurations, with leads extending from a single side of the component.</li>
+</ul>
+</li>
+<li>
+<p><strong>Design Considerations</strong>:</p>
+<ul>
+<li><strong>Hole Dimensions</strong>: The drilled hole diameters must accommodate the tolerances of component leads to ensure proper fit and alignment.</li>
+<li><strong>Pad Sizing</strong>: Annular copper pad diameters are generally larger than the hole diameters by at least 0.5 mm. This sizing facilitates the formation of solder fillets, which are essential for creating reliable electrical and mechanical connections.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-surface-mount-devices-smds">2. Surface-Mount Devices (SMDs)<a href="#2-surface-mount-devices-smds" class="hash-link" aria-label="Direct link to 2. Surface-Mount Devices (SMDs)" title="Direct link to 2. Surface-Mount Devices (SMDs)">​</a></h2>
+<p>Surface-Mount Devices (SMDs) are mounted directly onto the copper pads on the PCB surface, obviating the need for through-hole leads. Critical aspects of SMDs include:</p>
+<ul>
+<li>
+<p><strong>Miniaturization</strong>: SMDs support compact designs, with package sizes ranging from as small as 0402 (0.04&quot; × 0.02&quot;) to more complex forms like Quad Flat No-Lead (QFN) packages used for integrated circuits (ICs). This miniaturization facilitates higher component density and reduced overall PCB size.</p>
+</li>
+<li>
+<p><strong>Assembly Techniques</strong>:</p>
+<ul>
+<li><strong>Reflow Soldering</strong>: This process involves applying solder paste, typically composed of tin-lead (Sn-Pb) or lead-free alloys, to the designated pads. The assembly is then subjected to controlled infrared or convection heating, which melts the solder paste to form secure joints between the SMDs and the PCB.</li>
+<li><strong>Pick-and-Place Automation</strong>: High-speed automated machinery achieves precise placement of SMDs with accuracies within ±0.05 mm. This automation enhances manufacturing efficiency and consistency, particularly in high-volume production environments.</li>
+</ul>
+</li>
+<li>
+<p><strong>Thermal Management</strong>: SMD pads often incorporate thermal vias—small plated-through holes—that facilitate the dissipation of heat from power components. Effective thermal management is crucial for maintaining component performance and longevity, especially in power-intensive applications.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-traces-and-tracks">3. Traces and Tracks<a href="#3-traces-and-tracks" class="hash-link" aria-label="Direct link to 3. Traces and Tracks" title="Direct link to 3. Traces and Tracks">​</a></h2>
+<p>Copper traces serve as the conductive pathways that interconnect components on a PCB. The design of these traces is governed by several critical parameters:</p>
+<ul>
+<li>
+<p><strong>Current Capacity</strong>: The width of a copper trace is determined based on the current it must carry, using standardized formulas such as those provided by IPC-2221. For example, the width <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi></mrow><annotation encoding="application/x-tex">W</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span></span></span></span> can be calculated using <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>W</mi><mo>=</mo><mfrac><mi>I</mi><mrow><mi>k</mi><mo>⋅</mo><mi mathvariant="normal">Δ</mi><msup><mi>T</mi><mn>0.44</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">W = \frac{I}{k \cdot \Delta T^{0.44}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.13889em">W</span><span class="mspace" style="margin-right:0.2778em"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em"></span></span><span class="base"><span class="strut" style="height:1.2173em;vertical-align:-0.345em"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8723em"><span style="top:-2.655em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03148em">k</span><span class="mbin mtight">⋅</span><span class="mord mtight">Δ</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.13889em">T</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463em"><span style="top:-2.786em;margin-right:0.0714em"><span class="pstrut" style="height:2.5em"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mtight">0.44</span></span></span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em"><span class="pstrut" style="height:3em"></span><span class="frac-line" style="border-bottom-width:0.04em"></span></span><span style="top:-3.394em"><span class="pstrut" style="height:3em"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.07847em">I</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span>, where <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord mathnormal" style="margin-right:0.07847em">I</span></span></span></span> is the current, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>k</mi></mrow><annotation encoding="application/x-tex">k</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em"></span><span class="mord mathnormal" style="margin-right:0.03148em">k</span></span></span></span> is a constant (0.024 for outer layers), and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">Δ</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">\Delta T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em"></span><span class="mord">Δ</span><span class="mord mathnormal" style="margin-right:0.13889em">T</span></span></span></span> is the allowable temperature rise. Proper calculation ensures that traces can handle the intended current without excessive heating or voltage drop.</p>
+</li>
+<li>
+<p><strong>Impedance Control</strong>: In high-speed signal applications, maintaining consistent impedance is vital to prevent signal degradation and reflections. Impedance control is achieved through meticulous regulation of trace width, thickness, and the dielectric spacing between layers. This precision is essential for maintaining signal integrity in high-frequency circuits.</p>
+</li>
+<li>
+<p><strong>Etching Process</strong>: The fabrication of copper traces employs a subtractive etching method, typically utilizing photolithography to define the desired trace patterns. The standard copper thickness is commonly 1 oz/ft² (approximately 35 µm), providing a balance between conductivity and manufacturability. Accurate etching ensures the reliability and performance of the conductive pathways.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-solder-mask">4. Solder Mask<a href="#4-solder-mask" class="hash-link" aria-label="Direct link to 4. Solder Mask" title="Direct link to 4. Solder Mask">​</a></h2>
+<p>The solder mask is a polymer layer, often Liquid Photoimageable (LPI), applied over the copper traces on a PCB. It serves multiple critical functions:</p>
+<ul>
+<li>
+<p><strong>Oxidation Prevention</strong>: The solder mask protects copper traces from exposure to atmospheric elements, thereby preventing oxidation. This preservation of copper quality is essential for maintaining reliable electrical connections and solderability during assembly and over the product&#x27;s lifecycle.</p>
+</li>
+<li>
+<p><strong>Solder Bridging Mitigation</strong>: By isolating adjacent pads and traces, the solder mask minimizes the risk of solder bridging during the soldering process. This isolation ensures that solder joints form only where intended, reducing the likelihood of short circuits and enhancing overall assembly quality.</p>
+</li>
+<li>
+<p><strong>Material Properties</strong>: Solder masks are available in various formulations, including epoxy and polyimide. The choice of material impacts properties such as UV curing efficiency and thermal emissivity. Additionally, solder masks are produced in multiple colors (e.g., green, black), which can influence manufacturing processes and aesthetic considerations.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-silkscreen">5. Silkscreen<a href="#5-silkscreen" class="hash-link" aria-label="Direct link to 5. Silkscreen" title="Direct link to 5. Silkscreen">​</a></h2>
+<p>The silkscreen layer is an epoxy-based ink layer that provides essential information for component identification and assembly guidance:</p>
+<ul>
+<li>
+<p><strong>Legibility</strong>: To ensure readability, silkscreen text typically employs font sizes of 0.8 mm or larger. Proper alignment of the silkscreen elements is crucial to prevent obstruction of pads and vias, which could interfere with component placement and soldering processes.</p>
+</li>
+<li>
+<p><strong>Content Standards</strong>: Silkscreen annotations adhere to established standards, such as ANSI Y32.2-1975, which dictates the format for component designators (e.g., R1 for resistors, C2 for capacitors). Consistent labeling facilitates accurate assembly and maintenance by clearly indicating component types and positions.</p>
+</li>
+<li>
+<p><strong>Application Methods</strong>: Silkscreen can be applied through various methods, including inkjet printing and laser ablation. Inkjet printing offers flexibility and cost-effectiveness for low-resolution applications, whereas laser ablation provides high precision and permanence, suitable for complex or fine-detail markings.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-vias">6. Vias<a href="#6-vias" class="hash-link" aria-label="Direct link to 6. Vias" title="Direct link to 6. Vias">​</a></h2>
+<p>Vias are plated through-holes that enable electrical connectivity between different layers in multilayer PCBs. They are essential for creating complex interconnections in dense circuit designs:</p>
+<ul>
+<li>
+<p><strong>Types of Vias</strong>:</p>
+<ul>
+<li><strong>Through-Vias</strong>: These vias extend through all layers of the PCB, providing a direct electrical connection from the top to the bottom layer.</li>
+<li><strong>Blind Vias</strong>: Blind vias connect an outer layer to one or more inner layers without passing through the entire board.</li>
+<li><strong>Buried Vias</strong>: Buried vias interconnect only inner layers, remaining concealed within the PCB and not visible on the outer surfaces.</li>
+</ul>
+</li>
+<li>
+<p><strong>Aspect Ratio</strong>: The aspect ratio of a via is defined as the ratio of its depth to its diameter. Standard fabrication processes typically limit the aspect ratio to 8:1 or less to ensure reliable plating and structural integrity.</p>
+</li>
+<li>
+<p><strong>Microvias</strong>: Employed in High-Density Interconnect (HDI) designs, microvias are laser-drilled vias with diameters of 0.15 mm or smaller. They allow for higher component densities and finer trace routing, which are essential for modern electronic devices requiring compact and efficient PCB layouts.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-copper-layers">7. Copper Layers<a href="#7-copper-layers" class="hash-link" aria-label="Direct link to 7. Copper Layers" title="Direct link to 7. Copper Layers">​</a></h2>
+<p>Multilayer PCBs utilize multiple stratified copper planes to enhance signal integrity and power distribution across the board:</p>
+<ul>
+<li>
+<p><strong>Stack-Up Configuration</strong>: An example of a four-layer PCB stack-up might consist of Signal-Ground-Power-Signal layers. This arrangement facilitates efficient signal routing while providing dedicated planes for ground and power, which helps in minimizing electromagnetic interference (EMI) and maintaining signal quality.</p>
+</li>
+<li>
+<p><strong>Copper Weight</strong>: The thickness of copper layers varies, typically ranging from 0.5 to 3 oz/ft². Thicker copper reduces resistive losses, particularly in power distribution planes, enhancing the overall efficiency and thermal performance of the PCB.</p>
+</li>
+<li>
+<p><strong>Anti-Pad Design</strong>: Anti-pads are clearance areas in copper planes around vias and pads to prevent unwanted short circuits. Proper anti-pad design ensures that copper pours do not inadvertently connect to non-intended vias, maintaining the integrity of electrical isolation where required.</p>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-thermal-reliefs">8. Thermal Reliefs<a href="#8-thermal-reliefs" class="hash-link" aria-label="Direct link to 8. Thermal Reliefs" title="Direct link to 8. Thermal Reliefs">​</a></h2>
+<p>Thermal reliefs are spoked connections between component pads and copper pours, designed to manage heat transfer during soldering:</p>
+<ul>
+<li>
+<p><strong>Design Geometry</strong>: Thermal reliefs typically feature 4 to 8 spokes, each approximately 0.2 to 0.3 mm wide. This configuration creates a thermal barrier that moderates heat flow between the pad and the surrounding copper plane.</p>
+</li>
+<li>
+<p><strong>Impact on Rework</strong>: By reducing the heat sinking effect of large copper areas, thermal reliefs facilitate easier desoldering and reworking of components. This design minimizes the risk of thermal damage to pads and components during repair or modification processes.</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="example-pcb-analyses">Example PCB Analyses<a href="#example-pcb-analyses" class="hash-link" aria-label="Direct link to Example PCB Analyses" title="Direct link to Example PCB Analyses">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="breadboard-power-supply-pcb">Breadboard Power Supply PCB<a href="#breadboard-power-supply-pcb" class="hash-link" aria-label="Direct link to Breadboard Power Supply PCB" title="Direct link to Breadboard Power Supply PCB">​</a></h3>
+<ul>
+<li>
+<p><strong>Topology</strong>: The power supply PCB employs a linear regulator topology, utilizing an integrated circuit such as the LM7805. Bulk and filter capacitors are incorporated to stabilize input and output voltages, ensuring a consistent power supply.</p>
+</li>
+<li>
+<p><strong>Trace Design</strong>: To accommodate a current rating of 1A, input and output traces are widened to 0.5 mm or greater. This enlargement reduces resistive losses and prevents excessive heating, ensuring reliable current delivery.</p>
+</li>
+<li>
+<p><strong>Silkscreen Markings</strong>: Polarity indicators are present for electrolytic capacitors to prevent incorrect orientation during assembly. Additionally, pinout labels for input (Vin) and output (Vout) facilitate accurate component placement and verification.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="raspberry-pi-zero">Raspberry Pi Zero<a href="#raspberry-pi-zero" class="hash-link" aria-label="Direct link to Raspberry Pi Zero" title="Direct link to Raspberry Pi Zero">​</a></h3>
+<ul>
+<li>
+<p><strong>SMD Integration</strong>: The PCB design integrates 0201-sized resistors and capacitors, optimizing space utilization. A Ball Grid Array (BGA) packaged System on Chip (SoC) is employed to achieve high-density component placement essential for compact devices.</p>
+</li>
+<li>
+<p><strong>Via Utilization</strong>: Through-vias are utilized to connect General Purpose Input/Output (GPIO) pins to inner ground planes, enhancing signal integrity and reducing noise. Vias-in-pad under the BGA package are implemented to improve thermal management by efficiently dissipating heat generated by the SoC.</p>
+</li>
+<li>
+<p><strong>Solder Mask</strong>: A purple LPI solder mask with a thickness of 50 µm is applied, providing a dielectric strength of 10 kV. This robust solder mask ensures reliable protection of copper traces and component pads against environmental factors and electrical stress.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="4-layer-mcu-data-logger">4-Layer MCU Data Logger<a href="#4-layer-mcu-data-logger" class="hash-link" aria-label="Direct link to 4-Layer MCU Data Logger" title="Direct link to 4-Layer MCU Data Logger">​</a></h3>
+<ul>
+<li>
+<p><strong>Layer Allocation</strong>:</p>
+<ul>
+<li><strong>Layer 1</strong>: Dedicated to signal routing, facilitating the interconnection of various microcontroller unit (MCU) peripherals and interfaces.</li>
+<li><strong>Layer 2</strong>: A solid ground plane is established, serving as both a reference potential and providing electromagnetic interference (EMI) shielding to maintain signal integrity.</li>
+<li><strong>Layer 3</strong>: Split power planes distribute multiple voltage levels (e.g., 3.3V and 5V), ensuring stable power supply to different sections of the circuit.</li>
+<li><strong>Layer 4</strong>: Reserved for low-speed signals, minimizing interference with high-speed signal layers and simplifying signal management.</li>
+</ul>
+</li>
+<li>
+<p><strong>Copper Fill</strong>: Inner layers utilize 2 oz/ft² copper for power distribution. The increased copper weight reduces impedance and resistive losses, enhancing the efficiency and reliability of power delivery to the MCU and associated components.</p>
+</li>
+</ul>
+<hr>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
+<p>Printed Circuit Boards (PCBs) integrate a myriad of components and design elements to construct functional and reliable electronic systems. Through-hole and Surface-Mount Devices (SMDs) address diverse mechanical and electrical requirements, providing options for robust or compact component placement. Copper traces and multilayer substrates facilitate intricate interconnections, while vias enable interlayer communication essential for complex designs. Protective layers such as solder masks and silkscreens enhance manufacturability and assembly precision, while thermal management strategies like thermal reliefs and copper fills ensure operational stability and longevity. Mastery of these components and terminologies is indispensable for advanced PCB design, particularly in applications demanding high density, high speed, or stringent reliability standards.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad/tree/edit/main/webpage/docs/01_pcb_design/01_what-is-a-pcb.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--next" href="/PCB-Design-with-KiCad/docs/pcb_design/pcb-design-process"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">PCB Design Process</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#1-through-hole-components" class="table-of-contents__link toc-highlight">1. Through-Hole Components</a></li><li><a href="#2-surface-mount-devices-smds" class="table-of-contents__link toc-highlight">2. Surface-Mount Devices (SMDs)</a></li><li><a href="#3-traces-and-tracks" class="table-of-contents__link toc-highlight">3. Traces and Tracks</a></li><li><a href="#4-solder-mask" class="table-of-contents__link toc-highlight">4. Solder Mask</a></li><li><a href="#5-silkscreen" class="table-of-contents__link toc-highlight">5. Silkscreen</a></li><li><a href="#6-vias" class="table-of-contents__link toc-highlight">6. Vias</a></li><li><a href="#7-copper-layers" class="table-of-contents__link toc-highlight">7. Copper Layers</a></li><li><a href="#8-thermal-reliefs" class="table-of-contents__link toc-highlight">8. Thermal Reliefs</a></li><li><a href="#example-pcb-analyses" class="table-of-contents__link toc-highlight">Example PCB Analyses</a><ul><li><a href="#breadboard-power-supply-pcb" class="table-of-contents__link toc-highlight">Breadboard Power Supply PCB</a></li><li><a href="#raspberry-pi-zero" class="table-of-contents__link toc-highlight">Raspberry Pi Zero</a></li><li><a href="#4-layer-mcu-data-logger" class="table-of-contents__link toc-highlight">4-Layer MCU Data Logger</a></li></ul></li><li><a href="#summary" class="table-of-contents__link toc-highlight">Summary</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">PCB Design with KiCad</div></div></div></footer></div>
+</body>
+</html>

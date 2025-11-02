@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://CagriCatik.github.io/PCB-Design-with-KiCad/blog</id>
+    <title>Electronics &amp; PCB Design Blog</title>
+    <updated>2025-01-03T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/blog"/>
+    <subtitle>Electronics &amp; PCB Design Blog</subtitle>
+    <icon>https://CagriCatik.github.io/PCB-Design-with-KiCad/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Welcome to PCB Design with KiCad]]></title>
+        <id>https://CagriCatik.github.io/PCB-Design-with-KiCad/blog/welcome-to-pcb-design</id>
+        <link href="https://CagriCatik.github.io/PCB-Design-with-KiCad/blog/welcome-to-pcb-design"/>
+        <updated>2025-01-03T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Ah, PCB design – the mystical art of turning a chaotic jungle of electrical signals into an organized, manufacturable board. Or as some might describe it: the world’s most complex game of Tetris with a side of “Why isn’t this working?!”]]></summary>
+        <content type="html"><![CDATA[<p>Ah, PCB design – the mystical art of turning a chaotic jungle of electrical signals into an organized, manufacturable board. Or as some might describe it: the world’s most complex game of Tetris with a side of “Why isn’t this working?!”</p>
+<p>Welcome to <strong>PCB Design with KiCad</strong>, where dreams of electronics enthusiasts are either realized or ruthlessly crushed by short circuits and unrouted traces. Here, we dive into the magical world of KiCad – the free, open-source PCB design tool that promises professional-grade results. Because who doesn’t love a steep learning curve with no customer support hotline?</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="why-kicad-no-seriously-why">Why KiCad? (No, Seriously, Why?)<a href="https://cagricatik.github.io/PCB-Design-with-KiCad/blog/welcome-to-pcb-design#why-kicad-no-seriously-why" class="hash-link" aria-label="Direct link to Why KiCad? (No, Seriously, Why?)" title="Direct link to Why KiCad? (No, Seriously, Why?)">​</a></h3>
+<p>Let’s address the elephant in the room: KiCad isn’t your shiny, expensive EDA tool with a marketing team telling you it’s going to solve all your problems. It’s more like the underdog that quietly grew in the corner of the room, fueled by passion, community contributions, and the occasional curse word from its users.</p>
+<p>KiCad is:</p>
+<ul>
+<li><strong>Free</strong>: No licensing fees, no monthly subscriptions. Just download and start designing your masterpiece – or your next failure, depending on how good you are at reading datasheets.</li>
+<li><strong>Powerful</strong>: It might look like a humble open-source tool, but don’t let that fool you. KiCad can churn out multilayer PCBs and high-speed designs like a champ – once you figure out where all the buttons are.</li>
+<li><strong>Community-Driven</strong>: Have a problem? Ask the internet. Chances are, someone’s either solved it, complained about it, or made a plugin to deal with it.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="what-to-expect-in-this-series">What to Expect in This Series<a href="https://cagricatik.github.io/PCB-Design-with-KiCad/blog/welcome-to-pcb-design#what-to-expect-in-this-series" class="hash-link" aria-label="Direct link to What to Expect in This Series" title="Direct link to What to Expect in This Series">​</a></h3>
+<p>We’re not here to sugarcoat the experience. Designing PCBs is a mix of creativity, engineering, and a dash of masochism. Here’s what we’ll cover:</p>
+<ul>
+<li><strong>Getting Started with Schematic Design</strong>: Learn how to add components, manage libraries, and convince yourself that your circuit will actually work.</li>
+<li><strong>PCB Layout</strong>: The thrilling adventure of placing components and routing traces while battling the infamous Design Rule Checker (DRC).</li>
+<li><strong>Manufacturing Outputs</strong>: Because what’s the point of designing a PCB if you can’t make it? Spoiler: Generating Gerber files is not as straightforward as it sounds.</li>
+<li><strong>Best Practices (a.k.a. Mistakes We’ve Made)</strong>: Tips to avoid crying over poorly placed vias and ground loops.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="a-word-of-caution">A Word of Caution<a href="https://cagricatik.github.io/PCB-Design-with-KiCad/blog/welcome-to-pcb-design#a-word-of-caution" class="hash-link" aria-label="Direct link to A Word of Caution" title="Direct link to A Word of Caution">​</a></h3>
+<p>KiCad is amazing, but it’s not perfect. Expect to spend time Googling errors, watching tutorials, and occasionally banging your head against your desk. But hey, that’s part of the charm, right?</p>
+<p>If you’re here to learn PCB design and embrace the quirks of KiCad, you’re in the right place. If you’re expecting a polished, hand-holding experience, you might want to check out those paid tools.</p>
+<p>Let’s design some PCBs, make some mistakes, and (hopefully) learn something along the way.</p>]]></content>
+        <author>
+            <name>Çağrı Çatık</name>
+            <uri>https://github.com/CagriCatik</uri>
+        </author>
+        <category label="PCB Design" term="PCB Design"/>
+        <category label="KiCad" term="KiCad"/>
+        <category label="Electronics" term="Electronics"/>
+    </entry>
+</feed>

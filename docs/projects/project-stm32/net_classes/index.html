@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-projects/project-stm32/net_classes" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">10. Net Classes &amp; BOM | Electronics &amp; PCB Design</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/projects/project-stm32/net_classes"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="10. Net Classes &amp; BOM | Electronics &amp; PCB Design"><meta data-rh="true" name="description" content="10.1 Net Class Definition and Routing Rules"><meta data-rh="true" property="og:description" content="10.1 Net Class Definition and Routing Rules"><link data-rh="true" rel="icon" href="/PCB-Design-with-KiCad/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/projects/project-stm32/net_classes"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/projects/project-stm32/net_classes" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/projects/project-stm32/net_classes" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/PCB-Design-with-KiCad/blog/rss.xml" title="Electronics &amp; PCB Design RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/PCB-Design-with-KiCad/blog/atom.xml" title="Electronics &amp; PCB Design Atom Feed"><link rel="stylesheet" href="/PCB-Design-with-KiCad/assets/css/styles.524557fc.css">
+<script src="/PCB-Design-with-KiCad/assets/js/runtime~main.e827b521.js" defer="defer"></script>
+<script src="/PCB-Design-with-KiCad/assets/js/main.3242543a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/PCB-Design-with-KiCad/"><div class="navbar__logo"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"> </b></a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/getting_started/">Getting Started</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">PCB Design</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/kicad/introduction">KiCad</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/schematic-design/introduction">Schematic</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/layout/introduction">Layout</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/design_principles/introduction">Design Principles</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/schematic">Design Workflow</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/symbols_eeschema/introduction">Symbols Eeschema</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/footprints_pcbnew/introduction">Footprints Pcbnew</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/PCB-Design-with-KiCad/docs/projects/getting-started">Projects</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/recipes/getting-started">Recipes</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/introduction">Electronics</a><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/projects/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/project-voltage-regulator">Project: Voltage Regulator</a><button aria-label="Expand sidebar category &#x27;Project: Voltage Regulator&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/project-mcu-datalogger">Project: MCU Datalogger</a><button aria-label="Expand sidebar category &#x27;Project: MCU Datalogger&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/project-breadboard-power-supply">Project: Breadboard Power Supply</a><button aria-label="Expand sidebar category &#x27;Project: Breadboard Power Supply&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/project-esp32">Project: ESP32</a><button aria-label="Expand sidebar category &#x27;Project: ESP32&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/PCB-Design-with-KiCad/docs/category/project-stm32">Project: STM32</a><button aria-label="Collapse sidebar category &#x27;Project: STM32&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/overview">1. Project Overview &amp; Setup</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/schematic">2. Schematic Design Basics</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/stm32">3. STM32 WB55 Microcontroller Power Architecture</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/rf_design">4. RF Section Design</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/oscillator">5. Oscillators</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/programming_debugging">6. Programming &amp; Debugging</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/usb-c">7. USB-C Power &amp; Data Interface</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/peripherials">8. Peripherals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/erc_footprints">9. ERC &amp; Footprints</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/net_classes">10. Net Classes &amp; BOM</a></li></ul></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/PCB-Design-with-KiCad/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/PCB-Design-with-KiCad/docs/category/project-stm32"><span itemprop="name">Project: STM32</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">10. Net Classes &amp; BOM</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>10. Net Classes &amp; BOM</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="101-net-class-definition-and-routing-rules">10.1 Net Class Definition and Routing Rules<a href="#101-net-class-definition-and-routing-rules" class="hash-link" aria-label="Direct link to 10.1 Net Class Definition and Routing Rules" title="Direct link to 10.1 Net Class Definition and Routing Rules">​</a></h2>
+<p>Net classes are integral to enforcing specific electrical and physical constraints within PCB designs, ensuring signal integrity, manufacturability, and adherence to performance specifications. By categorizing critical signal groups into distinct net classes, designers can apply tailored routing rules that address the unique requirements of each signal type. This section delineates the definition and routing rules for various net classes utilized in the STM32 WB55CEU-based Bluetooth PCB design.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1011-rf-net-class">10.1.1 RF Net Class<a href="#1011-rf-net-class" class="hash-link" aria-label="Direct link to 10.1.1 RF Net Class" title="Direct link to 10.1.1 RF Net Class">​</a></h3>
+<p>The RF net class is designated for high-frequency signal paths, such as RF_OUT and antenna matching networks, which are pivotal for maintaining signal integrity in wireless communication applications.</p>
+<ul>
+<li>
+<p><strong>Scope:</strong></p>
+<ul>
+<li>RF traces including RF_OUT and components forming the antenna matching networks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rules:</strong></p>
+<ul>
+<li>
+<p><strong>Impedance:</strong></p>
+<ul>
+<li>Maintained at 50 Ω ±10%, achieved through the use of coplanar waveguide (CPW) configurations.</li>
+<li>Trace specifications include a width of 0.3 mm and a gap of 0.15 mm to the ground plane, ensuring controlled impedance essential for high-frequency signal transmission.</li>
+</ul>
+</li>
+<li>
+<p><strong>Isolation:</strong></p>
+<ul>
+<li>A clearance of at least three times the trace width (0.9 mm) is enforced from adjacent digital signals.</li>
+<li>This isolation mitigates electromagnetic interference (EMI) and prevents cross-talk, which could degrade RF performance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Via Usage:</strong></p>
+<ul>
+<li>Prohibited between components of the π-network and the antenna to prevent inductive discontinuities and maintain a continuous signal path.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Validation:</strong></p>
+<ul>
+<li><strong>Time-Domain Reflectometry (TDR):</strong>
+<ul>
+<li>Employed to verify the impedance continuity along RF traces, ensuring deviations do not exceed 5%.</li>
+<li>This validation technique identifies and quantifies impedance mismatches that could lead to signal reflections and loss of integrity.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1012-usb-net-class">10.1.2 USB Net Class<a href="#1012-usb-net-class" class="hash-link" aria-label="Direct link to 10.1.2 USB Net Class" title="Direct link to 10.1.2 USB Net Class">​</a></h3>
+<p>The USB net class manages the differential signaling required for USB data transmission, ensuring robust and high-fidelity communication between the microcontroller and connected host devices.</p>
+<ul>
+<li>
+<p><strong>Scope:</strong></p>
+<ul>
+<li>Differential pairs comprising D+ and D– lines.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rules:</strong></p>
+<ul>
+<li>
+<p><strong>Impedance:</strong></p>
+<ul>
+<li>Maintained at 90 Ω differential ±10%, facilitated by traces with a width of 0.2 mm and spacing of 0.1 mm.</li>
+<li>Controlled impedance is critical for minimizing signal reflections and maintaining data integrity at USB 2.0 speeds.</li>
+</ul>
+</li>
+<li>
+<p><strong>Length Matching:</strong></p>
+<ul>
+<li>Intra-pair skew must not exceed 5 mils, ensuring that the D+ and D– signals arrive simultaneously at the receiver, which is essential for accurate differential signal interpretation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Routing:</strong></p>
+<ul>
+<li>Bends in USB traces should avoid 90° angles; instead, 45° miters or arcs are employed to reduce impedance discontinuities and signal reflections.</li>
+<li>This approach preserves the integrity of high-speed differential signals, ensuring reliable data transmission.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Validation:</strong></p>
+<ul>
+<li><strong>Eye Diagram Analysis:</strong>
+<ul>
+<li>Conducted to assess the quality of the differential signals, with a requirement of ≥70% eye opening at 12 Mbps.</li>
+<li>A clear eye opening indicates minimal jitter and noise, signifying robust signal integrity conducive to high-speed data communication.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1013-power-net-class">10.1.3 Power Net Class<a href="#1013-power-net-class" class="hash-link" aria-label="Direct link to 10.1.3 Power Net Class" title="Direct link to 10.1.3 Power Net Class">​</a></h3>
+<p>The power net class encompasses all voltage rails supplying power to various components, ensuring stable and efficient power distribution across the PCB.</p>
+<ul>
+<li>
+<p><strong>Scope:</strong></p>
+<ul>
+<li>Voltage rails including 3V3, 5V, and VBAT.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rules:</strong></p>
+<ul>
+<li><strong>Trace Width:</strong>
+<ul>
+<li>Power traces are dimensioned based on current capacity requirements:<!-- -->
+<ul>
+<li>3V3 rails utilize traces with a width of 0.5 mm, supporting currents up to 1A.</li>
+<li>5V rails employ wider traces of 0.8 mm to accommodate higher currents up to 2A.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Via Current:</strong>
+<ul>
+<li>Each via is limited to a maximum current of 1A.</li>
+<li>For high-current paths, multiple vias are employed in parallel to distribute the load and prevent overheating or excessive voltage drops.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Validation:</strong></p>
+<ul>
+<li><strong>IR Drop Analysis:</strong>
+<ul>
+<li>Ensures that voltage drops across power traces do not exceed 3% of the nominal voltage at maximum load conditions.</li>
+<li>This analysis guarantees that all components receive adequate voltage, maintaining operational stability and performance.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1014-swd-net-class">10.1.4 SWD Net Class<a href="#1014-swd-net-class" class="hash-link" aria-label="Direct link to 10.1.4 SWD Net Class" title="Direct link to 10.1.4 SWD Net Class">​</a></h3>
+<p>The SWD (Serial Wire Debug) net class facilitates debugging and programming functionalities, providing a dedicated pathway for SWDIO, SWCLK, SWO, and NRST signals.</p>
+<ul>
+<li>
+<p><strong>Scope:</strong></p>
+<ul>
+<li>Debug signals including SWDIO, SWCLK, SWO, and NRST.</li>
+</ul>
+</li>
+<li>
+<p><strong>Rules:</strong></p>
+<ul>
+<li>
+<p><strong>Trace Width:</strong></p>
+<ul>
+<li>Maintained at 0.25 mm (10 mil), ensuring sufficient bandwidth for debugging operations without excessive resistance or inductance.</li>
+</ul>
+</li>
+<li>
+<p><strong>Guard Traces:</strong></p>
+<ul>
+<li>A ground trace with a spacing of 0.3 mm is routed on both sides of the SWD traces.</li>
+<li>This shielding minimizes electromagnetic interference (EMI) from adjacent signals, preserving the integrity of debug communications.</li>
+</ul>
+</li>
+<li>
+<p><strong>Length:</strong></p>
+<ul>
+<li>SWD traces must not exceed 30 mm from the microcontroller to the Tag Connect header.</li>
+<li>Short trace lengths reduce signal degradation and latency, ensuring timely and accurate debugging operations.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Validation:</strong></p>
+<ul>
+<li><strong>Signal Integrity Simulation:</strong>
+<ul>
+<li>Performed to verify that the rise time of SWD signals does not exceed 5 ns at a clock frequency of 10 MHz.</li>
+<li>This simulation ensures that the debug signals maintain their intended waveform characteristics, preventing data corruption during high-speed communication.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="102-bill-of-materials-bom-preparation">10.2 Bill of Materials (BOM) Preparation<a href="#102-bill-of-materials-bom-preparation" class="hash-link" aria-label="Direct link to 10.2 Bill of Materials (BOM) Preparation" title="Direct link to 10.2 Bill of Materials (BOM) Preparation">​</a></h2>
+<p>The Bill of Materials (BOM) is a comprehensive inventory that enumerates all components required for PCB assembly, detailing part numbers, manufacturers, quantities, and footprint specifications. A meticulously prepared BOM is essential for design reproducibility, procurement efficiency, and compliance with manufacturing standards.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1021-critical-component-selection">10.2.1 Critical Component Selection<a href="#1021-critical-component-selection" class="hash-link" aria-label="Direct link to 10.2.1 Critical Component Selection" title="Direct link to 10.2.1 Critical Component Selection">​</a></h3>
+<p>Selecting appropriate components is pivotal for ensuring the performance, reliability, and manufacturability of the PCB. Critical components, particularly those with stringent electrical specifications or unique footprint requirements, are carefully chosen to align with design objectives.</p>
+<ul>
+<li>
+<p><strong>TDK DLP11SN021SK2 Filter:</strong></p>
+<ul>
+<li><strong>MPN:</strong> DLP11SN021SK2</li>
+<li><strong>Description:</strong> 2.4 GHz low-pass filter with 50 Ω impedance, essential for suppressing unwanted harmonics and maintaining signal purity in the RF section.</li>
+<li><strong>Footprint:</strong> Custom 4-pad configuration with pad dimensions of 0.3 × 0.25 mm, tailored to match the filter’s physical and electrical characteristics.</li>
+</ul>
+</li>
+<li>
+<p><strong>Murata Inductors:</strong></p>
+<ul>
+<li><strong>L1 (10 nH):</strong>
+<ul>
+<li><strong>MPN:</strong> LQP15MN10N02D</li>
+<li><strong>Package:</strong> 0402</li>
+<li><strong>Tolerance:</strong> ±0.3 nH</li>
+<li><strong>Function:</strong> High-frequency filtering within the SMPS circuit, critical for minimizing switching noise.</li>
+</ul>
+</li>
+<li><strong>L2 (10 µH):</strong>
+<ul>
+<li><strong>MPN:</strong> LQM18FN100M00D</li>
+<li><strong>Package:</strong> 0805</li>
+<li><strong>Tolerance:</strong> ±20%</li>
+<li><strong>Function:</strong> Energy storage within the SMPS, ensuring continuous current flow during switching cycles.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Passives:</strong></p>
+<ul>
+<li><strong>0402 Resistors:</strong>
+<ul>
+<li><strong>MPN:</strong> RNMF14FTC5K11</li>
+<li><strong>Description:</strong> 5.1 kΩ, ±1% tolerance resistors used for various signal conditioning and biasing applications within the PCB.</li>
+</ul>
+</li>
+<li><strong>0402 Capacitors:</strong>
+<ul>
+<li><strong>MPN:</strong> GRM155R71H104KE14D</li>
+<li><strong>Description:</strong> 100 nF X7R capacitors rated at 10V, employed for decoupling and filtering in high-frequency sections.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1022-bom-structure">10.2.2 BOM Structure<a href="#1022-bom-structure" class="hash-link" aria-label="Direct link to 10.2.2 BOM Structure" title="Direct link to 10.2.2 BOM Structure">​</a></h3>
+<p>A well-organized BOM facilitates efficient component sourcing, inventory management, and assembly processes. The BOM structure includes item numbers, quantities, manufacturer part numbers (MPN), component descriptions, manufacturers, and assigned footprints.</p>
+<table><thead><tr><th><strong>Item</strong></th><th><strong>Qty</strong></th><th><strong>MPN</strong></th><th><strong>Description</strong></th><th><strong>Manufacturer</strong></th><th><strong>Footprint</strong></th></tr></thead><tbody><tr><td>1</td><td>1</td><td>STM32WB55CEU6</td><td>MCU, QFN-48</td><td>STMicro</td><td>QFN-48_7x7mm_P0.5mm</td></tr><tr><td>2</td><td>1</td><td>DLP11SN021SK2</td><td>2.4 GHz LPF</td><td>TDK</td><td>Custom_4pad_2.4x1.6mm</td></tr><tr><td>3</td><td>2</td><td>LQP15MN10N02D</td><td>10 nH inductor</td><td>Murata</td><td>Inductor_SMD_0402</td></tr><tr><td>4</td><td>4</td><td>GRM155R71H104KE14D</td><td>100 nF decoupling cap</td><td>Murata</td><td>Capacitor_SMD_0402</td></tr></tbody></table>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1023-validation-and-compliance">10.2.3 Validation and Compliance<a href="#1023-validation-and-compliance" class="hash-link" aria-label="Direct link to 10.2.3 Validation and Compliance" title="Direct link to 10.2.3 Validation and Compliance">​</a></h3>
+<p>Ensuring that the BOM is accurate and compliant with design specifications is critical for successful PCB fabrication and assembly. The following measures are implemented to validate the BOM:</p>
+<ul>
+<li>
+<p><strong>Cross-Referencing:</strong></p>
+<ul>
+<li>Each component in the BOM is cross-referenced with its schematic symbol in KiCad to verify correct footprint assignments. For instance, the MIC5365-3.3YD LDO is linked to the SOT-23-5 footprint, ensuring accurate component placement and connectivity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sourcing:</strong></p>
+<ul>
+<li>Components are vetted for lifecycle status, distinguishing between Not Recommended for New Designs (NRND) and active components.</li>
+<li>Lead times are verified to be within acceptable ranges (e.g., &lt; 12 weeks) to prevent procurement delays.</li>
+</ul>
+</li>
+<li>
+<p><strong>Standards Compliance:</strong></p>
+<ul>
+<li><strong>IPC-7351 Land Pattern Compliance:</strong>
+<ul>
+<li>All footprints are designed in accordance with IPC-7351A standards, ensuring that land patterns are manufacturable and compatible with assembly processes.</li>
+</ul>
+</li>
+<li><strong>Environmental Regulations:</strong>
+<ul>
+<li>Components are selected to comply with RoHS (Restriction of Hazardous Substances) and REACH (Registration, Evaluation, Authorisation, and Restriction of Chemicals) regulations, ensuring environmental sustainability and safety.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="103-critical-design-metrics">10.3 Critical Design Metrics<a href="#103-critical-design-metrics" class="hash-link" aria-label="Direct link to 10.3 Critical Design Metrics" title="Direct link to 10.3 Critical Design Metrics">​</a></h2>
+<p>Adherence to critical design metrics is essential for ensuring that the PCB meets performance, reliability, and manufacturability standards. The following metrics are rigorously enforced within the STM32 WB55CEU-based design:</p>
+<ul>
+<li><strong>RF Class:</strong>
+<ul>
+<li><strong>Return Loss (S11):</strong> Must be ≤ –10 dB within the 2.4–2.5 GHz band.<!-- -->
+<ul>
+<li>Ensures effective impedance matching and minimal signal reflection, crucial for maintaining RF signal integrity.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>USB Class:</strong>
+<ul>
+<li><strong>Differential Skew:</strong> Must be ≤5 ps as measured by Time-Domain Reflectometry (TDR).<!-- -->
+<ul>
+<li>Ensures that D+ and D– signals are synchronized, preventing data corruption and maintaining high-speed USB communication reliability.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Power Class:</strong>
+<ul>
+<li><strong>Voltage Ripple:</strong> Must not exceed 50 mV peak-to-peak (mVpp) within a 20 MHz bandwidth.<!-- -->
+<ul>
+<li>Maintains stable power delivery to sensitive components, preventing operational instability due to voltage fluctuations.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>BOM Accuracy:</strong>
+<ul>
+<li><strong>Component-to-Footprint Match:</strong> Achieve 100% alignment between components listed in the BOM and their assigned footprints in KiCad.<!-- -->
+<ul>
+<li>Verified through ERC reports and footprint audits, ensuring that all components are correctly placed and soldered during assembly.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>This structured approach to net class definition, BOM preparation, and adherence to critical design metrics ensures that the PCB design not only meets the desired electrical and mechanical specifications but also facilitates efficient manufacturing and assembly processes. Compliance with IPC standards and rigorous validation procedures underpin the reliability and performance of the final product, aligning with industry best practices for high-reliability PCB designs.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad/tree/edit/main/webpage/docs/09_projects/05_project-stm32/10_net_classes.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/PCB-Design-with-KiCad/docs/projects/project-stm32/erc_footprints"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">9. ERC &amp; Footprints</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#101-net-class-definition-and-routing-rules" class="table-of-contents__link toc-highlight">10.1 Net Class Definition and Routing Rules</a><ul><li><a href="#1011-rf-net-class" class="table-of-contents__link toc-highlight">10.1.1 RF Net Class</a></li><li><a href="#1012-usb-net-class" class="table-of-contents__link toc-highlight">10.1.2 USB Net Class</a></li><li><a href="#1013-power-net-class" class="table-of-contents__link toc-highlight">10.1.3 Power Net Class</a></li><li><a href="#1014-swd-net-class" class="table-of-contents__link toc-highlight">10.1.4 SWD Net Class</a></li></ul></li><li><a href="#102-bill-of-materials-bom-preparation" class="table-of-contents__link toc-highlight">10.2 Bill of Materials (BOM) Preparation</a><ul><li><a href="#1021-critical-component-selection" class="table-of-contents__link toc-highlight">10.2.1 Critical Component Selection</a></li><li><a href="#1022-bom-structure" class="table-of-contents__link toc-highlight">10.2.2 BOM Structure</a></li><li><a href="#1023-validation-and-compliance" class="table-of-contents__link toc-highlight">10.2.3 Validation and Compliance</a></li></ul></li><li><a href="#103-critical-design-metrics" class="table-of-contents__link toc-highlight">10.3 Critical Design Metrics</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">PCB Design with KiCad</div></div></div></footer></div>
+</body>
+</html>

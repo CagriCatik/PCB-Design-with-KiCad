@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-pcb_design/example-project" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Example Project | Electronics &amp; PCB Design</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/example-project"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Example Project | Electronics &amp; PCB Design"><meta data-rh="true" name="description" content="The design of Printed Circuit Boards (PCBs) utilizing KiCad necessitates proficiency in its core applications: the Schematic Editor (Eeschema) and the PCB Editor (PCBnew). These editors constitute the foundational tools within KiCad’s design workflow, enabling the creation of intricate circuits and their subsequent physical layout on PCBs. This documentation elucidates the practical utilization of these editors through an exemplar project, the PIC Programmer, sourced from the KiCad demo repository on GitLab. The PIC Programmer project serves as an intermediate-level case study, showcasing the comprehensive capabilities of KiCad’s design tools."><meta data-rh="true" property="og:description" content="The design of Printed Circuit Boards (PCBs) utilizing KiCad necessitates proficiency in its core applications: the Schematic Editor (Eeschema) and the PCB Editor (PCBnew). These editors constitute the foundational tools within KiCad’s design workflow, enabling the creation of intricate circuits and their subsequent physical layout on PCBs. This documentation elucidates the practical utilization of these editors through an exemplar project, the PIC Programmer, sourced from the KiCad demo repository on GitLab. The PIC Programmer project serves as an intermediate-level case study, showcasing the comprehensive capabilities of KiCad’s design tools."><link data-rh="true" rel="icon" href="/PCB-Design-with-KiCad/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/example-project"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/example-project" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/pcb_design/example-project" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/PCB-Design-with-KiCad/blog/rss.xml" title="Electronics &amp; PCB Design RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/PCB-Design-with-KiCad/blog/atom.xml" title="Electronics &amp; PCB Design Atom Feed"><link rel="stylesheet" href="/PCB-Design-with-KiCad/assets/css/styles.524557fc.css">
+<script src="/PCB-Design-with-KiCad/assets/js/runtime~main.e827b521.js" defer="defer"></script>
+<script src="/PCB-Design-with-KiCad/assets/js/main.3242543a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/PCB-Design-with-KiCad/"><div class="navbar__logo"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"> </b></a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/getting_started/">Getting Started</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">PCB Design</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/kicad/introduction">KiCad</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/schematic-design/introduction">Schematic</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/layout/introduction">Layout</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/design_principles/introduction">Design Principles</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/schematic">Design Workflow</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/symbols_eeschema/introduction">Symbols Eeschema</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/footprints_pcbnew/introduction">Footprints Pcbnew</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/projects/getting-started">Projects</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/recipes/getting-started">Recipes</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/introduction">Electronics</a><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">Printed Circuit Board</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/pcb-design-process">PCB Design Process</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/manufacturing">Manufacturing</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" href="/PCB-Design-with-KiCad/docs/pcb_design/example-project">Example Project</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/pcb_design/lessons-learned">Lessons Learned</a></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/PCB-Design-with-KiCad/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Example Project</span><meta itemprop="position" content="1"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Example Project</h1></header>
+<p>The design of Printed Circuit Boards (PCBs) utilizing KiCad necessitates proficiency in its core applications: the <strong>Schematic Editor (Eeschema)</strong> and the <strong>PCB Editor (PCBnew)</strong>. These editors constitute the foundational tools within KiCad’s design workflow, enabling the creation of intricate circuits and their subsequent physical layout on PCBs. This documentation elucidates the practical utilization of these editors through an exemplar project, the <strong>PIC Programmer</strong>, sourced from the <strong>KiCad demo repository</strong> on GitLab. The PIC Programmer project serves as an intermediate-level case study, showcasing the comprehensive capabilities of KiCad’s design tools.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="setting-up-an-example-project-in-kicad">Setting Up an Example Project in KiCad<a href="#setting-up-an-example-project-in-kicad" class="hash-link" aria-label="Direct link to Setting Up an Example Project in KiCad" title="Direct link to Setting Up an Example Project in KiCad">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-accessing-the-demo-repository">Step 1: Accessing the Demo Repository<a href="#step-1-accessing-the-demo-repository" class="hash-link" aria-label="Direct link to Step 1: Accessing the Demo Repository" title="Direct link to Step 1: Accessing the Demo Repository">​</a></h3>
+<p>KiCad offers a collection of demonstration projects to facilitate user learning through practical examples. These demo projects are typically bundled within the KiCad installation package. However, if absent, they can be retrieved from the <strong>KiCad GitLab repository</strong>. The procedure to acquire these demo files is as follows:</p>
+<ol>
+<li>
+<p><strong>Navigate to the KiCad Demo Repository:</strong></p>
+<ul>
+<li>Access the repository via <a href="https://gitlab.com/kicad" target="_blank" rel="noopener noreferrer">KiCad&#x27;s GitLab page</a>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Download the Demo Files:</strong></p>
+<ul>
+<li>Locate the desired demo project, such as the <strong>PIC Programmer</strong>.</li>
+<li>Click the <strong>Download</strong> button, selecting either the <strong>ZIP</strong> or <strong>tar.gz</strong> archive format.</li>
+</ul>
+</li>
+<li>
+<p><strong>Extract and Organize:</strong></p>
+<ul>
+<li>Upon download completion, extract the compressed files.</li>
+<li>Relocate the extracted directory to your designated projects folder for streamlined access within KiCad.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-opening-the-project">Step 2: Opening the Project<a href="#step-2-opening-the-project" class="hash-link" aria-label="Direct link to Step 2: Opening the Project" title="Direct link to Step 2: Opening the Project">​</a></h3>
+<p>The <strong>PIC Programmer</strong> project comprises multiple KiCad-specific files essential for both schematic and PCB design:</p>
+<ul>
+<li><code>PIC_Programmer.pro</code>: The primary project file encapsulating overall project configurations.</li>
+<li><code>PIC_Programmer.kicad_pcb</code>: The PCB layout file containing detailed physical design information.</li>
+<li><code>PIC_Programmer.kicad_sch</code>: The schematic file outlining the electrical circuit design.</li>
+</ul>
+<p>To initiate the project within KiCad:</p>
+<ul>
+<li><strong>Method 1:</strong> Double-click the <code>.pro</code> file associated with the project.</li>
+<li><strong>Method 2:</strong> Drag and drop the <code>.pro</code> file into the KiCad main interface.</li>
+</ul>
+<p>This action launches the project, providing access to both the schematic and PCB layout editors within a unified environment.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exploring-the-schematic-editor-eeschema">Exploring the Schematic Editor (Eeschema)<a href="#exploring-the-schematic-editor-eeschema" class="hash-link" aria-label="Direct link to Exploring the Schematic Editor (Eeschema)" title="Direct link to Exploring the Schematic Editor (Eeschema)">​</a></h2>
+<p>The <strong>Schematic Editor (Eeschema)</strong> serves as the environment for designing and documenting the electrical circuitry of the PCB. It allows designers to create a visual representation of the electronic components and their interconnections.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-navigating-the-interface">Step 1: Navigating the Interface<a href="#step-1-navigating-the-interface" class="hash-link" aria-label="Direct link to Step 1: Navigating the Interface" title="Direct link to Step 1: Navigating the Interface">​</a></h3>
+<p>The Eeschema interface is organized into several key sections to facilitate efficient schematic design:</p>
+<ul>
+<li>
+<p><strong>Toolbars and Status Bar:</strong></p>
+<ul>
+<li><strong>Top Toolbar:</strong> Hosts essential tools for component placement, wiring, annotation, and more.</li>
+<li><strong>Side Toolbars:</strong> Provide access to component libraries, netlist management, and hierarchical design controls.</li>
+<li><strong>Status Bar:</strong> Located at the bottom, it displays real-time information about the current design state, including cursor coordinates and tooltips for active components.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mouse Navigation:</strong></p>
+<ul>
+<li><strong>Zooming:</strong> Utilize the mouse scroll wheel to zoom in and out of the schematic view.</li>
+<li><strong>Panning:</strong> Press and hold the scroll wheel (middle-click) to navigate across different sections of the schematic sheet.</li>
+</ul>
+</li>
+</ul>
+<p>For instance, using a precision mouse such as the <strong>Logitech MX Master 3</strong> enhances navigation efficiency due to its responsive scroll wheel and ergonomic design.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-exploring-components-and-connections">Step 2: Exploring Components and Connections<a href="#step-2-exploring-components-and-connections" class="hash-link" aria-label="Direct link to Step 2: Exploring Components and Connections" title="Direct link to Step 2: Exploring Components and Connections">​</a></h3>
+<p>The schematic interface displays various electronic components interconnected by electrical nets, represented by green lines. Junctions, where multiple nets converge, are indicated by black dots.</p>
+<ul>
+<li>
+<p><strong>Selecting Components:</strong></p>
+<ul>
+<li><strong>Single Selection:</strong> Click on a component to highlight it, facilitating actions such as editing or moving.</li>
+<li><strong>Component Highlighting:</strong> Selecting a component (e.g., a transistor) will highlight all associated attributes, including text labels and reference designators.</li>
+</ul>
+</li>
+<li>
+<p><strong>Component Properties:</strong></p>
+<ul>
+<li>
+<p><strong>Accessing Properties:</strong> Double-clicking a component opens a properties dialog box, revealing detailed attributes such as:</p>
+<ul>
+<li><strong>Footprint Association:</strong> Links the schematic symbol to its physical PCB footprint.</li>
+<li><strong>Reference Designator:</strong> Unique identifier (e.g., R1 for resistor).</li>
+<li><strong>Value:</strong> Specifies the component&#x27;s electrical characteristic (e.g., 10kΩ for a resistor).</li>
+</ul>
+</li>
+<li>
+<p><strong>Visibility Control:</strong> Designers can toggle the visibility of specific attributes, such as the footprint, to declutter the schematic and enhance readability.</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-navigating-hierarchical-schematics">Step 3: Navigating Hierarchical Schematics<a href="#step-3-navigating-hierarchical-schematics" class="hash-link" aria-label="Direct link to Step 3: Navigating Hierarchical Schematics" title="Direct link to Step 3: Navigating Hierarchical Schematics">​</a></h3>
+<p>Complex projects often employ hierarchical schematics, segmenting the design into multiple interconnected sheets for improved manageability.</p>
+<ul>
+<li>
+<p><strong>Hierarchical Boxes:</strong></p>
+<ul>
+<li><strong>Definition:</strong> Represent modular sections of the circuit, encapsulating related components and sub-circuits.</li>
+<li><strong>Navigation:</strong> Double-clicking a hierarchical box transitions to the corresponding schematic sheet within the same project.</li>
+</ul>
+</li>
+<li>
+<p><strong>Schematic Hierarchy Pane:</strong></p>
+<ul>
+<li><strong>Location:</strong> Found in the left toolbar.</li>
+<li><strong>Functionality:</strong> Lists all schematic sheets within the project, allowing designers to switch between them seamlessly.</li>
+</ul>
+</li>
+<li>
+<p><strong>Properties Manager (KiCad and Later):</strong></p>
+<ul>
+<li><strong>Activation:</strong> Enable via the interface settings.</li>
+<li><strong>Functionality:</strong> Displays component properties in a dedicated pane upon selection, negating the need to open separate dialog boxes for quick reference and modification.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exploring-the-pcb-layout-editor-pcbnew">Exploring the PCB Layout Editor (PCBnew)<a href="#exploring-the-pcb-layout-editor-pcbnew" class="hash-link" aria-label="Direct link to Exploring the PCB Layout Editor (PCBnew)" title="Direct link to Exploring the PCB Layout Editor (PCBnew)">​</a></h2>
+<p>After finalizing the schematic, the design workflow advances to the <strong>PCB Layout Editor (PCBnew)</strong>. This editor is responsible for the spatial arrangement of components and the routing of electrical traces on the physical PCB.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-1-navigating-the-interface-1">Step 1: Navigating the Interface<a href="#step-1-navigating-the-interface-1" class="hash-link" aria-label="Direct link to Step 1: Navigating the Interface" title="Direct link to Step 1: Navigating the Interface">​</a></h3>
+<p>The PCBnew interface mirrors the organizational structure of Eeschema, with additional tools tailored for physical layout design:</p>
+<ul>
+<li>
+<p><strong>Toolbars and Appearance Pane:</strong></p>
+<ul>
+<li><strong>Top and Side Toolbars:</strong> Contain tools for component placement, trace routing, layer management, and more.</li>
+<li><strong>Appearance Pane:</strong> Located on the right, it allows designers to toggle the visibility of various PCB layers (e.g., copper, silkscreen, solder mask), facilitating focused work on specific aspects of the layout.</li>
+</ul>
+</li>
+<li>
+<p><strong>Mouse Navigation:</strong></p>
+<ul>
+<li><strong>Zooming and Panning:</strong> Similar to Eeschema, the mouse scroll wheel facilitates zooming, while holding the scroll wheel enables panning across the PCB layout.</li>
+<li><strong>Contextual Menus:</strong> Right-clicking within the layout area provides access to context-specific tools and options, enhancing workflow efficiency.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-2-managing-layers-and-components">Step 2: Managing Layers and Components<a href="#step-2-managing-layers-and-components" class="hash-link" aria-label="Direct link to Step 2: Managing Layers and Components" title="Direct link to Step 2: Managing Layers and Components">​</a></h3>
+<p>Effective management of PCB layers and component placement is critical for achieving an optimized and manufacturable design.</p>
+<ul>
+<li>
+<p><strong>Layer Management:</strong></p>
+<ul>
+<li><strong>Visibility Control:</strong> Use the Appearance Pane to hide or display specific layers, such as isolating the <strong>copper layer</strong> to concentrate on component placement without visual distractions.</li>
+<li><strong>Layer Selection:</strong> Enable or disable layers based on the design phase, such as focusing on signal layers during routing or power layers when designing power distribution.</li>
+</ul>
+</li>
+<li>
+<p><strong>Component Placement:</strong></p>
+<ul>
+<li><strong>Manual Placement:</strong> Drag and drop components to desired locations, considering factors like signal flow, thermal management, and manufacturability.</li>
+<li><strong>Automatic Alignment Tools:</strong> Utilize grid snapping, alignment guides, and placement wizards to ensure components are positioned accurately and uniformly.</li>
+<li><strong>Component Rotation and Orientation:</strong> Rotate components to optimize trace routing and minimize space utilization.</li>
+</ul>
+</li>
+<li>
+<p><strong>Trace Routing:</strong></p>
+<ul>
+<li><strong>Interactive Routing Tools:</strong> Employ tools such as the <strong>Interactive Router</strong> to draw copper traces connecting component pads, adhering to design rules for trace width, spacing, and clearance.</li>
+<li><strong>Net Highlighting:</strong> Select specific nets to highlight all associated traces, aiding in focused routing and error detection.</li>
+<li><strong>Routing Modes:</strong> Switch between different routing modes (e.g., normal, differential) to accommodate various signal integrity requirements.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-3-working-with-configurable-options">Step 3: Working with Configurable Options<a href="#step-3-working-with-configurable-options" class="hash-link" aria-label="Direct link to Step 3: Working with Configurable Options" title="Direct link to Step 3: Working with Configurable Options">​</a></h3>
+<p>PCBnew offers extensive configurability to tailor the physical layout to specific design requirements.</p>
+<ul>
+<li>
+<p><strong>Trace Width Adjustment:</strong></p>
+<ul>
+<li><strong>Current-Carrying Capacity:</strong> Modify trace widths based on the electrical current they must carry, ensuring adequate conductivity and preventing overheating.</li>
+<li><strong>Design Rules Integration:</strong> Implement trace width standards via the Design Rules Manager to maintain consistency across the PCB.</li>
+</ul>
+</li>
+<li>
+<p><strong>Pad and Hole Size Modification:</strong></p>
+<ul>
+<li><strong>Pad Sizing:</strong> Adjust pad dimensions to match component lead sizes and soldering requirements.</li>
+<li><strong>Hole Diameter Configuration:</strong> Specify hole sizes for through-hole components and vias, ensuring compatibility with mechanical and electrical specifications.</li>
+</ul>
+</li>
+<li>
+<p><strong>Via Management:</strong></p>
+<ul>
+<li><strong>Via Types:</strong> Define via characteristics, such as standard, blind, or buried vias, based on the PCB&#x27;s layer stack-up and routing complexity.</li>
+<li><strong>Via Placement:</strong> Strategically place vias to facilitate efficient interlayer connectivity and thermal dissipation.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="step-4-viewing-the-3d-model">Step 4: Viewing the 3D Model<a href="#step-4-viewing-the-3d-model" class="hash-link" aria-label="Direct link to Step 4: Viewing the 3D Model" title="Direct link to Step 4: Viewing the 3D Model">​</a></h3>
+<p>KiCad’s <strong>3D Viewer</strong> provides a realistic visualization of the PCB, enabling designers to assess the physical arrangement and spatial relationships of components.</p>
+<ul>
+<li>
+<p><strong>Accessing the 3D Viewer:</strong></p>
+<ul>
+<li><strong>Activation:</strong> Click the <strong>3D Viewer</strong> button located on the top toolbar within PCBnew.</li>
+<li><strong>Features:</strong> The viewer renders a three-dimensional representation of the PCB, showcasing component orientations, silkscreen markings, and the board outline.</li>
+</ul>
+</li>
+<li>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li><strong>Physical Assessment:</strong> Verify component placements, ensuring no mechanical conflicts or overlaps.</li>
+<li><strong>Aesthetic Evaluation:</strong> Assess the overall visual appeal and symmetry of the PCB layout.</li>
+<li><strong>Thermal Analysis Preparation:</strong> While not a substitute for formal thermal simulations, the 3D view aids in preliminary thermal management assessments.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="integration-between-schematic-and-pcb-editors">Integration Between Schematic and PCB Editors<a href="#integration-between-schematic-and-pcb-editors" class="hash-link" aria-label="Direct link to Integration Between Schematic and PCB Editors" title="Direct link to Integration Between Schematic and PCB Editors">​</a></h2>
+<p>KiCad ensures seamless integration between the <strong>Schematic Editor (Eeschema)</strong> and the <strong>PCB Layout Editor (PCBnew)</strong>, facilitating an efficient design workflow through interdependent functionalities.</p>
+<ul>
+<li>
+<p><strong>Cross-Referencing:</strong></p>
+<ul>
+<li><strong>Component Synchronization:</strong> Selecting a component in the schematic automatically highlights the corresponding footprint in the PCB layout, and vice versa.</li>
+<li><strong>Net Consistency:</strong> Electrical connections defined in the schematic are mirrored in the PCB layout, ensuring accurate trace routing and connectivity.</li>
+</ul>
+</li>
+<li>
+<p><strong>Real-Time Updates:</strong></p>
+<ul>
+<li><strong>Schematic Changes:</strong> Modifications to the schematic, such as adding or removing components, are reflected in the PCB layout upon updating the design.</li>
+<li><strong>Design Refresh:</strong> Utilize the <strong>Update PCB from Schematic</strong> function to synchronize changes, ensuring consistency between electrical and physical designs.</li>
+</ul>
+</li>
+<li>
+<p><strong>Error Detection and Resolution:</strong></p>
+<ul>
+<li><strong>Design Rule Checks (DRC):</strong> Integrated checks identify discrepancies between the schematic and PCB layout, such as missing connections or footprint mismatches.</li>
+<li><strong>Feedback Loops:</strong> Prompt notifications of design inconsistencies enable immediate corrective actions, maintaining design integrity.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="exploring-more-kicad-projects">Exploring More KiCad Projects<a href="#exploring-more-kicad-projects" class="hash-link" aria-label="Direct link to Exploring More KiCad Projects" title="Direct link to Exploring More KiCad Projects">​</a></h2>
+<p>While the <strong>PIC Programmer</strong> serves as an illustrative example, KiCad is adept at handling projects of varying complexity and scale. Designers are encouraged to explore additional projects within the <strong>KiCad demo repository</strong> to broaden their understanding and proficiency with the tool.</p>
+<ul>
+<li>
+<p><strong>KiCad Demo Repository Exploration:</strong></p>
+<ul>
+<li><strong>Access:</strong> Visit the <a href="https://gitlab.com/kicad" target="_blank" rel="noopener noreferrer">KiCad GitLab repository</a> to browse available demo projects.</li>
+<li><strong>Project Variety:</strong> Engage with projects ranging from simple single-layer boards to complex multi-layer high-density interconnect (HDI) designs.</li>
+<li><strong>Feature Exposure:</strong> Observe diverse design techniques, such as differential pair routing, high-speed signal management, and thermal mitigation strategies.</li>
+</ul>
+</li>
+<li>
+<p><strong>Community Contributions:</strong></p>
+<ul>
+<li><strong>Made with KiCad:</strong> Visit the <strong>Made with KiCad</strong> section on the official KiCad website to view real-world applications developed by engineers and hobbyists.</li>
+<li><strong>Case Studies:</strong> Analyze case studies that demonstrate advanced features and innovative design solutions implemented using KiCad.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>This documentation has provided an in-depth exploration of KiCad’s <strong>Schematic Editor (Eeschema)</strong> and <strong>PCB Layout Editor (PCBnew)</strong> through the practical example of the <strong>PIC Programmer</strong> project. By navigating the interfaces, managing components and layers, and leveraging configurability and visualization tools, designers can effectively translate electrical schematics into precise and manufacturable PCB layouts. The seamless integration between Eeschema and PCBnew ensures a coherent and efficient design workflow, essential for developing reliable and high-performance electronic systems. Continued practice with diverse projects will further enhance proficiency, enabling designers to tackle increasingly complex PCB designs with confidence and expertise.</p></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad/tree/edit/main/webpage/docs/01_pcb_design/04_example-project.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/PCB-Design-with-KiCad/docs/pcb_design/manufacturing"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Manufacturing</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/PCB-Design-with-KiCad/docs/pcb_design/lessons-learned"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Lessons Learned</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#setting-up-an-example-project-in-kicad" class="table-of-contents__link toc-highlight">Setting Up an Example Project in KiCad</a><ul><li><a href="#step-1-accessing-the-demo-repository" class="table-of-contents__link toc-highlight">Step 1: Accessing the Demo Repository</a></li><li><a href="#step-2-opening-the-project" class="table-of-contents__link toc-highlight">Step 2: Opening the Project</a></li></ul></li><li><a href="#exploring-the-schematic-editor-eeschema" class="table-of-contents__link toc-highlight">Exploring the Schematic Editor (Eeschema)</a><ul><li><a href="#step-1-navigating-the-interface" class="table-of-contents__link toc-highlight">Step 1: Navigating the Interface</a></li><li><a href="#step-2-exploring-components-and-connections" class="table-of-contents__link toc-highlight">Step 2: Exploring Components and Connections</a></li><li><a href="#step-3-navigating-hierarchical-schematics" class="table-of-contents__link toc-highlight">Step 3: Navigating Hierarchical Schematics</a></li></ul></li><li><a href="#exploring-the-pcb-layout-editor-pcbnew" class="table-of-contents__link toc-highlight">Exploring the PCB Layout Editor (PCBnew)</a><ul><li><a href="#step-1-navigating-the-interface-1" class="table-of-contents__link toc-highlight">Step 1: Navigating the Interface</a></li><li><a href="#step-2-managing-layers-and-components" class="table-of-contents__link toc-highlight">Step 2: Managing Layers and Components</a></li><li><a href="#step-3-working-with-configurable-options" class="table-of-contents__link toc-highlight">Step 3: Working with Configurable Options</a></li><li><a href="#step-4-viewing-the-3d-model" class="table-of-contents__link toc-highlight">Step 4: Viewing the 3D Model</a></li></ul></li><li><a href="#integration-between-schematic-and-pcb-editors" class="table-of-contents__link toc-highlight">Integration Between Schematic and PCB Editors</a></li><li><a href="#exploring-more-kicad-projects" class="table-of-contents__link toc-highlight">Exploring More KiCad Projects</a></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">PCB Design with KiCad</div></div></div></footer></div>
+</body>
+</html>

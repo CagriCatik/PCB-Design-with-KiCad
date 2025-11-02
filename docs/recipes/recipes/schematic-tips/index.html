@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-recipes/recipes/schematic-tips" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.6.3">
+<title data-rh="true">Schematic Tips &amp; Tricks | Electronics &amp; PCB Design</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/recipes/recipes/schematic-tips"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Schematic Tips &amp; Tricks | Electronics &amp; PCB Design"><meta data-rh="true" name="description" content="Introduction"><meta data-rh="true" property="og:description" content="Introduction"><link data-rh="true" rel="icon" href="/PCB-Design-with-KiCad/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/recipes/recipes/schematic-tips"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/recipes/recipes/schematic-tips" hreflang="en"><link data-rh="true" rel="alternate" href="https://CagriCatik.github.io/PCB-Design-with-KiCad/docs/recipes/recipes/schematic-tips" hreflang="x-default"><link rel="alternate" type="application/rss+xml" href="/PCB-Design-with-KiCad/blog/rss.xml" title="Electronics &amp; PCB Design RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/PCB-Design-with-KiCad/blog/atom.xml" title="Electronics &amp; PCB Design Atom Feed"><link rel="stylesheet" href="/PCB-Design-with-KiCad/assets/css/styles.524557fc.css">
+<script src="/PCB-Design-with-KiCad/assets/js/runtime~main.e827b521.js" defer="defer"></script>
+<script src="/PCB-Design-with-KiCad/assets/js/main.3242543a.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();t(null!==e?e:"light")}(),function(){try{const n=new URLSearchParams(window.location.search).entries();for(var[t,e]of n)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><div role="region" aria-label="Skip to main content"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Skip to main content</a></div><nav aria-label="Main" class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Toggle navigation bar" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/PCB-Design-with-KiCad/"><div class="navbar__logo"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/PCB-Design-with-KiCad/img/logo.png" alt="pcb logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate"> </b></a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/getting_started/">Getting Started</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/pcb_design/what-is-a-pcb">PCB Design</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/kicad/introduction">KiCad</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/schematic-design/introduction">Schematic</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/layout/introduction">Layout</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/design_principles/introduction">Design Principles</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/schematic">Design Workflow</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/symbols_eeschema/introduction">Symbols Eeschema</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/footprints_pcbnew/introduction">Footprints Pcbnew</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/projects/getting-started">Projects</a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/PCB-Design-with-KiCad/docs/recipes/getting-started">Recipes</a><a class="navbar__item navbar__link" href="/PCB-Design-with-KiCad/docs/category/introduction">Electronics</a><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a></div><div class="navbar__items navbar__items--right"><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)" aria-live="polite" aria-pressed="false"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/PCB-Design-with-KiCad/docs/recipes/getting-started">Getting Started</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/bom">BOM</a><button aria-label="Expand sidebar category &#x27;BOM&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/PCB-Design-with-KiCad/docs/category/recipes">Recipes</a><button aria-label="Collapse sidebar category &#x27;Recipes&#x27;" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/how_to_create_a_custom_graphic">Creating Custom Graphics</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/change_footprint_bulk">Changing Footprints in Bulk Using Pcbnew</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/text_variables">Text variables</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/import_from_snapeda">How to import symbols, footprints and 3D shapes from SnapEDA</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/custom_track_via_sizes">How to create custom sizes for tracks and vias</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/kicad_git_management">KiCad project management with Git</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/getting_started_with_git">Getting started with Git in KiCad</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/sharing_on_github">Sharing your KiCad project on GitHub</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/field_name_templates">Field name templates</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/router_modes">Router modes: highlight collisions - shove - walk around</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/footprint_wizard">The footprint wizard</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/pcbnew_inspection_menu">Pcbnew Inspection menu</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/pin_wire_highlighter">Pin and wire highlighter tool</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/footprint_creation">PCB Footprint Creation and Where to Start?</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/grid_overrides_pcb">Grid Overrides PCB editor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/grid_overrides_schematic">Grid Overrides Schematic editor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/schematic-tips">Schematic Tips &amp; Tricks</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/PCB-Design-with-KiCad/docs/recipes/recipes/teardrops">Teardrops</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/autorouting">Autorouting</a><button aria-label="Expand sidebar category &#x27;Autorouting&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/PCB-Design-with-KiCad/docs/category/footprint-design">Footprint Design</a><button aria-label="Expand sidebar category &#x27;Footprint Design&#x27;" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/PCB-Design-with-KiCad/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item"><a class="breadcrumbs__link" itemprop="item" href="/PCB-Design-with-KiCad/docs/category/recipes"><span itemprop="name">Recipes</span></a><meta itemprop="position" content="1"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Schematic Tips &amp; Tricks</span><meta itemprop="position" content="2"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Schematic Tips &amp; Tricks</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
+<p>In electronic design, the precision and organization of schematics are paramount for effective communication among engineers, designers, and technicians. A well-structured schematic not only facilitates current project workflows but also serves as a valuable reference for future developments. This tutorial delves into essential practices and methodologies for creating high-quality schematic diagrams using KiCad, a widely adopted Electronic Design Automation (EDA) tool. The principles outlined herein aim to enhance legibility, maintainability, and overall usability of schematic designs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-structural-organization-of-schematics">1. Structural Organization of Schematics<a href="#1-structural-organization-of-schematics" class="hash-link" aria-label="Direct link to 1. Structural Organization of Schematics" title="Direct link to 1. Structural Organization of Schematics">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="11-segmentation-of-schematic-pages">1.1. Segmentation of Schematic Pages<a href="#11-segmentation-of-schematic-pages" class="hash-link" aria-label="Direct link to 1.1. Segmentation of Schematic Pages" title="Direct link to 1.1. Segmentation of Schematic Pages">​</a></h3>
+<p>For complex projects, consolidating all components onto a single schematic sheet can lead to clutter and confusion. KiCad offers robust features to manage multiple schematic sheets, allowing designers to segment different functional blocks effectively.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Creating Multiple Sheets:</strong></p>
+<ol>
+<li>Open your project in KiCad and launch the <strong>Eeschema</strong> schematic editor.</li>
+<li>Navigate to <code>File</code> &gt; <code>New Schematic Sheet</code> or press <code>Shift+Ctrl+S</code>.</li>
+<li>Assign a meaningful name to each sheet corresponding to its functional block (e.g., <code>Power</code>, <code>USB_Interface</code>, <code>Analog</code>).</li>
+</ol>
+</li>
+<li>
+<p><strong>Linking Sheets:</strong></p>
+<ol>
+<li>Use hierarchical sheets to interconnect different schematic pages.</li>
+<li>Insert a hierarchical label by selecting the <strong>Place Hierarchical Label</strong> tool (icon resembling a hierarchical tree) from the toolbar.</li>
+<li>Define the hierarchical level and link it to the corresponding sheet.</li>
+</ol>
+</li>
+</ul>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>Allocate separate sheets for distinct subsystems such as power supply, communication interfaces, and signal processing.</li>
+<li>Maintain a logical flow by arranging sheets in the order of signal progression from left to right.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="12-overview-and-navigation">1.2. Overview and Navigation<a href="#12-overview-and-navigation" class="hash-link" aria-label="Direct link to 1.2. Overview and Navigation" title="Direct link to 1.2. Overview and Navigation">​</a></h3>
+<p>An overview page serves as a navigational hub, providing a summary of all schematic sheets and their interconnections. This facilitates quick access and understanding, especially for engineers new to the project.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Creating an Overview Sheet:</strong></p>
+<ol>
+<li>Create a new schematic sheet named <code>Overview</code>.</li>
+<li>Use the <strong>Place Graphic Line</strong> and <strong>Place Text</strong> tools to draft a block diagram representing the system architecture.</li>
+<li>Insert hierarchical labels linking to each functional sheet, effectively mapping out the entire schematic structure.</li>
+</ol>
+</li>
+<li>
+<p><strong>Page Numbering and Referencing:</strong></p>
+<ol>
+<li>Clearly number each schematic sheet.</li>
+<li>Include references to page numbers within the overview diagram to streamline navigation.</li>
+</ol>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="13-title-block">1.3. Title Block<a href="#13-title-block" class="hash-link" aria-label="Direct link to 1.3. Title Block" title="Direct link to 1.3. Title Block">​</a></h3>
+<p>A standardized title block on each schematic sheet ensures consistency and provides essential information at a glance.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Adding a Title Block:</strong></p>
+<ol>
+<li>Select the <strong>Place Graphic Line</strong> and <strong>Place Text</strong> tools to design a title block in the bottom right corner of each sheet.</li>
+<li>Include the following information:<!-- -->
+<ul>
+<li><strong>Title:</strong> Clearly state the purpose of the schematic sheet.</li>
+<li><strong>Revision Number:</strong> Track changes and updates.</li>
+<li><strong>Total Number of Sheets:</strong> Indicate the scope of the project.</li>
+<li><strong>Engineer’s Name:</strong> Identify the creator for accountability.</li>
+<li><strong>Date of Creation:</strong> Timestamp for version control.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>
+<p><strong>Standardization:</strong></p>
+<ol>
+<li>Maintain a uniform layout and format for title blocks across all schematic sheets to enhance readability and professionalism.</li>
+</ol>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="2-clarity-through-annotation">2. Clarity Through Annotation<a href="#2-clarity-through-annotation" class="hash-link" aria-label="Direct link to 2. Clarity Through Annotation" title="Direct link to 2. Clarity Through Annotation">​</a></h2>
+<p>Detailed annotations within the schematic provide context and rationale for design choices, enhancing comprehension and facilitating troubleshooting.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="21-detailed-annotations">2.1. Detailed Annotations<a href="#21-detailed-annotations" class="hash-link" aria-label="Direct link to 2.1. Detailed Annotations" title="Direct link to 2.1. Detailed Annotations">​</a></h3>
+<p>Annotations encompass component values, design calculations, and references to datasheet specifications.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Adding Text Annotations:</strong></p>
+<ol>
+<li>Use the <strong>Place Text</strong> tool to add explanatory notes near relevant components.</li>
+<li>For resistor values, capacitor specifications, and voltage levels, include the formulas or calculations used to derive these values.</li>
+</ol>
+</li>
+<li>
+<p><strong>Example:</strong></p>
+<ul>
+<li>Near a voltage regulator, annotate the feedback resistor values and the formula used to calculate the output voltage:<br>
+<code>V_out = V_ref * (1 + R_feedback_upper / R_feedback_lower)</code></li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="22-consistency-in-symbol-use">2.2. Consistency in Symbol Use<a href="#22-consistency-in-symbol-use" class="hash-link" aria-label="Direct link to 2.2. Consistency in Symbol Use" title="Direct link to 2.2. Consistency in Symbol Use">​</a></h3>
+<p>Consistent use of schematic symbols ensures that the diagram is intuitive and adheres to standard conventions.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li><strong>Directional Flow:</strong>
+<ul>
+<li>Arrange components so that the schematic flows from left (input) to right (output), aligning with the natural reading order.</li>
+</ul>
+</li>
+<li><strong>Ground Symbols:</strong>
+<ul>
+<li>Standardize the orientation of ground symbols, typically pointing downward, to maintain visual consistency across the schematic.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="23-avoiding-crossed-lines">2.3. Avoiding Crossed Lines<a href="#23-avoiding-crossed-lines" class="hash-link" aria-label="Direct link to 2.3. Avoiding Crossed Lines" title="Direct link to 2.3. Avoiding Crossed Lines">​</a></h3>
+<p>Minimizing line crossings reduces visual clutter and potential misinterpretation of connections.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Using Junctions:</strong></p>
+<ol>
+<li>When lines must cross, utilize the <strong>Place Junction</strong> tool to indicate whether the lines are connected.</li>
+<li>Alternatively, use the <strong>Place Wire</strong> tool with the appropriate settings to manage crossovers clearly.</li>
+</ol>
+</li>
+<li>
+<p><strong>Layer Management:</strong></p>
+<ul>
+<li>Leverage different layers for routing if necessary, although for schematics, keeping all connections on a single layer is standard practice.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="3-effective-labeling">3. Effective Labeling<a href="#3-effective-labeling" class="hash-link" aria-label="Direct link to 3. Effective Labeling" title="Direct link to 3. Effective Labeling">​</a></h2>
+<p>Proper labeling is critical for identifying connections and facilitating the transition from schematic to PCB layout.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="31-comprehensive-net-labeling">3.1. Comprehensive Net Labeling<a href="#31-comprehensive-net-labeling" class="hash-link" aria-label="Direct link to 3.1. Comprehensive Net Labeling" title="Direct link to 3.1. Comprehensive Net Labeling">​</a></h3>
+<p>Each net should be uniquely labeled to ensure clarity during the PCB design phase.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Using Net Labels:</strong></p>
+<ol>
+<li>Select the <strong>Place Net Label</strong> tool from the toolbar.</li>
+<li>Assign descriptive names to each net (e.g., <code>VCC_3V3</code>, <code>GND</code>, <code>DATA_BUS</code>).</li>
+</ol>
+</li>
+<li>
+<p><strong>Consistency:</strong></p>
+<ul>
+<li>Ensure that net labels are consistently named across all schematic sheets to avoid confusion during layout.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="32-horizontal-text-orientation">3.2. Horizontal Text Orientation<a href="#32-horizontal-text-orientation" class="hash-link" aria-label="Direct link to 3.2. Horizontal Text Orientation" title="Direct link to 3.2. Horizontal Text Orientation">​</a></h3>
+<p>Maintaining horizontal text orientation enhances readability and reduces strain during schematic reviews.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Adjusting Text Orientation:</strong></p>
+<ol>
+<li>When placing text labels, ensure that the text is oriented horizontally.</li>
+<li>Avoid vertical or angled text unless necessary for space constraints.</li>
+</ol>
+</li>
+<li>
+<p><strong>Text Alignment:</strong></p>
+<ul>
+<li>Align text labels uniformly, either to the left or center, to maintain a clean and organized appearance.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="33-use-of-junctions">3.3. Use of Junctions<a href="#33-use-of-junctions" class="hash-link" aria-label="Direct link to 3.3. Use of Junctions" title="Direct link to 3.3. Use of Junctions">​</a></h3>
+<p>Proper use of junctions clarifies connections and prevents ambiguity.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Three-Wire Junctions:</strong></p>
+<ol>
+<li>Limit junctions to three-wire connections to minimize complexity.</li>
+<li>Use the <strong>Place Junction</strong> tool to clearly indicate whether lines are connected or simply crossing over.</li>
+</ol>
+</li>
+<li>
+<p><strong>Visual Indicators:</strong></p>
+<ul>
+<li>Utilize graphical indicators such as circles or dots at junction points to signify actual connections.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="4-order-of-components">4. Order of Components<a href="#4-order-of-components" class="hash-link" aria-label="Direct link to 4. Order of Components" title="Direct link to 4. Order of Components">​</a></h2>
+<p>Logical arrangement of components reflects their physical placement on the PCB and the signal flow within the circuit.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="41-logical-component-arrangement">4.1. Logical Component Arrangement<a href="#41-logical-component-arrangement" class="hash-link" aria-label="Direct link to 4.1. Logical Component Arrangement" title="Direct link to 4.1. Logical Component Arrangement">​</a></h3>
+<p>Organize components in the schematic to mirror their intended physical placement on the PCB, facilitating an intuitive transition from design to layout.</p>
+<p><strong>Best Practices:</strong></p>
+<ul>
+<li>
+<p><strong>Sequential Ordering:</strong></p>
+<ul>
+<li>Arrange components in the order they appear on the PCB, typically from left to right or top to bottom.</li>
+</ul>
+</li>
+<li>
+<p><strong>Functional Grouping:</strong></p>
+<ul>
+<li>Group related components (e.g., filtering capacitors, decoupling capacitors) together to maintain coherence within the schematic.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="42-placement-of-decoupling-capacitors">4.2. Placement of Decoupling Capacitors<a href="#42-placement-of-decoupling-capacitors" class="hash-link" aria-label="Direct link to 4.2. Placement of Decoupling Capacitors" title="Direct link to 4.2. Placement of Decoupling Capacitors">​</a></h3>
+<p>Decoupling capacitors should be strategically placed near power pins to ensure effective noise reduction and power stability.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Proximity to Power Pins:</strong></p>
+<ol>
+<li>Position decoupling capacitors as close as possible to the power pins of ICs.</li>
+<li>Use the <strong>Place Component</strong> tool to accurately position capacitors adjacent to the relevant components.</li>
+</ol>
+</li>
+<li>
+<p><strong>Annotation:</strong></p>
+<ul>
+<li>Label decoupling capacitors clearly (e.g., <code>C_DEC_1V8</code>) to indicate their purpose and voltage rating.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="5-use-of-colors-in-schematics">5. Use of Colors in Schematics<a href="#5-use-of-colors-in-schematics" class="hash-link" aria-label="Direct link to 5. Use of Colors in Schematics" title="Direct link to 5. Use of Colors in Schematics">​</a></h2>
+<p>Color-coding nets can significantly enhance the readability of complex schematics by visually distinguishing different signal groups.</p>
+<p><strong>Implementation in KiCad:</strong></p>
+<ul>
+<li>
+<p><strong>Assigning Colors to Nets:</strong></p>
+<ol>
+<li>Open the <strong>Design Rules</strong> manager by navigating to <code>Setup</code> &gt; <code>Design Rules</code>.</li>
+<li>Select the <strong>Colors</strong> tab to assign specific colors to different net groups (e.g., power, data, control signals).</li>
+</ol>
+</li>
+<li>
+<p><strong>Color Consistency:</strong></p>
+<ul>
+<li>Maintain consistent color assignments across all schematic sheets to aid in quick identification during reviews and PCB layout.</li>
+</ul>
+</li>
+<li>
+<p><strong>Example Assignments:</strong></p>
+<ul>
+<li><strong>Power Nets:</strong> Red for <code>VCC</code>, Blue for <code>GND</code>.</li>
+<li><strong>Data Buses:</strong> Green for <code>DATA_BUS</code>, Yellow for <code>ADDRESS_BUS</code>.</li>
+<li><strong>Control Signals:</strong> Orange for <code>CTRL_SIG</code>, Purple for <code>CLK</code>.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-evaluating-existing-schematics">6. Evaluating Existing Schematics<a href="#6-evaluating-existing-schematics" class="hash-link" aria-label="Direct link to 6. Evaluating Existing Schematics" title="Direct link to 6. Evaluating Existing Schematics">​</a></h2>
+<p>Regularly reviewing and evaluating existing schematics is essential for maintaining high design standards and identifying areas for improvement.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="61-case-study-analysis">6.1. Case Study Analysis<a href="#61-case-study-analysis" class="hash-link" aria-label="Direct link to 6.1. Case Study Analysis" title="Direct link to 6.1. Case Study Analysis">​</a></h3>
+<p>Analyzing poorly organized schematics can illuminate common pitfalls and reinforce the importance of adhering to best practices.</p>
+<p><strong>Example Analysis:</strong></p>
+<ul>
+<li><strong>Inconsistent Ground Orientation:</strong>
+<ul>
+<li>Ground symbols not consistently pointing downward can lead to misinterpretation of voltage levels.</li>
+</ul>
+</li>
+<li><strong>Missing Net Labels:</strong>
+<ul>
+<li>Unlabeled nets obscure the function of connections, complicating the PCB layout process.</li>
+</ul>
+</li>
+<li><strong>Overlapping Text:</strong>
+<ul>
+<li>Overlapping annotations and labels reduce readability and obscure critical information.</li>
+</ul>
+</li>
+<li><strong>Floating Components:</strong>
+<ul>
+<li>Components without clear connections can cause confusion regarding their role within the circuit.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Mitigation Strategies:</strong></p>
+<ul>
+<li><strong>Standardize Ground Orientation:</strong>
+<ul>
+<li>Ensure all ground symbols point downward to maintain visual consistency.</li>
+</ul>
+</li>
+<li><strong>Comprehensive Labeling:</strong>
+<ul>
+<li>Label every net with descriptive names to eliminate ambiguity.</li>
+</ul>
+</li>
+<li><strong>Avoid Overlapping Elements:</strong>
+<ul>
+<li>Strategically place text and labels to prevent overlaps, enhancing overall readability.</li>
+</ul>
+</li>
+<li><strong>Clear Component Placement:</strong>
+<ul>
+<li>Position components logically with clear connections to prevent floating or ambiguous placements.</li>
+</ul>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="7-practical-implementation-in-kicad">7. Practical Implementation in KiCad<a href="#7-practical-implementation-in-kicad" class="hash-link" aria-label="Direct link to 7. Practical Implementation in KiCad" title="Direct link to 7. Practical Implementation in KiCad">​</a></h2>
+<p>To solidify the concepts discussed, this section provides a step-by-step guide to implementing best practices within KiCad.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="71-creating-a-multi-sheet-schematic">7.1. Creating a Multi-Sheet Schematic<a href="#71-creating-a-multi-sheet-schematic" class="hash-link" aria-label="Direct link to 7.1. Creating a Multi-Sheet Schematic" title="Direct link to 7.1. Creating a Multi-Sheet Schematic">​</a></h3>
+<ol>
+<li>
+<p><strong>Initialize Project:</strong></p>
+<ul>
+<li>Open KiCad and create a new project via <code>File</code> &gt; <code>New Project</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Launch Eeschema:</strong></p>
+<ul>
+<li>Open the schematic editor by clicking the <strong>Eeschema</strong> icon.</li>
+</ul>
+</li>
+<li>
+<p><strong>Design Overview Sheet:</strong></p>
+<ul>
+<li>Create an overview sheet that outlines the system architecture.</li>
+<li>Insert hierarchical labels linking to functional sheets (e.g., Power, USB).</li>
+</ul>
+</li>
+<li>
+<p><strong>Add Functional Sheets:</strong></p>
+<ul>
+<li>For each functional block, create a new schematic sheet.</li>
+<li>Use consistent naming conventions for ease of navigation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Link Sheets Hierarchically:</strong></p>
+<ul>
+<li>Ensure that hierarchical labels correctly reference their corresponding sheets.</li>
+<li>Validate connections by cross-referencing between sheets.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="72-annotating-components">7.2. Annotating Components<a href="#72-annotating-components" class="hash-link" aria-label="Direct link to 7.2. Annotating Components" title="Direct link to 7.2. Annotating Components">​</a></h3>
+<ol>
+<li><strong>Select Component:</strong>
+<ul>
+<li>Click on the component you wish to annotate.</li>
+</ul>
+</li>
+<li><strong>Add Text:</strong>
+<ul>
+<li>Use the <strong>Place Text</strong> tool to insert annotations near the component.</li>
+</ul>
+</li>
+<li><strong>Detail Calculations:</strong>
+<ul>
+<li>For components like resistors and capacitors, include relevant calculations and references to datasheets.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="73-labeling-nets">7.3. Labeling Nets<a href="#73-labeling-nets" class="hash-link" aria-label="Direct link to 7.3. Labeling Nets" title="Direct link to 7.3. Labeling Nets">​</a></h3>
+<ol>
+<li>
+<p><strong>Identify Net:</strong></p>
+<ul>
+<li>Select the net you intend to label.</li>
+</ul>
+</li>
+<li>
+<p><strong>Place Net Label:</strong></p>
+<ul>
+<li>Click on the <strong>Place Net Label</strong> tool.</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Descriptive Name:</strong></p>
+<ul>
+<li>Enter a meaningful name that reflects the net’s function (e.g., <code>VCC_3V3</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Maintain Consistency:</strong></p>
+<ul>
+<li>Ensure that net labels are uniform across all schematic sheets.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="74-color-coding-nets">7.4. Color-Coding Nets<a href="#74-color-coding-nets" class="hash-link" aria-label="Direct link to 7.4. Color-Coding Nets" title="Direct link to 7.4. Color-Coding Nets">​</a></h3>
+<ol>
+<li>
+<p><strong>Access Design Rules:</strong></p>
+<ul>
+<li>Navigate to <code>Setup</code> &gt; <code>Design Rules</code> &gt; <code>Colors</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>Assign Colors:</strong></p>
+<ul>
+<li>Choose colors for different net groups based on their function.</li>
+</ul>
+</li>
+<li>
+<p><strong>Apply and Review:</strong></p>
+<ul>
+<li>Apply the color settings and review the schematic to ensure clarity.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="75-organizing-components">7.5. Organizing Components<a href="#75-organizing-components" class="hash-link" aria-label="Direct link to 7.5. Organizing Components" title="Direct link to 7.5. Organizing Components">​</a></h3>
+<ol>
+<li>
+<p><strong>Logical Placement:</strong></p>
+<ul>
+<li>Arrange components in the schematic to reflect their physical layout on the PCB.</li>
+</ul>
+</li>
+<li>
+<p><strong>Proximity of Related Components:</strong></p>
+<ul>
+<li>Place decoupling capacitors near power pins and group related components together.</li>
+</ul>
+</li>
+<li>
+<p><strong>Sequential Ordering:</strong></p>
+<ul>
+<li>Order components sequentially to represent signal flow from input to output.</li>
+</ul>
+</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-common-pitfalls-and-how-to-avoid-them">8. Common Pitfalls and How to Avoid Them<a href="#8-common-pitfalls-and-how-to-avoid-them" class="hash-link" aria-label="Direct link to 8. Common Pitfalls and How to Avoid Them" title="Direct link to 8. Common Pitfalls and How to Avoid Them">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="81-overcrowded-schematics">8.1. Overcrowded Schematics<a href="#81-overcrowded-schematics" class="hash-link" aria-label="Direct link to 8.1. Overcrowded Schematics" title="Direct link to 8.1. Overcrowded Schematics">​</a></h3>
+<p><strong>Issue:</strong> Cramming too many components onto a single sheet leads to clutter and confusion.</p>
+<p><strong>Solution:</strong> Utilize multiple schematic sheets to segregate functional blocks, maintaining clarity and organization.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="82-inconsistent-labeling">8.2. Inconsistent Labeling<a href="#82-inconsistent-labeling" class="hash-link" aria-label="Direct link to 8.2. Inconsistent Labeling" title="Direct link to 8.2. Inconsistent Labeling">​</a></h3>
+<p><strong>Issue:</strong> Inconsistent or missing net labels hinder understanding and PCB layout.</p>
+<p><strong>Solution:</strong> Implement comprehensive and descriptive net labeling practices across all schematic sheets.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="83-poor-annotation-practices">8.3. Poor Annotation Practices<a href="#83-poor-annotation-practices" class="hash-link" aria-label="Direct link to 8.3. Poor Annotation Practices" title="Direct link to 8.3. Poor Annotation Practices">​</a></h3>
+<p><strong>Issue:</strong> Lack of detailed annotations obscures design rationale and complicates troubleshooting.</p>
+<p><strong>Solution:</strong> Provide thorough annotations, including component values, calculations, and references to datasheets.</p>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="84-ignoring-design-standards">8.4. Ignoring Design Standards<a href="#84-ignoring-design-standards" class="hash-link" aria-label="Direct link to 8.4. Ignoring Design Standards" title="Direct link to 8.4. Ignoring Design Standards">​</a></h3>
+<p><strong>Issue:</strong> Disregarding standard schematic conventions leads to misinterpretation and errors.</p>
+<p><strong>Solution:</strong> Adhere to established schematic design standards, ensuring consistency in symbol usage, component placement, and labeling.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>Adhering to structured schematic design principles using KiCad significantly enhances the clarity, maintainability, and overall quality of electronic designs. By segmenting schematic pages, maintaining comprehensive annotations, ensuring effective labeling, and utilizing color-coding, designers can create schematics that are both intuitive and professional. Regular evaluation and adherence to best practices mitigate common pitfalls, fostering efficient collaboration and streamlined PCB layout processes. Implementing these strategies will not only improve current project outcomes but also establish a foundation for future engineering endeavors.</p>
+<h1>Acknowledgments</h1>
+<p>This tutorial integrates insights and best practices from Phil&#x27;s Lab #62, emphasizing the application of these strategies within KiCad. The support from the KiCad community and continual advancements in EDA tools contribute significantly to the evolution of schematic design methodologies.</p>
+<h1>Appendices</h1>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-a-sample-schematic-layout-in-kicad">Appendix A: Sample Schematic Layout in KiCad<a href="#appendix-a-sample-schematic-layout-in-kicad" class="hash-link" aria-label="Direct link to Appendix A: Sample Schematic Layout in KiCad" title="Direct link to Appendix A: Sample Schematic Layout in KiCad">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="appendix-b-checklist-for-schematic-review">Appendix B: Checklist for Schematic Review<a href="#appendix-b-checklist-for-schematic-review" class="hash-link" aria-label="Direct link to Appendix B: Checklist for Schematic Review" title="Direct link to Appendix B: Checklist for Schematic Review">​</a></h2>
+<ul class="contains-task-list containsTaskList_mC6p">
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->All nets are comprehensively labeled.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Components are logically arranged reflecting PCB layout.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Annotations provide necessary design rationale.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Color-coding enhances net differentiation.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Title blocks are standardized across all sheets.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Hierarchical sheets are correctly linked and navigable.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Ground symbols are consistently oriented.</li>
+<li class="task-list-item"><input type="checkbox" disabled=""> <!-- -->Junctions are clearly indicated to avoid misinterpretation.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/CagriCatik/PCB-Design-with-KiCad/tree/edit/main/webpage/docs/10_recipes/02_recipes/schematic-tips.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href="/PCB-Design-with-KiCad/docs/recipes/recipes/grid_overrides_schematic"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Grid Overrides Schematic editor</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/PCB-Design-with-KiCad/docs/recipes/recipes/teardrops"><div class="pagination-nav__sublabel">Next</div><div class="pagination-nav__label">Teardrops</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#introduction" class="table-of-contents__link toc-highlight">Introduction</a></li><li><a href="#1-structural-organization-of-schematics" class="table-of-contents__link toc-highlight">1. Structural Organization of Schematics</a><ul><li><a href="#11-segmentation-of-schematic-pages" class="table-of-contents__link toc-highlight">1.1. Segmentation of Schematic Pages</a></li><li><a href="#12-overview-and-navigation" class="table-of-contents__link toc-highlight">1.2. Overview and Navigation</a></li><li><a href="#13-title-block" class="table-of-contents__link toc-highlight">1.3. Title Block</a></li></ul></li><li><a href="#2-clarity-through-annotation" class="table-of-contents__link toc-highlight">2. Clarity Through Annotation</a><ul><li><a href="#21-detailed-annotations" class="table-of-contents__link toc-highlight">2.1. Detailed Annotations</a></li><li><a href="#22-consistency-in-symbol-use" class="table-of-contents__link toc-highlight">2.2. Consistency in Symbol Use</a></li><li><a href="#23-avoiding-crossed-lines" class="table-of-contents__link toc-highlight">2.3. Avoiding Crossed Lines</a></li></ul></li><li><a href="#3-effective-labeling" class="table-of-contents__link toc-highlight">3. Effective Labeling</a><ul><li><a href="#31-comprehensive-net-labeling" class="table-of-contents__link toc-highlight">3.1. Comprehensive Net Labeling</a></li><li><a href="#32-horizontal-text-orientation" class="table-of-contents__link toc-highlight">3.2. Horizontal Text Orientation</a></li><li><a href="#33-use-of-junctions" class="table-of-contents__link toc-highlight">3.3. Use of Junctions</a></li></ul></li><li><a href="#4-order-of-components" class="table-of-contents__link toc-highlight">4. Order of Components</a><ul><li><a href="#41-logical-component-arrangement" class="table-of-contents__link toc-highlight">4.1. Logical Component Arrangement</a></li><li><a href="#42-placement-of-decoupling-capacitors" class="table-of-contents__link toc-highlight">4.2. Placement of Decoupling Capacitors</a></li></ul></li><li><a href="#5-use-of-colors-in-schematics" class="table-of-contents__link toc-highlight">5. Use of Colors in Schematics</a></li><li><a href="#6-evaluating-existing-schematics" class="table-of-contents__link toc-highlight">6. Evaluating Existing Schematics</a><ul><li><a href="#61-case-study-analysis" class="table-of-contents__link toc-highlight">6.1. Case Study Analysis</a></li></ul></li><li><a href="#7-practical-implementation-in-kicad" class="table-of-contents__link toc-highlight">7. Practical Implementation in KiCad</a><ul><li><a href="#71-creating-a-multi-sheet-schematic" class="table-of-contents__link toc-highlight">7.1. Creating a Multi-Sheet Schematic</a></li><li><a href="#72-annotating-components" class="table-of-contents__link toc-highlight">7.2. Annotating Components</a></li><li><a href="#73-labeling-nets" class="table-of-contents__link toc-highlight">7.3. Labeling Nets</a></li><li><a href="#74-color-coding-nets" class="table-of-contents__link toc-highlight">7.4. Color-Coding Nets</a></li><li><a href="#75-organizing-components" class="table-of-contents__link toc-highlight">7.5. Organizing Components</a></li></ul></li><li><a href="#8-common-pitfalls-and-how-to-avoid-them" class="table-of-contents__link toc-highlight">8. Common Pitfalls and How to Avoid Them</a><ul><li><a href="#81-overcrowded-schematics" class="table-of-contents__link toc-highlight">8.1. Overcrowded Schematics</a></li><li><a href="#82-inconsistent-labeling" class="table-of-contents__link toc-highlight">8.2. Inconsistent Labeling</a></li><li><a href="#83-poor-annotation-practices" class="table-of-contents__link toc-highlight">8.3. Poor Annotation Practices</a></li><li><a href="#84-ignoring-design-standards" class="table-of-contents__link toc-highlight">8.4. Ignoring Design Standards</a></li></ul></li><li><a href="#conclusion" class="table-of-contents__link toc-highlight">Conclusion</a></li><li><a href="#appendix-a-sample-schematic-layout-in-kicad" class="table-of-contents__link toc-highlight">Appendix A: Sample Schematic Layout in KiCad</a></li><li><a href="#appendix-b-checklist-for-schematic-review" class="table-of-contents__link toc-highlight">Appendix B: Checklist for Schematic Review</a></li></ul></div></div></div></div></main></div></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="footer__bottom text--center"><div class="footer__copyright">PCB Design with KiCad</div></div></div></footer></div>
+</body>
+</html>
